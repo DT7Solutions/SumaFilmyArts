@@ -1,0 +1,48 @@
+.suma_tm_section{
+    width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+
+.suma_tm_portfolio{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+    margin-top: 100px;
+}
+
+.inner-port-img img{
+    height: 380px;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 6px;
+}
+.portfolio-slider3{
+	margin-top: -35px;
+}
+.portfolio-slider2{
+	margin-top: -35px;
+}
+
+@media(max-width: 574px){
+	
+.inner-port-img img{
+    height: 150px;
+	width: 300px;
+    border-radius: 6px;
+}
+.suma_tm_portfolio{
+	margin-top: 20px;
+}
+.portfolio-slider2{
+	margin-top: -350px;
+}
+.portfolio-slider3{
+	margin-top: -350px;
+	margin-bottom: -350px;
+}
+	
+ }

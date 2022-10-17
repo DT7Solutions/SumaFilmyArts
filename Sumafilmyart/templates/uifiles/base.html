@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Name of your web site">
+<meta name="author" content="Marketify">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>SumaFilmyArt | Home</title>
+
+<!-- STYLES -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/plugins.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/dark.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/news_events.css' %}" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<!-- oel carosul -->
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<!-- /owl carsolul -->
+<!--bootstrap -->
+
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<!-- /STYLES -->
+
+</head>
+
+<body> 
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="loader_line"></div>
+	</div>
+	<!-- /PRELOADER -->
+	
+	<!-- WRAPPER ALL -->
+	<div class="dizme_tm_all_wrap" data-magic-cursor="show">
+	
+		<!-- MOBILE MENU -->
+		<div class="dizme_tm_mobile_menu">
+			<div class="mobile_menu_inner">
+				<div class="mobile_in">
+					<div class="logo">
+						<a href="/"><img src="{% static 'img/logo/Suma filmy arts.png' %}" alt="" /></a>
+					</div>
+					<div class="trigger">
+						<div class="hamburger hamburger--slider">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown_inner">
+					<ul class="anchor_nav">
+						<li class=""><a class="nav-btn active" href="/">Home</a></li>
+						<li><a class="nav-btn" href="/about/">About</a></li>
+						<li><a class="nav-btn" href="/portfolio/">Portfolio</a></li>
+						<li><a class="nav-btn" href="/news_events/">News&Events</a></li>
+						<li><a class="nav-btn" href="/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /MOBILE MENU -->
+	
+		<!-- HEADER -->
+		<div class="dizme_tm_header">
+			<div class="container">
+				<div class="inner">
+					<div class="logo">
+						<a href="/"><img src="{% static 'img/logo/Suma filmy arts.png' %}" alt="" /></a>
+					</div>
+					<div class="menu">
+						<ul class="anchor_nav">
+							<li class=""><a class="nav-btn active" href="/">Home</a></li>
+							<li><a class="nav-btn" 	href="/about/">About</a></li>
+							<li><a class="nav-btn"  href="/portfolio/">Portfolio</a></li>
+							<li><a class="nav-btn"  href="/news_events/">News & Events</a></li>
+							<li><a class="nav-btn"  href="/contact/">Contact</a></li>
+						</ul>
+					</div>
+					<div class="menu ">
+						<ul class='home-social-links'>
+							<li><a href="#"><i class="icon-facebook-1"></i></a></li>
+							<li><a href="#"><i class="icon-twitter-1"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+							<li><a href="#"><i class="icon-behance"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /HEADER -->
+
+	
+	{% block content %}
+    
+    {% endblock %}
+	
+
+		
+			  </footer><!-- End Footer -->
+			  <div class="dizme_tm_section suma-footer">
+				<div class="dizme_tm_copyright footer">
+			  
+				<div class="container-black">
+					<div class="row">
+						<div class="footer-col">
+							<h4>Quick Links</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">news&events</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Contact Us</h4>
+							<ul>
+								<li><a href="#">123-5</a></li>
+								<li><a href="#">Hyderabad</a></li>
+								<li><a href="#">Telangana</a></li>
+								<li><a href="#">+91 9123456789</a></li>
+								<li><a href="#">info@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Privacy Policies</h4>
+							<ul>
+								<li><a href="#">Terms of Use </a></li>
+								<li><a href="#">Refund Policy</a></li>
+								<li><a href="#">Return Policy</a></li>
+								<li><a href="#">conditions</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Map </h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.058215656213!2d80.63774101477304!3d16.268786588757905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a062f6663586f%3A0x47ee4650ea8b815d!2sTenali%20Double%20Horse!5e0!3m2!1sen!2sin!4v1665388332794!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>s
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="me-md-auto text-center text-md-center  mt-5">
+				<div class="copyright f-container-section">
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+					  &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+					  <div class="credits">Designed by <a href="https://bootstrapmade.com/" style="color:#000600bb;font-weight:600;text-decoration: none;">DT7Solutions</a>
+						<div class="social  text-md-center f-container-section3">
+							
+							<a href="#"><i class="icon-facebook-2"></i></a>
+							<a href="#"><i class="icon-twitter-2"></i></a>
+							<a href="#"><i class="icon-linkedin-2"></i></a>
+							<a href="#"><i class="icon-behance-1"></i></a>
+						
+					</div>
+					  </div>
+					 
+			  </div>
+			
+		   
+	</div>
+		 
+		
+
+
+<!-- CURSOR -->
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
+<!-- /CURSOR -->
+
+<!-- TOTOP -->
+<div class="progressbar">
+	<a href="#"><span class="text">To Top</span></a>
+	<span class="line"></span>
+</div>
+<!-- /TOTOP -->
+
+</div>
+<!-- / WRAPPER ALL -->
+		
+	
+	
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
+<script src="{% static 'js/home.js' %}"></script>
+<script src="{% static 'js/portfolio.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
+<!-- owl carsoul js liberys -->
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<!--end  owl carsoul js liberys -->
+<!--bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> {% endcomment %}
+<!-- /SCRIPTS -->
+<script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

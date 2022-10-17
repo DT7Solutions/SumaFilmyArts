@@ -1,0 +1,274 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %} 
+<!-- ABOUT -->
+<div class="dizme_tm_section" id="about">
+    <div class="dizme_tm_about">
+        <div class="container">
+            <div class="wrapper">
+                <div class="left">
+                    <div class="image">
+                        <img src="{% static 'img/home/suma image 2.jpg' %}" alt="" />
+                        <div class="numbers year">
+                            <div class="wrapper">
+                                <h3><span class="dizme_tm_counter" data-from="0" data-to="18" data-speed="2000">0</span></h3>
+                                <span class="name">Years of<br />Success</span>
+                            </div>
+                        </div>
+                        <div class="numbers project">
+                            <div class="wrapper">
+                                <h3><span class="dizme_tm_counter" data-from="0" data-to="9" data-speed="2000">0</span>K</h3>
+                                <span class="name">Total<br />Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title wow fadeInUp" data-wow-duration="1s">
+                        <span>I'm a Designer</span>
+                        <h3>I Can Design Anything You Want</h3>
+                    </div>
+                    <div class="text wow fadeInUp" data-wow-duration="1s">
+                        <p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                    </div>
+                    <div class="dizme_tm_button wow fadeInUp" data-wow-duration="1s">
+                        <a class="anchor" href="#contact"><span>Hire Me</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/1.png' %}" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div>
+    </div>
+</div>
+<!-- /ABOUT -->
+<!-- awards slider -->
+<div class="dizme_tm_section">
+    <div class="dizme_tm_testimonials">
+        <div class="dizme_tm_main_title" data-align="center">
+            <span>Awards</span>
+            <h3>My Awards & Achievements</h3>
+            <p>Awards for Anchoring events  that gets Success  on Tollywood Industry </p>
+        </div>
+        <div class="list_wrapper">
+            <div class="total">
+                <div class="in">
+                    <ul class="owl-carousel owl-theme">
+                        <li>
+                            <div class="icon"data-merge="3">
+                                <img class="awards-img" src="{% static 'img/suma_main/suma_awards2.png' %}" alt="iamge1" />
+                            </div>
+                             
+                        </li>
+                        <li>
+                             <div class="icon"data-merge="3">
+                                <img class="awards-img" src="{% static 'img/suma_main/suma _awards.png' %}" alt="" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"data-merge="3">
+                                <img class="awards-img" src="{% static 'img/suma_main/suma_awards2.png' %}" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left_details">
+                    <div class="det_image one wow fadeIn" data-wow-duration="1s" data-img-url="{% static 'img/testimonials/2.jpg' %}"></div>
+                    <div class="det_image two wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" data-img-url="{% static 'img/testimonials/1.jpg' %}"></div>
+                    <div class="det_image three wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-img-url="{% static 'img/testimonials/3.jpg' %}"></div>
+                    <div class="det_image four wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-img-url="{% static 'img/testimonials/4.jpg' %}"></div>
+                    <span class="circle green animPulse"></span>
+                    <span class="circle yellow animPulse"></span>
+                    <span class="circle border animPulse"></span>
+                </div>
+                <div class="right_details">
+                    <div class="det_image one wow fadeIn" data-wow-duration="1s" data-img-url="{% static 'img/testimonials/5.jpg' %}"></div>
+                    <div class="det_image two wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-img-url="{% static 'img/testimonials/6.jpg' %}"></div>
+                    <div class="det_image three wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-img-url="{% static 'img/testimonials/7.jpg' %}"></div>
+                    <span class="circle yellow animPulse"></span>
+                    <span class="circle purple animPulse"></span>
+                    <span class="circle border animPulse"></span>
+                </div>
+            </div>
+        </div>
+        <div class="brush_1 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/testimonials/1.png' %}" alt="" /></div>
+    </div>
+</div>
+<!-- /awards slider -->
+            <!-- PORTFOLIO -->
+            <div class="dizme_tm_section" id="portfolio">
+            <div class="dizme_tm_portfolio">
+        <div class="container">
+            <div class="dizme_tm_main_title" data-align="center">
+                <span>Social Videos</span>
+                <h3>My Amazing Videos</h3>
+                <p>Most common events for organized events  that get  huge response  on telugu film industry</p>
+            </div>
+            <div class="portfolio_filter">
+                <ul>
+                    <li><a href="#" class="current" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".soundcloud">FaceBook</a></li>
+                    <li><a href="#" data-filter=".popup">Instagram</a></li>
+                    <li><a href="#" data-filter=".youtube">youtube</a></li>
+                    <li><a href="#" data-filter=".vimeo">Twitter</a></li>
+    
+                    {% comment %} <li><a href="#" data-filter=".detail">Detail</a></li> {% endcomment %}
+                </ul>
+            </div>
+            <div class="dizme_tm_portfolio_titles"></div>
+            <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
+                <ul class="gallery_zoom grid">
+                    <li class="youtube grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=oS9pk56ZHLg" >
+                                    <img src="{% static 'img/suma_main/suma _awards.png' %}" alt="" />
+                                    <div class="main" data-img-url="{% static 'img/suma_main/suma-video4.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Mockup Shape</h3>
+                                <span>Youtube</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vimeo grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle" data-category="Vimeo">
+                                <a class="popup-vimeo" href="https://www.youtube.com/watch?v=oS9pk56ZHLg">
+                                    <img src="{% static 'img/suma_main/suma-instgram.png' %}" alt="" />
+                                    <div class="main" data-img-url="{% static 'img/suma_main/suma-instgram.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Ave Bottle</h3>
+                                <span>Vimeo</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soundcloud grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art" data-category="Soundcloud">
+                                <a class="soundcloude_link mfp-iframe audio"href="https://www.youtube.com/watch?v=oS9pk56ZHLg">
+                                <img src="{% static 'img/suma_main/suma-instgram.png' %}" alt="" />
+                                <div class="main" data-img-url="{% static 'img/suma_main/suma-video3.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Magic Art</h3>
+                                <span>Soundcloud</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="popup grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix" data-category="Popup">
+                                <a class="zoom" href="{% static 'img/portfolio/5.jpg' %}">
+                                    <img src="{% static 'img/suma_main/suma-instgram.png' %}" alt="" />
+                                    <div class="main" data-img-url="{% static 'img/suma_main/suma-video3.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Blue Lemon</h3>
+                                <span>Popup</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="popup grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Art Stone" data-category="Popup">
+                                <a class="zoom" href="{% static 'img/portfolio/4.jpg' %}">
+                                    <img src="{% static 'img/suma_main/suma-instgram.png' %}" alt="" />
+                                <div class="main" data-img-url="{% static 'img/suma_main/suma-image6.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Art Stone</h3>
+                                <span>Popup</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="detail grid-item">
+                        <div class="inner">
+                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution" data-category="Detail">
+                                <a class="portfolio_popup" href="#">
+                                    <img src="{% static 'img/suma_main/suma-instgram.png' %}" alt="" />
+                                    <div class="main" data-img-url="{% static 'img/suma_main/suma-video2.png' %}"></div>
+                                </a>
+                            </div>
+                            <div class="mobile_title">
+                                <h3>Global Evolution</h3>
+                                <span>Detail</span>
+                            </div>
+
+                            <div class="hidden_content">
+                                <div class="popup_details">
+                                    <div class="main_details">
+                                        <div class="textbox">
+                                            <p>We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible.</p>
+                                            <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification.</p>
+                                        </div>
+                                        <div class="detailbox">
+                                            <ul>
+                                                <li>
+                                                    <span class="first">Client</span>
+                                                    <span>Alvaro Morata</span>
+                                                </li>
+                                                <li>
+                                                    <span class="first">Category</span>
+                                                    <span><a href="#">Detail</a></span>
+                                                </li>
+                                                <li>
+                                                    <span class="first">Date</span>
+                                                    <span>March 07, 2021</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="additional_images">
+                                        <ul>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <div class="my_image">
+                                                        <img src="{% static 'img/thumbs/4-2.jpg' %}" alt="" />
+                                                        <div class="main" data-img-url="{% static 'img/portfolio/1.jpg' %}"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <div class="my_image">
+                                                        <img src="{% static 'img/thumbs/4-2.jpg' %}" alt="" />
+                                                        <div class="main" data-img-url="{% static 'img/portfolio/2.jpg' %}"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <div class="my_image">
+                                                        <img src="{% static 'img/thumbs/4-2.jpg' %}" alt="" />
+                                                        <div class="main" data-img-url="{% static 'img/portfolio/3.jpg' %}"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="{% static 'img/brushes/portfolio/1.png' %}" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/portfolio/2.png' %}" alt="" /></div>
+    </div>
+</div>
+<!-- /PORTFOLIO -->
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
