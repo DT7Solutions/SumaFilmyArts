@@ -821,7 +821,12 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_about .left{
 	width: 50%;
-	padding-right: 60px;
+	padding-right: 40px!important;
+}
+.vision-left img{
+	height: 450px;
+	width: 470px;
+	padding-left: 100px !important;
 }
 .dizme_tm_about .left .image{
 	position: relative;
@@ -876,7 +881,7 @@ h6 { font-size: 16px; }
 .dizme_tm_about .right .title span{
 	display: inline-block;
 	color: #f75023;
-	font-size: 24px;
+	font-size: 35px;
 	font-weight: 500;
 	font-family: 'Jost', sans-serif;
 	margin-bottom: 6px;
@@ -2650,10 +2655,10 @@ input[type=number] {
 	.dizme_tm_hero .skills.illustrator{left: -20px;}
 	.dizme_tm_process .icon .brush{max-width: 90px;}
 	.dizme_tm_process .icon .svg{width: 45px;height: 45px;}
-	.dizme_tm_about .right .title span{font-size: 22px;}
+	 span{font-size: 22px;}
 	.dizme_tm_about .right .title h3{font-size: 40px;}
 	.dizme_tm_main_title{max-width: 550px;}
-	.dizme_tm_main_title span{font-size: 22px;}
+	.dizme_tm_main_title span{font-size: 35px;}
 	.dizme_tm_main_title h3{font-size: 38px;}
 	.dizme_tm_main_title h3{margin-bottom: 16px;}
 	.dizme_tm_services .service_list .title h3{font-size: 25px;margin-bottom: 10px;}
@@ -2726,7 +2731,7 @@ input[type=number] {
 	.dizme_tm_about .left{padding-right: 0px;width: 100%;margin-bottom: 40px;}
 	.dizme_tm_about .left .image img{max-width: 300px;max-height: 300px;}
 	.dizme_tm_about .right{width: 100%;padding: 0px;}
-	.dizme_tm_about .right .title span{font-size: 20px;}
+	.dizme_tm_about .right .title span{font-size: 35px;}
 	.dizme_tm_about .right .title h3{font-size: 35px;max-width: 100%;}
 	.dizme_tm_about .numbers{position: relative;}
 	.dizme_tm_about .numbers.year{top: auto;left: auto;margin-top: 20px;margin-bottom: 20px;}

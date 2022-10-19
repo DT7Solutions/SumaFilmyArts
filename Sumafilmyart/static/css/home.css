@@ -280,3 +280,54 @@ a.nav-btn.active:hover {
   } */
 
 } 
+/*--help-us-container--*/
+.help-us-container{
+	background-color: #565859;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+.help-button{
+	background-color: #f75023;
+	width:160px;
+	height:40px;
+	border-radius:10px;
+	border-style:none;
+	color: #ffffff;
+	margin-top:5px;
+}
+.help-conatiner-heading{
+	color:#ffffff;
+}
+/*-----brief-container--*/
+.brief-image{
+	padding-left: 40px;
+}
+
+/*---our-Activities--*/
+
+.our-activites-container{
+	display: flex!important;
+	flex-direction: row!important;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.services{
+	width:50px;
+	height:50px;
+}
+.activity-container{
+	margin: 10px;
+	width:300px;
+	height:300px;
+	box-shadow: #fffcfc;
+	border-radius: 10px;
+
+}
