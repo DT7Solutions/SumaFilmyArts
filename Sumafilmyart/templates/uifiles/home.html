@@ -151,7 +151,7 @@
 						</div>
 						<div class="avatar">
 							<div class="image">
-								<img class="home-avatar" src="{%static 'img/home/suma image 2.jpg' %}" alt="" />
+								<img class="home-avatar" src="{%static 'img/home/suma image 2.png' %}" alt="" />
 								{% comment %} <span class="skills illustrator anim_moveBottom"><img class="svg" src="img/svg/skills/illustrator.svg" alt="" /></span>
 								<span class="skills photoshop anim_moveBottom"><img class="svg" src="img/svg/skills/photoshop.svg" alt="" /></span>
 								<span class="skills figma anim_moveBottom"><img class="svg" src="img/svg/skills/figma.svg" alt="" /></span> {% endcomment %}
@@ -185,17 +185,17 @@
                 <div class="left">
 					
                     <div class="image">
-                        <img src="{% static 'img/home/suma image 1.png' %}" alt="" />
+                        <img class="choose-img" src="{% static 'img/home/chhoseus.png' %}" alt="" />
                         <div class="numbers year">
                             <div class="wrapper">
-                                <h3><span class="dizme_tm_counter" data-from="0" data-to="32" data-speed="2000">0</span></h3>
-                                <span class="name">Years of<br />Success</span>
+                                {% comment %} <h3><span class="dizme_tm_counter" data-from="0" data-to="32" data-speed="2000">0</span></h3>
+                                <span class="name">Years of<br />Success</span> {% endcomment %}
                             </div>
                         </div>
                         <div class="numbers project">
                             <div class="wrapper">
-                                <h3><span class="dizme_tm_counter" data-from="0" data-to="9" data-speed="2000">0</span>K</h3>
-                                <span class="name">Total<br />Projects</span>
+                                {% comment %} <h3><span class="dizme_tm_counter" data-from="0" data-to="9" data-speed="2000">0</span>K</h3>
+                                <span class="name">Total<br />Projects</span> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -203,20 +203,19 @@
                 <div class="right">
                     <div class="title wow fadeInUp" data-wow-duration="1s">
 						<span>Why choose Us</span>
-                       
-                        <!--<h3>I Can  organize  Any Event You Want</h3>-->
+                        <h3 class="subheding-h3">What Makes Us One Of The Best Option</h3>
                     </div>
                     <div class="text wow fadeInUp" data-wow-duration="1s">
                         <p>Hello there! I'm a Television Anchor, and I'm very passionate and dedicated to my work. With 32 years experience as a  Television Presenter, I have acquired the skills and knowledge necessary to make your event   success. I enjoy every step of the event  process, from discussion and collaboration.</p>
                     </div>
-                    <div class="dizme_tm_button wow fadeInUp" data-wow-duration="1s">
-                        <a class="anchor" href="#contact"><span>contact Me</span></a>
+                    <div class="dizme_tm_button wow fadeInUp" data-wow-duration="2s">
+                        <a class="anchor" href="#contact"><span>Know More</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/1.png' %}" alt="" /></div>
-        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div>
+        {% comment %} <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/1.png' %}" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div> {% endcomment %}
     </div>
 </div>
 <!-- /ABOUT -->
@@ -242,7 +241,7 @@
                 <div class="left">
 					
                     <div class="image brief-image">
-                        <img src="{% static 'img/home/suma image 1.png' %}" alt="" />
+                        <img src="{% static 'home/home-img/' %}" alt="" />
                         
                     </div>
                 </div>
@@ -251,14 +250,14 @@
             </div>
                
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/1.png' %}" alt="" /></div>
-        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div>
+        {% comment %} <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/1.png' %}" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div> {% endcomment %}
     </div>
 </div>
 <!--- /video slider  -->
 
 <!-- promo videos section  -->
-<div class="dizme_tm_section mb-2" id="promovideos">
+{% comment %} <div class="dizme_tm_section mb-2" id="promovideos">
     <div class="dizme_tm_about">
         <div class="container">
 			<div class="dizme_tm_main_title" data-align="center">
@@ -287,52 +286,157 @@
 					  </div>
     			</div>
             </div>
-        </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div>
-        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/news/2.png' %}" alt="" /></div>
-    </div>
-</div>
+        </div> {% endcomment %}
+        {% comment %} <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/news/2.png' %}" alt="" /></div> {% endcomment %}
+    {% comment %} </div>
+</div> {% endcomment %}
 <!-- /promo videos  -->
-<!---Our -Activties-->
-<div class="dizme_tm_section mt-5 mb-5">
-	<h1 style="color:#f75203;text-align:center;">Our Activities</h1>
-	<div class="our-activites-container">
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image"  class="services"/>
+<!-- our activites -->
+<div class="container-xxl py-5">
+	<div class="container mt-5">
+		<div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+			<div class="dizme_tm_main_title mt-5" data-align="center">
+				<span class="mt-5">Our Activitys</span>
+				<h3>Whatch My Videos Hear</h3>
+				<p>Most common events for organized events  that get  huge response  on telugu film industry</p>
+			</div>
+		</div>
+		<div class="row gy-5 gx-4">
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="{%static 'home/home-img/suma sj1.png' %}" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{%static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Production Design & Art Direction</h4>
+						<p class="mb-4">In-depth, hands-on, practical training across the key disciplines of Production Design and Art Direction will help you start and continue your career in Film &amp; Television Industry successfully.</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="img/service-2.jpg" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{% static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Film Direction & Screenwriting</h5>
+						<p class="mb-4">Direct your first feature film while graduating. Pursue your passion to become Film Director at one of India's most updated film schools. Training with practicing film.</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="img/service-3.jpg" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{% static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Care & Milking</h5>
+						<p class="mb-4">In-depth, hands-on, practical training across the key disciplines of Production Design and Art Direction will help you start and continue your career in Film &amp; Television Industry successfully</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-xxl py-5">
+	<div class="container mt-0">
+		<div class="row gy-5 gx-4">
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="{%static 'home/home-img/suma sj1.png' %}" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{%static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Production Design & Art Direction</h4>
+						<p class="mb-4">In-depth, hands-on, practical training across the key disciplines of Production Design and Art Direction will help you start and continue your career in Film &amp; Television Industry successfully.</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="img/service-2.jpg" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{% static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Film Direction & Screenwriting</h5>
+						<p class="mb-4">Direct your first feature film while graduating. Pursue your passion to become Film Director at one of India's most updated film schools. Training with practicing film.</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+				<div class="service-item d-flex h-100">
+					<div class="service-img">
+						<img class="img-fluid" src="img/service-3.jpg" alt="">
+					</div>
+					<div class="service-text p-5 pt-0">
+						<div class="service-icon">
+							<img class="img-fluid rounded-circle" src="{% static 'home/home-img/sum-filmy-art-service-item1.png' %}" alt="">
+						</div>
+						<h5 class="mb-3">Care & Milking</h5>
+						<p class="mb-4">In-depth, hands-on, practical training across the key disciplines of Production Design and Art Direction will help you start and continue your career in Film &amp; Television Industry successfully</p>
+						<a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- our activitys End -->
+<!-- Banner Start -->
+<div class="container-fluid banner my-5 py-5 parallax ">
+	<div class="container py-5">
+		<div class="row g-5">
+			<div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+				<div class="row g-4 align-items-center">
+					{% comment %} <div class="col-sm-4">
+						<img class="img-fluid rounded" src="img/banner-1.jpg" alt="">
+					</div> {% endcomment %}
+					<div class="want-work mt-3">
+						<div class="text wow fadeInUp" data-wow-duration="1s">
+							<span class="mt-5">Want To Work Us</span>
+							<p>knowledge necessary to make your event   success. I enjoy every step of the event  process, from discussion and collaboration.</p>
+						</div>
+						<div class="dizme_tm_button apply-btn wow fadeInUp" data-wow-duration="1s">
+							<a class="anchor" href="#contact"><span>Apply Now</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Banner End -->
 
-		</div>
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image" class="services"/>
-			
-		</div>
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image" class="services"/>
-			
-		</div>
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image"  class="services"/>
-			
-		</div>
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image"  class="services"/>
-			
-		</div>
-		<div class="activity-container shadow p-3 mb-5 bg-white rounded">
-			<img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" alt="image"  class="services"/>
-			
-		</div>
-		
-		
-	</div>
-</div>
-	
+
 <!--Help-Us-container-->
-<div class="dizme_tm_section ">
+{% comment %} <div class="dizme_tm_section ">
 	<div class="help-us-container" >
-		<h1 class="help-conatiner-heading">How Can We Help You...?</h1>
-		<button class="help-button">Find Our Services</button>
+		<h1 class="help-conatiner-heading">Want Work With Us</h1>
+		<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+		<button class="help-button">Apply Now</button>
 	</div>
-</div>
+</div> {% endcomment %}
 
 <!-- f3 sinipit images  section  -->
 <div class="dizme_tm_section mb-5" id="F3-content">
@@ -386,7 +490,6 @@
         {% comment %} <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{% static 'img/brushes/about/2.png' %}" alt="" /></div> {% endcomment %}
     </div>
 </div>
-
 
 <!-- /ABOUT -->
 {% comment %} 
