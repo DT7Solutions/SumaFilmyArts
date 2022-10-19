@@ -136,7 +136,10 @@
 
 .want-work{
     position: relative;
-    left: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
 }
 .want-work .text {
@@ -145,16 +148,37 @@ color: #ebeae9;
 }
 .apply-btn{
     margin-top: 15px;
-    margin-left: 170px;
+    text-align: center!important;
+   
 }
 
 
 .parallax {
-    background-image: url("../home/home-img/banner.png");
+    background-image: url("../home/home-img/suma-filmy-art-banner.jpg"); 
+    /* background-color: black; */
     min-height: 400px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
+  /*--our-activities--*/
+  .heading-activity{
+    color: #f76407 !important;
+  }
+ .banner-heading{
+    color:#ffffff;
+
+ }
+ .banner-paragraph{
+    color:#ffffff;
+    font-weight:600;
+    font-size:21px;
+    width: 70%;
+ }
+ .description-conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }

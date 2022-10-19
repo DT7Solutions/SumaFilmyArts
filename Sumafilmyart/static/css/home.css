@@ -313,8 +313,13 @@ a.nav-btn.active:hover {
 	color: #ffffff;
 	margin-top:5px;
 }
-.help-conatiner-heading{
+.help-us-heading{
 	color:#ffffff;
+}
+.help-us-description{
+	color:#ffffff;
+	font-weight:500;
+	font-size:20px;
 }
 /*-----brief-container--*/
 .brief-image{
