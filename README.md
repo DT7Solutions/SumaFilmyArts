@@ -7,10 +7,10 @@
 #install env
 #pip install virtualenv
 # create virtual environment
-#python -m venv env-dts
+#python -m venv env-suma
 
 # activate virtual environment
-#env-dts\Scripts\activate
+#env-suma\Scripts\activate
 
 # install libs
 pip freeze > requirements.txt 

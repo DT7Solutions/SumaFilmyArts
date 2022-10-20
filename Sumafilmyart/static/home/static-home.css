@@ -154,7 +154,7 @@ color: #ebeae9;
 
 
 .parallax {
-    background-image: url("../home/home-img/suma-filmy-art-banner.jpg"); 
+    background-image: url("../home/home-img/banner.png"); 
     /* background-color: black; */
     min-height: 400px; 
     background-attachment: fixed;
@@ -181,4 +181,11 @@ color: #ebeae9;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ }
+
+
+ .btn-square img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
  }
