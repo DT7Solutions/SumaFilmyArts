@@ -2837,7 +2837,7 @@ input[type=number] {
 .f-container-section{
 	color:#ffffff;
 	margin-top:10px;
-	background-color:#F46806;
+	background-color:#f87b2c;
 }
 .f-container-section3 ul{
 	align-items: center !important;
@@ -2906,7 +2906,7 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	background-color: #0f172b;
     padding: 70px 0;
 }
 .footer-col{
@@ -2926,7 +2926,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color:#F46806;
+	background-color:#f56c0a;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -2939,8 +2939,7 @@ ul{
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
+	font-weight: 500;
 	display: block;
 	transition: all 0.3s ease;
 }
@@ -3013,4 +3012,10 @@ ul{
 	color: #ffffff;
 	
 
+}
+.copyrights-section span{
+    color: rgb(0, 0, 0);	
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+	
 }
