@@ -146,10 +146,13 @@
 text-align: center;
 color: #ebeae9;
 }
-.apply-btn{
+.apply-btn {
     margin-top: 15px;
     text-align: center!important;
    
+}
+.apply-btn .apply:hover{
+  color: #ebeae9;
 }
 
 
@@ -161,6 +164,7 @@ color: #ebeae9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
   }
   /*--our-activities--*/
   .heading-activity{
@@ -270,3 +274,6 @@ color: #ebeae9;
 
 
  /* bottom image slider */
+ .img-container{
+  width: 80% !important;
+ }

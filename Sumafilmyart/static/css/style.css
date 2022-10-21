@@ -2937,7 +2937,7 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #ffff;
 	text-decoration: none;
 	font-weight: 500;
 	display: block;
@@ -2974,6 +2974,12 @@ ul{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+.footer-col ul li a{
+	margin-left: 50px !important;
+}
+.footer-col .map-iframe {
+	margin-left: 50px !important;
 }
 }
 
