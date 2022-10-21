@@ -1,0 +1,13 @@
+.page-baner-section{
+    height: 60vh;
+    background-image: url('../home/home-img/suma_site1.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+.page-baner-section h1 {
+    color: rgb(0, 0, 0) !important;
+    position: relative;
+    top: 150px;
+    left: 600px;
+ }
