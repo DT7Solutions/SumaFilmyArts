@@ -204,6 +204,7 @@ color: #ebeae9;
     display: block;
     cursor: pointer;
     overflow: hidden;
+   
     border-radius: 20px; }
     .media-thumb:after {
       position: absolute;
@@ -227,7 +228,9 @@ color: #ebeae9;
       transform: scale(1.03);
       -webkit-transition: .3s transform ease;
       -o-transition: .3s transform ease;
-      transition: .3s transform ease; }
+      transition: .3s transform ease;
+      
+     }
     .media-thumb .media-text {
       position: absolute;
       top: 20px;
@@ -271,6 +274,7 @@ color: #ebeae9;
         transition-delay: .2s;
         opacity: 1;
         visibility: visible; }
+        
 
 
  /* bottom image slider */

@@ -101,7 +101,7 @@ var swiper = new Swiper(".imgSwiper", {
 //       margin: 20,
 //       autoplay: true,
 //       smartSpeed: 700,
-//       items: 2,
+//       items:2,
 //       nav: true,
 //       dots: true,
 //       navText: ['<span class="icon-keyboard_backspace"></span>','<span class="icon-keyboard_backspace"></span>'],
