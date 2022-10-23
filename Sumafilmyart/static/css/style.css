@@ -386,7 +386,7 @@ h6 { font-size: 16px; }
 .dizme_tm_header .menu ul{
 	margin: 0px;
 	list-style-type: none;
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 }
 .dizme_tm_header .menu ul li{
@@ -3021,7 +3021,16 @@ ul{
 }
 .copyrights-section span{
     color: rgb(0, 0, 0);	
-	font-weight: 800;
+	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	
+}
+
+
+/* drop down */
+.dropdown-menu{
+	border: none;
+}
+a .dropdown-item:hover{
+   color: #1cbe59;
 }

@@ -11,3 +11,8 @@
     top: 150px;
     left: 600px;
  }
+
+.dizme_tm_about .left .image img{
+    border-radius: 10px !important;
+    width: 100%;
+} 
