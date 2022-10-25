@@ -1,0 +1,92 @@
+.career-section{
+    background-color: antiquewhite;
+}
+.career-list{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.career-list .card{
+    margin: 15px;
+    width: 100px;
+    border: none;
+    background-color: rgb(220, 238, 232);
+
+}
+.card-title {
+    text-align:left !important;
+}
+.card-span{
+    font-size: 15px;
+    color: rgb(26, 87, 26);
+}
+.card-description{
+    font-size: 18px;
+    color: rgb(26, 87, 26);
+    
+}
+
+.more-info-model{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(29, 28, 28, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 4;
+    visibility: hidden;
+    
+}
+/* visibility: visible 0s, opacity 0.5s; */
+.model-active{
+    visibility: visible;
+}
+.more-section{
+    height: 80vh;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    overflow:scroll;
+    border-radius: 6px;
+    border-top-right-radius: 6px !important;
+}
+.more-section h3{
+    text-align: center;
+}
+.more-section p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.model-close{
+    color: red ;
+    font-weight: 900;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 8px !important;
+    cursor: pointer;
+}
+
+.card-body .card-btn{
+    border-radius: 5px;
+    background: transparent;
+
+}
+.card-body .card-btn:hover{
+    background-color:rgb(58, 250, 160);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.more-section ul  li{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: dotted !important;
+}
+.more-section h4{
+    margin-left: 25px;
+    margin-right: 25px;
+}
