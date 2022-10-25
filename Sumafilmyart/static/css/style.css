@@ -3037,7 +3037,8 @@ a .dropdown-item:hover{
 /* header banner*/
 .page-baner-section{
     height: 50vh;
-    background-image: url('../home/home-img/suma_site1.jpg');
+    /* background-image: url('../home/home-img/suma_site1.jpg'); */
+	background-color: #17a2b8;
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
@@ -3045,8 +3046,7 @@ a .dropdown-item:hover{
 .page-baner-section h1 {
     color: rgb(0, 0, 0) !important;
     position: relative;
-    top: 150px;
-    left: 550px;
+   
  }
 
 .dizme_tm_about .left .image img{
