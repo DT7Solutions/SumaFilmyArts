@@ -1,6 +1,12 @@
-/* .career-section{
-    background-color: rgb(247, 247, 247);
-} */
+.career-section{
+    /* background-color: #f1eaea; */
+    background-image: url('../home/home-img/suma_site1.jpg');
+    background-image: url('../career/career-img/background-img.jpg');
+}
+.section-title h3{
+   color:#F76407;
+}
+
 .career-list{
     display: flex !important;
     justify-content: center;
@@ -11,7 +17,7 @@
     margin: 15px;
     width: 100px;
     border: none;
-    background-color: rgb(220, 238, 232);
+    background-color: rgb(255, 255, 255);
 
 }
 .card-title {
@@ -126,10 +132,10 @@ text-align: center;
     padding-right: 5px;
  }
 .carrer-info-section h4{
- margin-left: 50px;
+ margin-left: 100px;
  }
 .carrer-info-section p{
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 100px;
     }
 .carrer-info-section ul{
@@ -137,12 +143,12 @@ text-align: center;
         margin-right: 100px; list-style:decimal;
     }
     .carrer-info-section ul li{
-        margin-left: 50px;
+        margin-left: 100px;
         margin-right: 100px;
         list-style:decimal;
     }
 .hr-line{
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 100px;
 }
 .carrer-info-section .carrer-foo-btn{
