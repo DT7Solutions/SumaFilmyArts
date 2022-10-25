@@ -10,8 +10,24 @@
     background-size: cover;
 }
 .partner{
-    width:200px;
-    height:200px;
+    width:350px;
+    height:320px;
     background-size: cover;
 
+}
+.collbration-container{
+    display:flex;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    
+}
+.cancer-care{
+    display:flex;
+    margin:20px;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: 350px;
+    
 }
