@@ -1,6 +1,6 @@
-.career-section{
-    background-color: antiquewhite;
-}
+/* .career-section{
+    background-color: rgb(247, 247, 247);
+} */
 .career-list{
     display: flex !important;
     justify-content: center;
@@ -74,19 +74,82 @@
 .card-body .card-btn{
     border-radius: 5px;
     background: transparent;
-
+    color: #3b6efa;
+}
+.card-body .card-btn a{
+    text-decoration: none;
 }
 .card-body .card-btn:hover{
     background-color:rgb(58, 250, 160);
-    color: rgb(0, 0, 0);
+    color:#3b6efa;
     font-weight: 500;
 }
 .more-section ul  li{
-    margin-left: 25px;
+    margin-left: 50px !important;
     margin-right: 25px;
-    text-decoration: dotted !important;
+    list-style:decimal;
 }
 .more-section h4{
     margin-left: 25px;
     margin-right: 25px;
 }
+/*model form section */
+.apply-form-model{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(29, 28, 28, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 4;
+    visibility: hidden;
+}
+
+.carrer-info-section{
+   position: relative;
+   top: 180px;
+   height: 235vh;
+
+}
+
+.carrer-info-section h3{
+text-align: center;
+} 
+ .diveder-right{
+    border-right: 2px solid rgb(211, 210, 210);
+    height: 1px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+ }
+.carrer-info-section h4{
+ margin-left: 50px;
+ }
+.carrer-info-section p{
+    margin-left: 50px;
+    margin-right: 100px;
+    }
+.carrer-info-section ul{
+        margin-left: 50px;
+        margin-right: 100px; list-style:decimal;
+    }
+    .carrer-info-section ul li{
+        margin-left: 50px;
+        margin-right: 100px;
+        list-style:decimal;
+    }
+.hr-line{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.carrer-info-section .carrer-foo-btn{
+   margin-left:45% !important;
+   border-radius: 5px;
+   background: transparent;
+}
+.carrer-info-section .carrer-foo-btn a{
+    text-decoration: none;
+ }

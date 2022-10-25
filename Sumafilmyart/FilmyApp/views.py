@@ -22,4 +22,10 @@ def sponsorship(request):
     return render (request,"uifiles/sponsorship.html")
 def shows_productions(request):
     return render (request,"uifiles/shows-productions.html")
-    
+#carrer-pages 
+def assistent_director(request):
+    return render (request,"uifiles/carrerpages/assistent-director.html")
+def tv_producer(request):
+    return render (request, "uifiles/carrerpages/tvproducer.html")
+def unit_production(request):
+    return render (request, "uifiles/carrerpages/unit-production.html")
