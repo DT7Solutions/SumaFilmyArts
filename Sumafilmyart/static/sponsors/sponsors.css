@@ -88,4 +88,12 @@
 }
 
  
+ /* shows and productions*/
+.align-items-center .card{
+ height: 150px;
+ width: 250px;
  
+}
+.card-container{
+  margin-left: 420px;
+}
