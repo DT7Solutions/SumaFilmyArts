@@ -3036,16 +3036,27 @@ a .dropdown-item:hover{
 }
 /* header banner*/
 .page-baner-section{
-    height: 50vh;
-    /* background-image: url('../home/home-img/suma_site1.jpg'); */
-	background-color: #17a2b8;
-    background-repeat: no-repeat; 
+    height: 51vh;
+	width: 100%;
+    background-image: url('../home/home-img/page-banner.jpg');
+	/* background-color: #17a2b8; */
+    background-repeat: repeat; 
     background-size: cover;
-    background-position: center;
+    background-position: left;
+	background-color: #fff;
+	background-blend-mode: luminosity;
 }
 .page-baner-section h1 {
-    color: rgb(0, 0, 0) !important;
     position: relative;
+	top: 130px;
+	left: 45%;
+	font-size: 50px;
+	font-weight: 800;
+	color: #f76407;
+	width: 100%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	
    
  }
 
