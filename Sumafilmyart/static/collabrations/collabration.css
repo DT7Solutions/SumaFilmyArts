@@ -20,6 +20,7 @@
     background-color: #f8f9fa;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding:20px;
     
 }
@@ -29,5 +30,6 @@
     justify-content:center;
     flex-wrap: wrap;
     height: 350px;
+    width: 85%;
     
 }
