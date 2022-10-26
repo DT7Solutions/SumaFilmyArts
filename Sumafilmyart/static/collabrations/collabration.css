@@ -31,7 +31,7 @@
     justify-content:center;
     flex-wrap: wrap;
     height: 350px;
-    width: 85%;
+    border-radius:5px;
     
 }
 .cancer-care-description{

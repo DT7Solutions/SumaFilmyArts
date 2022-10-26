@@ -3036,15 +3036,15 @@ a .dropdown-item:hover{
 }
 /* header banner*/
 .page-baner-section{
-    height: 51vh;
-	width: 100%;
-    background-image: url('../home/home-img/page-banner.jpg');
-	/* background-color: #17a2b8; */
-    background-repeat: repeat; 
+    height: 50vh;
+    /* background-image: url('../home/home-img/suma_site1.jpg'); */
+	background-color:#ff9a00;
+    background-repeat: no-repeat; 
     background-size: cover;
-    background-position: left;
-	background-color: #fff;
-	background-blend-mode: luminosity;
+    background-position: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 .page-baner-section h1 {
     position: relative;
