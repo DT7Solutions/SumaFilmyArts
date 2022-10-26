@@ -11,3 +11,7 @@ ul.job_listings, ul.resumes {
     border-radius: 6px;
     background: #fff;
 }
+.img-fluid{
+    width:100%;
+    height:auto;
+}
