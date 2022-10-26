@@ -3048,13 +3048,14 @@ a .dropdown-item:hover{
 }
 .page-baner-section h1 {
     position: relative;
-	top: 100px;
-	left: 45%;
+	/* top: 100px;
+	left: 45%; */
 	font-size: 50px;
 	font-weight: 800;
 	color: #f76407;
 	width: 100%;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: "roboto";
+	/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 	text-transform: uppercase;
 	
    
@@ -3100,6 +3101,8 @@ a .dropdown-item:hover{
   }
   .text-center{
 	color:#f75023;
+	font-family: "roboto";
+	font-weight: 600;
   }
  .production-subpage{
 	display: flex;
