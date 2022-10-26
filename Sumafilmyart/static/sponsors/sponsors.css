@@ -92,8 +92,26 @@
 .align-items-center .card{
  height: 150px;
  width: 250px;
- 
+ /* background: transparent; */
+ background-color: #ffffff;
+
 }
 .card-container{
-  margin-left: 420px;
+  margin-left: 400px;
 }
+.card-container .card .form-control{
+  border-radius: 8px;
+  border:  1px solid rgb(43, 42, 42);
+  background: transparent;
+}
+
+.card-container .card .card-title{
+  color: #F76407;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 150px;
+  margin-bottom: 20px;
+
+}
+
+
