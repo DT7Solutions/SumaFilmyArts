@@ -3037,8 +3037,8 @@ a .dropdown-item:hover{
 /* header banner*/
 .page-baner-section{
     height: 50vh;
-    /* background-image: url('../home/home-img/suma_site1.jpg'); */
-	background-color:#ff9a00;
+     background-image: url('../home/home-img/page-banner.jpg'); 
+	/* background-color:#ff9a00; */
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
@@ -3101,4 +3101,18 @@ a .dropdown-item:hover{
   .text-center{
 	color:#f75023;
   }
- 
+ .production-subpage{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 30px;
+ }
+ .subpage-image{
+	width: 50%;
+	margin: 10px;
+	border-radius: 5px;
+	
+ }
+ .subpage-text{
+	font-size: 25px;
+ }
