@@ -3048,7 +3048,7 @@ a .dropdown-item:hover{
 }
 .page-baner-section h1 {
     position: relative;
-	top: 0px;
+	top: 100px;
 	left: 45%;
 	font-size: 50px;
 	font-weight: 800;
@@ -3129,3 +3129,4 @@ a .dropdown-item:hover{
 	padding: 20px 0;
 	font-size: 30px;
   }
+  

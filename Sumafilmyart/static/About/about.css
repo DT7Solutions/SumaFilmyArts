@@ -14,4 +14,14 @@ ul.job_listings, ul.resumes {
 .img-fluid{
     width:100%;
     height:auto;
+    transition:0.2s;
+   
+}
+
+
+
+.img-fluid:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
