@@ -3064,3 +3064,41 @@ a .dropdown-item:hover{
     border-radius: 10px !important;
     width: 100%;
 } 
+/*--shows-productions--*/
+.Tv-shows{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+  }
+  .Suma-shows-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+
+  }
+  .show-text{
+	font-size: 22px;
+  }
+  .cash-program{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+
+	flex-wrap: wrap;
+	
+	
+  }
+  .show-image{
+	border-radius: 5px;
+  }
+  .shows-production-page{
+	display:flex;
+	flex-direction: column;
+	margin-top: 10px;
+  }
+  .text-center{
+	color:#f75023;
+  }
+ 

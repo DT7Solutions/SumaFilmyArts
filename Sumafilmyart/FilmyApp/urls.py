@@ -18,4 +18,8 @@ urlpatterns = [
     path('tvproducer/', views.tv_producer, name='tv_producer'), 
     path('unit_production/', views.unit_production, name='unit_production'), 
 
+    path('production/', views.production_page_1, name='production'), 
+    path('show/', views.show_page_1, name='show'), 
+
+
 ]

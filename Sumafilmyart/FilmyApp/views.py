@@ -29,3 +29,7 @@ def tv_producer(request):
     return render (request, "uifiles/carrerpages/tvproducer.html")
 def unit_production(request):
     return render (request, "uifiles/carrerpages/unit-production.html")
+def production_page_1(request):
+    return render (request, "uifiles/shows-productionpages/production.html")
+def show_page_1(request):
+    return render (request, "uifiles/shows-productionpages/show.html")

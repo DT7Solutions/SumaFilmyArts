@@ -13,6 +13,7 @@
     width:350px;
     height:320px;
     background-size: cover;
+    border-radius:3px;
 
 }
 .collbration-container{
@@ -32,4 +33,20 @@
     height: 350px;
     width: 85%;
     
+}
+.cancer-care-description{
+    font-weight: 600;
+    font-size:20px;
+}
+.cancer-care-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cancer-care-button{
+    width:20%;
+}
+.cancer-care-text{
+    color:#f75023;
+    font-family:sans-serif,"Jost";
 }
