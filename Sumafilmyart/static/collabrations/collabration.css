@@ -42,7 +42,6 @@
 .cancer-care-content{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .cancer-care-button{
     width:20%;
