@@ -48,7 +48,7 @@
 }
 /* #24292d */
 .timeline-section{
-	background-color: #fff;
+	background-color: rgb(155, 46, 46);
 	min-height: 100vh;
 	padding: 100px 15px;
 }
