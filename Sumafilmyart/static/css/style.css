@@ -3111,8 +3111,11 @@ a .dropdown-item:hover{
 	align-items: center;
 	margin: 30px;
  }
+ .production-content{
+	width:80%;
+ }
  .subpage-image{
-	
+	margin: 10px;
 	border-radius: 5px;
 	
  }
@@ -3133,3 +3136,9 @@ a .dropdown-item:hover{
 	font-size: 30px;
   }
   
+  h1{
+    color:#000;
+    background: linear-gradient(#f75023 45%,#fff2e6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
