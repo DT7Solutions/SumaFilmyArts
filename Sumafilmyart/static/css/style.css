@@ -3107,12 +3107,12 @@ a .dropdown-item:hover{
  .production-subpage{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 	margin: 30px;
  }
  .subpage-image{
-	width: 50%;
-	margin: 10px;
+	
 	border-radius: 5px;
 	
  }
