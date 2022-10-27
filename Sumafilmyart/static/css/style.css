@@ -3053,11 +3053,15 @@ a .dropdown-item:hover{
 	left: 45%; */
 	font-size: 50px;
 	font-weight: 800;
-	color: #f76407;
+	/* color: #f76407; */
 	width: 100%;
-	font-family: "roboto";
+	font-family: "roboto", sans-serif;
 	/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-	text-transform: uppercase;
+	text-transform: capitalize;
+	color:#000;
+    background: linear-gradient(#8b8b8a 25%, #b3b0b0 25%,#0f0f0f);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 	
    
  }
@@ -3102,7 +3106,7 @@ a .dropdown-item:hover{
   }
   .text-center{
 	color:#f75023;
-	font-family: "roboto";
+	font-family: "roboto sans-serif";
 	font-weight: 600;
   }
  .production-subpage{
@@ -3142,4 +3146,8 @@ a .dropdown-item:hover{
     background: linear-gradient(#f75023 45%,#fff2e6);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+}
+
+.dizme_tm_section .dizme_tm_contact{
+	margin-top: -50px;
 }

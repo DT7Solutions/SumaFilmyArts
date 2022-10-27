@@ -10,7 +10,7 @@
     background-size: cover;
 }
 .partner{
-    width:350px;
+    width:400px;
     height:320px;
     background-size: cover;
     border-radius:3px;
@@ -49,4 +49,10 @@
 .cancer-care-text{
     color:#f75023;
     font-family:sans-serif,"Jost";
+}
+.cancer-care-content p{
+    margin-top: -3px !important;
+}
+.cancer-care-content  button{
+    margin-top: 18px;
 }
