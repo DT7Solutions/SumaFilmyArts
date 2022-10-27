@@ -3020,9 +3020,10 @@ ul{
 
 }
 .copyrights-section span{
-    color: rgb(0, 0, 0);	
-	font-weight: 400;
+    color: rgb(8, 8, 8);	
+	font-weight: 500;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
 	
 }
 
