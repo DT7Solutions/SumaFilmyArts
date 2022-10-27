@@ -42,15 +42,18 @@
 	height: auto;
 	clear: both;
 	float: left;
+	margin-top: -80px !important;
 }
 .timeline_list{
     background-color: #f8f7f7;
 }
 /* #24292d */
 .timeline-section{
-	background-color: rgb(155, 46, 46);
+	background-color:#790909;
 	min-height: 100vh;
 	padding: 100px 15px;
+	border-radius: 10px;
+	/* margin-top: -60px !important; */
 }
 .timeline-items{
 	max-width: 1000px;

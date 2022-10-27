@@ -6,6 +6,9 @@
 .section-title h3{
    color:#F76407;
 }
+.section-title p{
+    color:#f8f8f8;
+ }
 
 .career-list{
     display: flex !important;
@@ -33,7 +36,7 @@
     
 }
 
-.more-info-model{
+.more-info-model1{
     position:fixed;
     top:0px;
     left:0px;
@@ -45,12 +48,13 @@
     align-items: center;
     z-index: 100;
     opacity: 4;
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
     
 }
-/* visibility: visible 0s, opacity 0.5s; */
 .model-active{
-    visibility: visible;
+    display: block;
+    /* visibility: visible; */
 }
 .more-section{
     height: 80vh;
@@ -159,3 +163,79 @@ text-align: center;
 .carrer-info-section .carrer-foo-btn a{
     text-decoration: none;
  }
+.alternate p{
+    color: #fff;
+}
+
+ /* job application */
+ .job-application-section{
+    position: relative;
+    top: 180px;
+    height: 180vh;
+ }
+ .job-h3,.job-h6{
+    text-align: center;
+ }
+ .job-h3{
+    font-size: 25px;
+    color: #F76407;
+    font-weight: 500;
+ }
+ .job-h6{
+    margin-top: 5px;
+    margin-bottom: 10px;
+ }
+ .hr-apply-line{
+    margin-left: 20%;
+    margin-right: 20%;
+ }
+ .carrer-application{
+   background-image: url(../career/career-img/background-img.jpg);
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+ }
+
+  
+ /* carrer  productions*/
+.carrer-application .card{
+    background-color: #9c1414;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(#fff, .175);
+   
+   }
+   .card-container{
+     margin-left: 400px;
+   }
+   .card-container .card .form-control{
+     border-radius: 5px;
+     border:  2px solid rgb(247, 242, 242);
+     background: transparent;
+     color: whitesmoke;
+   }
+   
+   .card-container .card .card-title{
+     color: #f8f8f8;
+     font-size: 25px;
+     font-weight: 600;
+     margin-left: 150px;
+     margin-bottom: 20px;
+   
+   }
+   
+@media(max-width: 574px){
+    .carrer-application .card{
+       margin-left: -400px !important;
+       width: 18rem;
+       }
+    .card-container .card .form-control{
+        width: 23rem;
+        margin-left: 40px;
+    }
+    .form-check{
+        margin-left: 20px;
+    }
+    .sub-btn{
+        margin-left: 40px;
+    }
+   }

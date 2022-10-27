@@ -33,3 +33,5 @@ def production_page_1(request):
     return render (request, "uifiles/shows-productionpages/production.html")
 def show_page_1(request):
     return render (request, "uifiles/shows-productionpages/show.html")
+def Apply_job(request):
+    return render (request, "uifiles/carrerpages/applyform.html")

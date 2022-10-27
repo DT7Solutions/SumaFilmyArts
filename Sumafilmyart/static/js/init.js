@@ -380,7 +380,7 @@ function dizme_tm_my_load(){
 	
 	"use strict";
 	
-	var speed	= 500;
+	var speed	= 1000;
 	setTimeout(function(){dizme_tm_preloader();},speed);
 }
 

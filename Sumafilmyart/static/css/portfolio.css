@@ -21,10 +21,10 @@
     border-radius: 6px;
 }
 .portfolio-slider3{
-	margin-top: -35px;
+	margin-top: -125px !important;
 }
 .portfolio-slider2{
-	margin-top: -35px;
+	margin-top: -125px;
 }
 
 @media(max-width: 574px){
