@@ -96,9 +96,9 @@
  background-color: #ffffff;
 
 }
-.card-container{
+/* .card-container{
   margin-left: 400px;
-}
+} */
 .card-container .card .form-control{
   border-radius: 5px;
   border:  1px solid rgb(43, 42, 42);
