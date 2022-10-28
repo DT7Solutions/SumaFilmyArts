@@ -821,7 +821,7 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_about .left{
 	width: 50%;
-	padding-right: 40px!important;
+	padding-right: 10px!important;
 }
 .vision-left img{
 	height: 450px;
@@ -2972,9 +2972,9 @@ ul{
 }
 }
 @media(max-width: 574px){
-  .footer-col{
+  /* .footer-col{
     width: 100%;
-}
+} */
 .footer-col ul li a{
 	margin-left: 50px !important;
 }
