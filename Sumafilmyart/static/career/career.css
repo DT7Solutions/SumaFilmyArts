@@ -204,9 +204,9 @@ text-align: center;
     box-shadow: 0 1rem 3rem rgba(#fff, .175);
    
    }
-   .card-container{
+   /* .card-container{
      margin-left: 400px;
-   }
+   } */
    .card-container .card .form-control{
      border-radius: 5px;
      border:  2px solid rgb(247, 242, 242);
