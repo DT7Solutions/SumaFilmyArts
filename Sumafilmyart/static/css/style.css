@@ -2965,23 +2965,24 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 574px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
 }
 }
-@media(max-width: 574px){
-  /* .footer-col{
-    width: 100%;
-} */
-.footer-col ul li a{
+/*@media(max-width: 574px){
+   .footer-col{
+    width: 50%;
+	margin-bottom: 30px;
+} 
+ .footer-col ul li a{
 	margin-left: 50px !important;
 }
 .footer-col .map-iframe {
 	margin-left: 50px !important;
-}
-}
+} */
+
 
 
 .icon-facebook-2:hover{
@@ -3038,7 +3039,8 @@ a .dropdown-item:hover{
 /* header banner*/
 .page-baner-section{
     height: 50vh;
-     background-image: url('../home/home-img/page-banner.jpg'); 
+	width: 100%;
+    background-image: url('../home/home-img/page-banner.jpg'); 
 	/* background-color:#ff9a00; */
     background-repeat: no-repeat; 
     background-size: cover;
