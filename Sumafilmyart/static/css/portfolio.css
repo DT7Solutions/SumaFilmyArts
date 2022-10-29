@@ -18,7 +18,7 @@
     height: 380px;
     margin-top: 20px;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 1px;
 }
 .portfolio-slider3{
 	margin-top: -125px !important;
@@ -32,7 +32,8 @@
 .inner-port-img img{
     height: 150px;
 	width: 300px;
-    border-radius: 6px;
+    border-radius: 1px;
+	display: none;
 }
 .suma_tm_portfolio{
 	margin-top: 20px;
@@ -46,3 +47,12 @@
 }
 	
  }
+
+ .pop-content{
+	height: 250px;
+	width: 300px;
+	background-color: aliceblue;
+ }
+
+
+ 

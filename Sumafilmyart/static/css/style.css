@@ -3038,7 +3038,7 @@ a .dropdown-item:hover{
 }
 /* header banner*/
 .page-baner-section{
-    height: 50vh;
+    height: 44vh;
 	width: 100%;
     background-image: url('../home/home-img/page-banner.jpg'); 
 	/* background-color:#ff9a00; */

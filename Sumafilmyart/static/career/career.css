@@ -197,32 +197,45 @@ text-align: center;
  }
 
   
- /* carrer  productions*/
+ /* form for  productions*/
 .carrer-application .card{
-    background-color: #9c1414;
-    border-radius: 10px;
+    background-color: #fffdfd;
+    border-radius: 8px;
     box-shadow: 0 1rem 3rem rgba(#fff, .175);
+    position: relative;
+    left: 30%;
    
    }
    .card-container{
      margin-left: 0px!important;
    } 
+   
    .card-container .card .form-control{
      border-radius: 5px;
-     border:  2px solid rgb(247, 242, 242);
+     border:  2px solid rgb(61, 60, 60);
      background: transparent;
      color: whitesmoke;
    }
    
+   .card-container .card .form-control ::placeholder{
+   color: #f1eeee;
+  }
+
    .card-container .card .card-title{
      color: #f8f8f8;
      font-size: 25px;
      font-weight: 600;
-     margin-left: 150px;
+     margin-left: 200px;
      margin-bottom: 20px;
    
    }
    
+.card-container .enq-card{
+    background-color: #f1eeee !important;
+}
+
+
+
 @media(max-width: 574px){
     .carrer-application .card{
        margin-left: -400px !important;

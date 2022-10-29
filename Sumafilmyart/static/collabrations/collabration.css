@@ -42,16 +42,30 @@
     display:flex;
     flex-direction: column;
 }
-.cancer-care-button{
-    width:20%;
-}
+
 .cancer-care-text{
     color:#f75023;
     font-family:sans-serif,"Jost";
+    
 }
 .cancer-care-content p{
     margin-top: -3px !important;
 }
 .cancer-care-content  button{
     margin-top: 18px;
+}
+/* .cancer-care-content .btn {
+    border:none;
+    border-radius:15px;
+    color: #f8f9fa;
+    width: 15%;
+} */
+
+.cancer-care-button{
+    width:110px;
+    height: 40px;
+    background-color: #f75023 !important;
+    border:none;
+    border-radius:12px;
+    color: white;
 }
