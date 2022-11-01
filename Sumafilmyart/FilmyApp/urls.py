@@ -21,6 +21,6 @@ urlpatterns = [
 
     path('production/', views.production_page_1, name='production'), 
     path('show/', views.show_page_1, name='show'), 
-
+    
 
 ]

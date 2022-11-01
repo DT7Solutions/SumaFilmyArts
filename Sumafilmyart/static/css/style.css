@@ -3032,10 +3032,20 @@ ul{
 /* drop down */
 .dropdown-menu{
 	border: none;
+	background-color: #c6e1ee;
+	
+	
 }
-a .dropdown-item:hover{
-   color: #1cbe59;
+.navbarDropdown{
+	display: none !important;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
 /* header banner*/
 .page-baner-section{
     height: 44vh;

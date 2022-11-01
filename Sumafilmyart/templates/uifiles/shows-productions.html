@@ -55,43 +55,31 @@
           <div class="row g-4 align-items-center">
             <div class="card-container" style="display:flex;justify-content:center;margin-left:0px;">
               <div class="card  enq-card" style="width: 35rem; height: auto;">
+                {% for message in messages %}
+                    {% if message == 'success' %}
+                        <div class="enq-returnmessage"><h1>hi dinesh</h1></div>
+                    {% else %}
+                        <div class="enq-returnmessage" data-success={{ message }}></div>
+                    {% endif %}
+                {% endfor  %}
                 <div class="card-body enq-body-card">
-                  <h5 class="card-title ">Production Enquiry</h5>
+                  <div class="enq-returnmessage"><h1>hi dinesh</h1></div>
+                  <h5 class="card-title " style=" color:black !importent;  margin-left:155px">Production Enquiry</h5>
                   <form class="row g-3">
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" id="inputEmail4" placeholder="Full Name" Required> 
                     </div>
-                    <div class="col-md-6">
-
-                      <input type="text" class="form-control" id="inputPassword4" placeholder="LastName">
+                   
+                    <div class="col-md-12">
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" Required>
                     </div>
-                    <div class="col-md-6">
-                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="col-md-6">
-
+    
+                    <div class="col-md-12">
                       <input type="number" class="form-control" id="inputPassword4" placeholder="phonenumber">
                     </div>
-
-                    <div class="col-12">
-
-                      <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-6">
-                      <!-- <label for="inputCity" class="form-label">City</label> -->
-                      <input type="text" class="form-control" id="inputCity" placeholder="City">
-                    </div>
-                    <div class="col-md-6">
-                      <!-- <label for="inputState" class="form-label">State</label> -->
-                      <input id="inputState" class="form-control" aria-placeholder="State" placeholder="State">
-                      <!-- <option selected>Choose...</option>
-                                    <option></option> -->
-                      <!-- </select> -->
-                    </div>
-                    <div class="col-md-3">
-                      <!-- <label for="inputZip" class="form-label">Zip</label> -->
-                      <input type="text" class="form-control" id="inputCity" placeholder="Zipcode">
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Comments</label>
                     </div>
                     <div class="col-12">
                       <div class="form-check">

@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from FilmyApp.models import ContactData
+from django.contrib import messages
+from django.core.mail import send_mail
+
 
 # Create your views here.
 def home(request):
@@ -9,8 +13,7 @@ def portfolio(request):
     return render (request,"uifiles/portfolio.html")
 def news_events(request):
     return render (request,"uifiles/news_events.html")
-def contact(request):
-    return render (request,"uifiles/contact.html")
+
 
 def career(request):
     return render (request,"uifiles/career.html")
@@ -35,3 +38,31 @@ def show_page_1(request):
     return render (request, "uifiles/shows-productionpages/show.html")
 def Apply_job(request):
     return render (request, "uifiles/carrerpages/applyform.html")
+
+
+#contact form submision  #
+def contact(request):
+    if request.method == "POST":
+        name = request.POST.get('name',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        subject = request.POST.get('subject',"")
+        message = request.POST.get('message',"")
+        
+        oContactinfo = ContactData(Name=name,Email=email,Phone=phone,Subject=subject,Message=message)
+        oContactinfo.save()
+        sucess =f'hi {name} Your message has been received, We will contact you soon'
+        
+        message ='''
+        Subject:{}
+        Message:{}
+        From:{}
+        '''.format(subject,message,email)
+        try:
+            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['badugudinesh94@gmail.com']) 
+            messages.success(request,sucess)
+        except:
+            messages.error(request,'Your message has been failed, Please Try Agian')
+        #return redirect("/")
+    return render (request,"uifiles/contact.html")
+    
