@@ -69,3 +69,11 @@
     border-radius:12px;
     color: white;
 }
+.partners-imgs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+    
+}
