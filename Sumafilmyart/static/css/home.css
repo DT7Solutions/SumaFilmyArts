@@ -31,7 +31,7 @@ a.nav-btn.active:hover {
 
 .swiper {
     width: 100%;
-    height: 700px;
+    height: auto;
   }
 
 
