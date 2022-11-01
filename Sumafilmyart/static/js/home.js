@@ -10,6 +10,10 @@ for(let i = 0; i < btns.length; i++){
 }
 
 
+
+    // Portfolio isotope and filter
+   
+
 /* main slider */
 var swiper = new Swiper(".mySwiper", {
     speed:400,
