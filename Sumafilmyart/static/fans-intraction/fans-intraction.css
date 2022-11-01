@@ -139,3 +139,10 @@
     margin-left: 40px!important;
   }
 }
+@media(max-width: 992px){
+  .fans-img{
+    display: flex;
+    
+  }
+
+}
