@@ -1,8 +1,9 @@
+from email.headerregistry import Address
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData
+from FilmyApp.models import ContactData, Application
 from django.contrib import messages
-from django.core.mail import send_mail
-
+from django.core.mail import send_mail,EmailMessage
+from django.conf import settings
 
 # Create your views here.
 def home(request):
@@ -36,11 +37,40 @@ def production_page_1(request):
     return render (request, "uifiles/shows-productionpages/production.html")
 def show_page_1(request):
     return render (request, "uifiles/shows-productionpages/show.html")
+
+
 def Apply_job(request):
+    if request.method == "POST":
+        name = request.POST.get('name',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        address = request.POST.get('address',"")
+        experinces = request.POST.get('inpuexperices',"")
+        message = request.POST.get('message',"")
+        # file = request.POST.get('message',"")
+        up_file = request.FILES['file']
+        tr_check = request.POST.get('check'," ")
+        agrement=''
+        if tr_check =="on":
+            agrement = 'True'
+        oApplication = Application(Name=name,Email=email,Phone=phone,Address=address,Experience =experinces ,Message=message, file=up_file ,Term_check=agrement)
+        oApplication.save()
+        subject="sumfilmyart"
+        sucess =f'hi {name} Your Application has been submited Sucessfully'
+        
+        try:
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
+            mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            mail.send()
+            messages.success(request,sucess)
+        except:
+            messages.ERROR(request,'sending fail')
+                    
     return render (request, "uifiles/carrerpages/applyform.html")
 
 
 #contact form submision  #
+
 def contact(request):
     if request.method == "POST":
         name = request.POST.get('name',"")
@@ -66,3 +96,14 @@ def contact(request):
         #return redirect("/")
     return render (request,"uifiles/contact.html")
     
+def sending_email(subject, message, email,file):
+    email = EmailMessage(
+    'Hello',
+    'Body goes here',
+    'from@example.com',
+    ['to1@example.com', 'to2@example.com'],
+    ['bcc@example.com'],
+    reply_to=['another@example.com'],
+    headers={'Message-ID': 'foo'},
+)
+    return ""
