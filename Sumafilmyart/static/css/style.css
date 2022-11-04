@@ -2788,7 +2788,7 @@ input[type=number] {
 	.dizme_tm_portfolio .portfolio_list ul{margin: 0px;}
 	.dizme_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
 	.dizme_tm_services .service_list .icon{display: none;}
-	.dizme_tm_services .service_list ul li .list_inner{padding: 40px 20px;}
+	/* .dizme_tm_services .service_list ul li .list_inner{padding: 40px 20px;} */
 	.dizme_tm_services .service_list .title h3{font-size: 25px;}
 	.dizme_tm_services .service_list .price{font-size: 19px;}
 	.dizme_tm_services .service_list .price span{font-size: 21px;}
