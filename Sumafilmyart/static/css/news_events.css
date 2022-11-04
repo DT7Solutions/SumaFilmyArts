@@ -15,6 +15,42 @@
     
  
 }
+/* .service_list,
+.wow,.list_inner, */
+.news_popup-content{
+	height: 250px !important;
+}
+.news_popup-content h2{
+ margin-left: -60px !important;
+ color: #F46806;
+ font-size: 25px !important;
+ 
+}
+.news_popup-content h2::after{
+	content: '-';
+	position: relative;
+	top: 14px;
+	/* left: -140px;
+	border-top: 1px solid #000; */
+}
+.news_popup-content p{
+	margin-left: -150px !important;
+    color: rgb(1, 14, 24);
+   }
+.service_hidden_details h2{
+	color:#F46806 !important;
+   }
+
+/* .news-card-img{
+	height: 150px;
+	width:700px ;
+	margin-left: -150px !important;
+} */
+
+
+
+
+
 .tv-shows{
 	background-color:#F46806;
 	width:100%;

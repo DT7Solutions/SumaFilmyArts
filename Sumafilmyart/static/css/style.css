@@ -1499,7 +1499,7 @@ h6 { font-size: 16px; }
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left;
+	float: none;
 	padding-top: 178px;
 	margin-bottom: 160px;
 	position: relative;
@@ -1508,7 +1508,7 @@ h6 { font-size: 16px; }
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left;
+	/* float: left; */
 	padding-top: 86px;
 }
 .dizme_tm_services .service_list ul{
