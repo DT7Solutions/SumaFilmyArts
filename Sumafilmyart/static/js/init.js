@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
 	dizme_tm_imgtosvg();
 	dizme_tm_popup();
 	dizme_tm_data_images();
-	dizme_tm_contact_form();
+	// dizme_tm_contact_form();
 	dizme_tm_owl_carousel();
 	dizme_tm_input_padding();
 	dizme_tm_totop();
