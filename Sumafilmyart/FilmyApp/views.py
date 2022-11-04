@@ -4,7 +4,7 @@ from FilmyApp.models import ContactData, Application
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
-
+import io
 # Create your views here.
 def home(request):
     return render (request,"uifiles/home.html")
@@ -59,8 +59,9 @@ def Apply_job(request):
         sucess =f'hi {name} Your Application has been submited Sucessfully'
         
         try:
+            # bio_file = io.BytesIO(up_file.read().encode('utf8'))
             mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
-            mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            mail.attach(up_file.name, up_file.read(), up_file.content_type )
             mail.send()
             messages.success(request,sucess)
         except:
