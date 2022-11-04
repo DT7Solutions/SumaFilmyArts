@@ -3032,11 +3032,15 @@ ul{
 /* drop down */
 .dropdown-menu{
 	border: none;
-	background-color: #c6e1ee;
-	
-	
+	background-color: #f7d3aa;	
+	color: white !important;
 }
-.navbarDropdown{
+.dropdown-menu li{
+	
+	width: 100% !important;
+}
+
+/* .navbarDropdown{
 	display: none !important;
 }
 
@@ -3044,8 +3048,12 @@ ul{
     display: block;
     margin-top: 0;
  }
-
-
+ 
+ @media(max-width: 520px){
+	.mobial-nav:hover .dropdown-menu {
+		display: none !important;
+ }
+}  */
 /* header banner*/
 .page-baner-section{
     height: 44vh;

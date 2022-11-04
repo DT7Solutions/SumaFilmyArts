@@ -38,6 +38,9 @@ def production_page_1(request):
 def show_page_1(request):
     return render (request, "uifiles/shows-productionpages/show.html")
 
+def page_not_found_view(request, exception):
+    return render(request, 'uifiles/404.html', status=404)
+
 
 def Apply_job(request):
     if request.method == "POST":
