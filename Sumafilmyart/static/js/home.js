@@ -11,6 +11,51 @@ for(let i = 0; i < btns.length; i++){
 
 
 
+ let homeElement = document.getElementById("home");
+ let AboutElement = document.getElementById("about");
+let Portfoliolement = document.getElementById("portfolio");
+let newsElement = document.getElementById("news");
+let carrerElement = document.getElementById("carrer");
+
+function home() {
+  homeElement.style.color="#f75203";
+   AboutElement.style.color="#000";
+   Portfoliolement.style.color="#000";
+   newsElement.style.color="#000";
+   carrerElement.style.color="#000";
+}
+
+function about(){
+  homeElement.style.color="#000";
+  AboutElement.style.color="#f75203";
+  Portfoliolement.style.color="#000";
+  newsElement.style.color="#000";
+   carrerElement.style.color="#000";
+
+}
+
+function portfolio(){
+  homeElement.style.color="#000";
+  AboutElement.style.color="#000";
+  Portfoliolement.style.color="#f75203";
+  newsElement.style.color="#000";
+   carrerElement.style.color="#000";
+
+}
+ function news(){
+  homeElement.style.color="#000";
+  AboutElement.style.color="#000";
+  Portfoliolement.style.color="#000";
+  newsElement.style.color="#f75203";
+   carrerElement.style.color="#000";
+ }
+ function carrer(){
+  homeElement.style.color="#000";
+  AboutElement.style.color="#000";
+  Portfoliolement.style.color="#000";
+  newsElement.style.color="#000";
+   carrerElement.style.color="#f75203";
+ }
     // Portfolio isotope and filter
    
 

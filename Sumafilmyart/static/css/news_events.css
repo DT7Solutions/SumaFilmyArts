@@ -239,13 +239,17 @@ width: 150px;
   .latest-news a.boxed-btn {
 	margin-top: 80px;
   }
-  .news-bg-2{
-	background-image: url('../home/home-img/page-banner.jpg'); ;
+  /* .news-bg-2{
+	background-image: url('../home/home-img/suma-filmy-art-news2-300x220.png'); ;
   }
 
   .news-bg-3{
-	background-image: url('../home/home-img/page-banner.jpg'); ;
-  }
+	background-image: url('../home/home-img/suma-filmy-art-news3-300x220.png'); ;
+  } */
   .news-bg-4{
 	background-image: url('../home/home-img/page-banner.jpg'); ;
+  }
+  .social-icon{
+	margin: 5px;
+
   }

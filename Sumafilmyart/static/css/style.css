@@ -3164,5 +3164,30 @@ ul{
 	margin-top: -50px;
 }
 .news-bg-1{
-	background-image: url('../home/home-img/page-banner.jpg'); ;
+	background-image: url('../home/home-img/suma-filmy-art-news-300x220.png'); ;
   }
+  .news-bg-2{
+	background-image: url('../home/home-img/suma-filmy-art-news2-300x220.png'); ;
+  }
+
+  .news-bg-3{
+	background-image: url('../home/home-img/suma-filmy-art-news3-300x220.png'); ;
+  }
+  .dizme_tm_header .menu ul li.current a {
+    color: #f75023;
+  }
+  .owl-stage{
+	flex-wrap: wrap;
+	display:flex;
+  }
+  ul li .active a{
+	color: #f75203;
+
+  }
+   .active{
+	color:#f75203;
+   }
+    .last{
+		color: blue !important;
+
+	}

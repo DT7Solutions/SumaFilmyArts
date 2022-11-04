@@ -77,3 +77,14 @@
     overflow:hidden;
     
 }
+/* .partners-logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}  */
+
+.owl-stage{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
