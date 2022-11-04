@@ -1,5 +1,5 @@
 var swiper = new Swiper(".port_video_slider", {
-    slidesPerView: 3,
+    slidesPerView:2,
         spaceBetween: 30,
         freeMode: true,
         // pagination: {

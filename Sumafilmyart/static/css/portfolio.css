@@ -21,14 +21,19 @@
     border-radius: 1px;
 }
 .portfolio-slider3{
-	margin-top: -125px !important;
+	margin-top: -225px !important;
 }
 .portfolio-slider2{
-	margin-top: -125px;
+	margin-top: -255px !important;
+}
+.blog{
+	margin-top: -305px !important;
 }
 
 @media(max-width: 574px){
-	
+	.portfolio-slider2{
+		margin-top: -255px !important;
+	}
 .inner-port-img img{
     height: 150px;
 	width: 300px;
