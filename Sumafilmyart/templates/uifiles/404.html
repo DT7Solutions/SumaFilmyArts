@@ -1,19 +1,8 @@
-<!--Template Name: FoodEque
-File Name: 404.html
-Author Name: ThemeVault
-Author URI: http://www.themevault.net/
-License URI: http://www.themevault.net/license/-->
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/Home/favicon.png"/>
-        <title>FoodEque</title>
-    </head>
-    <body class="not-found">
+    <div class="not-found">
         <div class="page text-center">
             <div class="container">
                 <header class="page-head">
@@ -48,7 +37,7 @@ License URI: http://www.themevault.net/license/-->
         <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
             <img src="images/top-arrow.png" onmouseover="this.src = 'images/top-arrow2.png'" onmouseout="this.src = 'images/top-arrow.png'" alt="left">
         </a>
-        <!--end--->
+        </div>
 
-    </body>
-</html>
+        <!--end--->
+{% endblock %}
