@@ -122,8 +122,9 @@
 .carrer-info-section{
    position: relative;
    top: 180px;
-   height: 260vh;
-   margin-bottom: 130px !important;
+   height: 100vh;
+   overflow: scroll;
+   margin-bottom:170px!important;
 
 }
 
