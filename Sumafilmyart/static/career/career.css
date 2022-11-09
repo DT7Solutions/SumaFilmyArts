@@ -268,6 +268,11 @@ text-align: center;
     color: #F76407 !important;
 }
 
+.form-sub-btn{
+    background-color: #F76407 !important;
+    font-weight: 600;
+}
+
 
 @media(max-width: 574px){
     .carrer-application .card{
@@ -354,4 +359,8 @@ text-align: center;
 .application-responce{
     text-align: center !important;
     color: whitesmoke;
+    /* display: flex;
+    justify-content: center;
+    align-items: start; */
+
 }
