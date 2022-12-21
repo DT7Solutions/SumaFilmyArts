@@ -5,91 +5,50 @@
 <div class="page-baner-section">
     <h1 class="text-center" > Our Sponsorship</h1>
 </div>
-<div class="row">
-    <div class="row sponsor-headig">
-        <div class="col-12 m-2">
-            <div class="section-title">
-                <!-- <h1>Our Sponsors</h1> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p> -->
+<div class="dizme_tm_section" id="contact">
+    <div class="dizme_tm_contact"> 
+        <div class="container">
+            <div class="dizme_tm_main_title" data-align="center">
+                <span>Contact Me</span>
+              
             </div>
+            <div class="contact_inner">
+               
+                <div class=" wow fadeInRight" data-wow-duration="1s">
+                    <div class="fields"> 
+                        <form  method="post" class="contact_form" id="contact_form" autocomplete="off">
+                            {% csrf_token %}
+                            {% for mes in messages %}
+                            <h5 class="responce-text">hi dinesh </h5>
+                            {% endfor  %}
+                            <div class="returnmessage" ></div>
+                            <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                            <div class="input_list">
+                                <ul>
+                                    <li><input name ="name" id="name" type="text" placeholder="Your Name" /></li>
+                                    <li><input name ="email" id="email" type="text" placeholder="Your Email" /></li>
+                                    <li><input name ="phone" id="phone" type="number" placeholder="Your Phone" /></li>
+                                    <li><input name ="subject" id="subject" type="text" placeholder="Subject" /></li>
+                                </ul>
+                            </div>
+                            <div class="message_area">
+                                <textarea name ="message" id="message" placeholder="Write your message here"></textarea>
+                            </div>
+                            <div class="dizme_tm_button">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                               
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/contact/2.png" alt="" /></div>
+            </div>
+           
+            
         </div>
-    </div>
-    <div class="col-12">
-        <!-- Title -->
-        <div class="sponsor-title text-center mt-3 mb-5">
-            <h4 class="section-title1"><span class="alternate">Platinum</span> Sponsors</h4>
-        </div>
-        <div class="block text-center">
-            <!-- Sponsors image list -->
-            <ul class="list-inline sponsors-list">
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/pt-spon-two.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/pt-spon-two.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/pt-spon-three.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/pt-spon-four.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- Title -->
-        <div class="sponsor-title text-center mt-5 mb-5">
-            <h4><span class="alternate">Gold</span> Sponsors</h4>
-        </div>
-        <div class="block text-center">
-            <!-- Sponsors image list -->
-            <ul class="list-inline sponsors-list">
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/gl-spon-one.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/gl-spon-two.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div class="image-block text-center">
-                        <a href="#">
-                            <img src="{% static 'sponsors/sponsors-img/gl-spon-three.png' %}" alt="sponsors-logo" class="img-fluid">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- <div class="sponsor-btn text-center mt-3 mb-4">
-            <a href="#" class="btn btn-main-md">Become a sponsor</a>
-        </div> -->
-        <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s" style="text-align: center;margin-top:25px; margin-bottom:25px;">
-            <a class="anchor" href="#contact"><span >Become a sponsor</span></a>
-        </div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/contact/1.png" alt="" /></div>
     </div>
 </div>
-
+<!-- /CONTACT -->
 
 {% endblock %}

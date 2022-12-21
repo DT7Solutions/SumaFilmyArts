@@ -5,103 +5,87 @@
 <div class="page-baner-section">
     <h1 class="text-center " >Interaction with Suma</h1>
 </div>
-
-<section class="news section-padding m-2" id="news">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mt-5">
-                <h2 class="mb-5 text-center" data-aos="fade-up" style="font-family:roboto ,sans-serif ;">Fans Interaction</h2>
+<div class="dizme_tm_section" id="contact">
+    <div class="dizme_tm_contact"> 
+        <div class="container">
+            <div class="dizme_tm_main_title" data-align="center">
+                <span>Contact Me</span>
+                <!-- <h3>I Want To Here From You</h3>
+                <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p> -->
             </div>
-
-            <div class="col-lg-8 col-12 mb-5  mt-3 mb-lg-0">
-                <div class="news-thumb" data-aos="fade-up">
-                    <video autoplay="" loop="" muted="" class="custom-video" controls>
-                        <source src="{%static 'fans-intraction/fans-intraction-img/suma-video.mp4'%}" type="video/mp4">
-                    </video>
-                    <div class="news-category bg-primary text-white">25-10-2022</div>
-                </div> 
-            </div>
-
-            <div class="col-lg-4 col-6  fans-pic" >
-                <div class="news-thumb news-two-column d-flex flex-column flex-lg-row " data-aos="fade-up">
-                    <div class="news-top w-100">
-                        <a href="news-detail.html" class="news-image-hover news-image-hover-primary">
-                            <img src="{%static 'fans-intraction/fans-intraction-img/fans-img2.png'%}" class="img-fluid news-image" alt="">
-                        </a>
-                        
-                    
-                        <!-- <div class="news-category bg-primary text-white">Events</div> -->
+            <div class="contact_inner">
+                <!-- <div class="left wow fadeInLeft" data-wow-duration="1s">
+                    <ul>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon orangeBackground">
+                                    <i class="icon-location orangeText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Address</h3>
+                                    <span>20, Somewhere in world</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon greenBackground">
+                                    <i class="icon-mail-1 greenText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Email</h3>
+                                    <span><a href="#">hello@dizme.com</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon purpleBackground">
+                                    <i class="icon-phone purpleText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Phone</h3>
+                                    <span>+123 456 7890</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class=" wow fadeInRight" data-wow-duration="1s">
+                    <div class="fields"> 
+                        <form  method="post" class="contact_form" id="contact_form" autocomplete="off">
+                            {% csrf_token %}
+                            {% for mes in messages %}
+                            <h5 class="responce-text">hi dinesh </h5>
+                            {% endfor  %}
+                            <div class="returnmessage" ></div>
+                            <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                            <div class="input_list">
+                                <ul>
+                                    <li><input name ="name" id="name" type="text" placeholder="Your Name" /></li>
+                                    <li><input name ="email" id="email" type="text" placeholder="Your Email" /></li>
+                                    <li><input name ="phone" id="phone" type="number" placeholder="Your Phone" /></li>
+                                    <li><input name ="subject" id="subject" type="text" placeholder="Subject" /></li>
+                                </ul>
+                            </div>
+                            <div class="message_area">
+                                <textarea name ="message" id="message" placeholder="Write your message here"></textarea>
+                            </div>
+                            <div class="dizme_tm_button">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                                <!-- <a id="send_message" href="#"><span>Submit Now</span></a> -->
+                            </div>
+                        </form>
                     </div>
-                
                 </div>
-                <div class="news-thumb news-two-column d-flex flex-column flex-lg-row  " data-aos="fade-up">
-                    <div class="news-top w-100" data-aos="fade-up">
-                        
-                        <a href="news-detail.html" class="news-image-hover news-image-hover-success">
-                            <img src="{%static 'fans-intraction/fans-intraction-img/fans-img1.png'%}" class="img-fluid news-image" alt="">
-                        </a>
-
-                        <!-- <div class="news-category bg-success text-white">News</div> -->
-                     </div>
-                    
-                </div>  
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/contact/2.png" alt="" /></div>
             </div>
-            <div class="row">
-                <div class="event-content" id="event-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt veniam quaerat, aperiam quia illo nam, cum quis minus voluptate voluptatum omnis! Exercitationem quae quisquam quo voluptatibus saepe veniam minus quam voluptates rem cupiditate ducimus pariatur totam culpa eveniet natus, iste sunt quasi dolore ullam beatae. Quo ullam illo quam corporis?</p>
-                </div>
-            </div>
+           
+            
         </div>
-        
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/contact/1.png" alt="" /></div>
     </div>
-
-    <div class="container  mt-5">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="mb-5 text-center" data-aos="fade-up"></h2>
-            </div>
-
-            <div class="col-lg-8 col-12 mb-5 mb-lg-0">
-                <div class="news-thumb" data-aos="fade-up">
-                    <video autoplay="" loop="" muted="" class="custom-video" controls>
-                        <source src="{%static 'fans-intraction/fans-intraction-img/suma-video2.mp4'%}" type="video/mp4">
-                    </video>
-                    <div class="news-category bg-primary text-white">26-10-2022</div>
-                </div> 
-            </div>
-
-            <div class="col-lg-4 col-12">
-                <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                    <div class="news-top w-100">
-                        <a href="news-detail.html" class="news-image-hover news-image-hover-primary">
-                            <img src="{%static 'fans-intraction/fans-intraction-img/fans-img3.png'%}" class="img-fluid news-image" alt="">
-                        </a>
-
-                        <!-- <div class="news-category bg-primary text-white">Events</div> -->
-                    </div>
-                </div> 
-
-                <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                    <div class="news-top w-100" data-aos="fade-up">
-                        
-                        <a href="news-detail.html" class="news-image-hover news-image-hover-success">
-                            <img src="{%static 'fans-intraction/fans-intraction-img/fans-img4.png'%}" class="img-fluid news-image" alt="">
-                        </a>
-
-                        <!-- <div class="news-category bg-success text-white">News</div> -->
-                    </div>
-                
-                    
-                </div> 
-            </div>
-            <div class="row mb-5">
-                <div class="event-content" id="event-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt veniam quaerat, aperiam quia illo nam, cum quis minus voluptate voluptatum omnis! Exercitationem quae quisquam quo voluptatibus saepe veniam minus quam voluptates rem cupiditate ducimus pariatur totam culpa eveniet natus, iste sunt quasi dolore ullam beatae. Quo ullam illo quam corporis?</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</section>
+</div>
+<!-- /CONTACT -->
 
 {% endblock %}
