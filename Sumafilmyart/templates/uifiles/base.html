@@ -1,10 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-
+<html lang="en">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -118,24 +114,24 @@
 					</div>
 					<div class="menu">
 						<ul class="anchor_nav">
-							<li class=""><a class="nav-btn active" href="/">Home</a></li>
-							<li><a class="nav-btn" 	href="/about/">About</a></li>
-							<li><a class="nav-btn"  href="/portfolio/">Portfolio</a></li>
-							<li class="nav-item dropdown">
+							<li class=""><a class="nav-btn {% if navbar == 'home' %} active {% endif %}" href="/">Home</a></li>
+							<li><a class="nav-btn {% if navbar == 'about' %} active  {% endif %}" 	href="/about/">About</a></li>
+							<li><a class="nav-btn {% if navbar == 'portfolio' %} active {% endif %}"  href="/portfolio/">Portfolio</a></li>
+							<li class="dropdown">
 								<a class="nav-btn nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Connect  with us
+									Connect with us
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  <li><a class="dropdown-item" href="/collaboration/">Collabrations</a></li>
-								  <li><a class="dropdown-item" href="/sponsorship/">Sponsorship</a></li>
-								  <li><a class="dropdown-item" href="/fansinteraction/">Interaction with suma</a></li>
-							      <li><a class="dropdown-item" href="/shows_productions/">Enquiries</a></li>
-								  <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+								  <li><a class="dropdown-item {% if navbar == 'collaboration' %} active {% endif %}" href="/collaboration/">Collabrations</a></li>
+								  <li><a class="dropdown-item {% if navbar == 'sponsorship' %} active {% endif %}" href="/sponsorship/">Sponsorship</a></li>
+								  <li><a class="dropdown-item {% if navbar == 'fansinteraction' %} active {% endif %}" href="/fansinteraction/">Interaction with suma</a></li>
+							      <li><a class="dropdown-item {% if navbar == 'shows_productions' %} active {% endif %}" href="/shows_productions/">Enquiries</a></li>
+								  <li><a class="dropdown-item {% if navbar == 'contact' %} active {% endif %}" href="/contact/">Contact</a></li>
 								</ul>
 							  </li>
-							  <li><a class="nav-btn" href="/news_events/">News&Events</a></li>
-							<li><a class="nav-btn"  href="/career/">Careers</a></li>
-							<!-- <li><a class="nav-btn"  href="/contact/">Contact</a></li> -->
+
+							<li><a class="nav-btn {% if navbar == 'news_events' %} active {% endif %}" href="/news_events/">News&Events</a></li>
+							<li><a class="nav-btn {% if navbar == 'career' %} active {% endif %}"  href="/career/">Careers</a></li>
 						</ul>
 					</div>
 					 <div class="menu ">

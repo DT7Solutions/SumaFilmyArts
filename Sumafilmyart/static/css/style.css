@@ -355,6 +355,7 @@ h6 { font-size: 16px; }
 /*---------------------------------------------------*/
 
 .dizme_tm_header{
+	background-color:#fff;
 	position: fixed;
 	top: 0px;
 	left: 0px;

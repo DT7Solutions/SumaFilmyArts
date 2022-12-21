@@ -1,4 +1,8 @@
 /*** Section Title ***/
+.home-banner{
+  padding-top: 80px;
+}
+
 .section-title {
     position: relative;
     display: inline-block;

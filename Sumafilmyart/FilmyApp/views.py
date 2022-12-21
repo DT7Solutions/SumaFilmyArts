@@ -7,25 +7,25 @@ from django.conf import settings
 import io
 # Create your views here.
 def home(request):
-    return render (request,"uifiles/home.html")
+    return render (request,"uifiles/home.html",{'navbar':'home'})
 def about(request):
-    return render (request,"uifiles/about.html")
+    return render (request,"uifiles/about.html",{'navbar':'about'})
 def portfolio(request):
-    return render (request,"uifiles/portfolio.html")
+    return render (request,"uifiles/portfolio.html",{'navbar':'portfolio'})
 def news_events(request):
-    return render (request,"uifiles/news_events.html")
+    return render (request,"uifiles/news_events.html",{'navbar':'news_events'})
 
 
 def career(request):
-    return render (request,"uifiles/career.html")
+    return render (request,"uifiles/career.html",{'navbar':'career'})
 def collaboration(request):
-    return render (request,"uifiles/collaboration.html")
+    return render (request,"uifiles/collaboration.html",{'navbar':'collaboration'})
 def fansinteraction(request):
-    return render (request,"uifiles/fansinteraction.html")
+    return render (request,"uifiles/fansinteraction.html",{'navbar':'collaboration'})
 def sponsorship(request):
-    return render (request,"uifiles/sponsorship.html")
+    return render (request,"uifiles/sponsorship.html",{'navbar':'sponsorship'})
 def shows_productions(request):
-    return render (request,"uifiles/shows-productions.html")
+    return render (request,"uifiles/shows-productions.html",{'navbar':'shows_productions'})
 #carrer-pages 
 def assistent_director(request):
     return render (request,"uifiles/carrerpages/assistent-director.html")
@@ -98,7 +98,7 @@ def contact(request):
         except:
             messages.error(request,'Your message has been failed, Please Try Agian')
         #return redirect("/")
-    return render (request,"uifiles/contact.html")
+    return render (request,"uifiles/contact.html",{'navbar':'contact'})
     
 def sending_email(subject, message, email,file):
     email = EmailMessage(
