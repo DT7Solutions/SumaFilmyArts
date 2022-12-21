@@ -13,6 +13,8 @@ ul.job_listings, ul.resumes {
 }
 .img-fluid{
     width:100%;
+   
+   
     height:auto;
     transition:0.2s;
    

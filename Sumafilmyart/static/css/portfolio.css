@@ -4,8 +4,22 @@
 	clear: both;
 	float: left;
 }
+.port_video_slider1{
+	max-height: 450px !important;
+	width: 100%;
+	/* height: 100% !important; */
+	
+} 
+.inner-port-img img{
+    height: auto;
+	width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 1px;
+	padding: 10px;
+}
 
-.suma_tm_portfolio{
+/* .suma_tm_portfolio{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -14,12 +28,7 @@
     margin-top: 100px;
 }
 
-.inner-port-img img{
-    height: 380px;
-    margin-top: 20px;
-    align-items: center;
-    border-radius: 1px;
-}
+
 .portfolio-slider3{
 	margin-top: -225px !important;
 }
@@ -38,7 +47,7 @@
     height: 150px;
 	width: 300px;
     border-radius: 1px;
-	display: none;
+	
 }
 .suma_tm_portfolio{
 	margin-top: 20px;
@@ -60,4 +69,4 @@
  }
 
 
- 
+  */

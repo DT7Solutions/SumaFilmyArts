@@ -584,7 +584,7 @@ h6 { font-size: 16px; }
 	height: 0;
 }
 .dizme_tm_button a:hover span{
-	color: #000;
+	color: #fff;
 }
 .dizme_tm_hero .social{
 	padding-left: 27px;
@@ -809,7 +809,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 112px;
+	/* padding-top: 30px; */
 	position: relative;
 }
 .dizme_tm_about .wrapper{
@@ -873,7 +873,7 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_about .right{
 	width: 50%;
-	padding-left: 60px;
+	 padding-left: 60px; 
 }
 .dizme_tm_about .right .title{
 	margin-bottom: 25px;
@@ -1500,8 +1500,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: none;
-	padding-top: 178px;
-	margin-bottom: 160px;
+	padding-top: 30px;
+	margin-bottom: 60px;
 	position: relative;
 }
 .dizme_tm_services .service_list{
@@ -1509,7 +1509,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	/* float: left; */
-	padding-top: 86px;
+	padding-top: 40px;
 }
 .dizme_tm_services .service_list ul{
 	margin: 0px 0px 0px -25px;
@@ -1693,7 +1693,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 187px;
+	margin-bottom: 50px;
 	position: relative;
 }
 .dizme_tm_testimonials .list_wrapper{
@@ -2300,7 +2300,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 190px;
+	padding-top: 50px;
 	margin-bottom: 200px;
 	position: relative;
 }
@@ -2910,7 +2910,7 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-   width: 25%;
+   width: 33%;
    padding: 0 15px;
 }
 .footer-col h4{
@@ -3069,10 +3069,14 @@ ul{
 }
 .page-baner-section h1 {
     position: relative;
-	/* top: 100px;
-	left: 45%; */
+	top:0px;
+	left: 20%;
+	right:20px;
+	
+	
 	font-size: 50px;
 	font-weight: 800;
+	
 	/* color: #f76407; */
 	width: 100%;
 	font-family: "roboto", sans-serif;
@@ -3082,6 +3086,8 @@ ul{
     background: linear-gradient(#8b8b8a 25%, #b3b0b0 25%,#0f0f0f);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+	
+
 	
    
  }
@@ -3169,7 +3175,7 @@ ul{
 }
 
 .dizme_tm_section .dizme_tm_contact{
-	margin-top: -50px;
+	/* margin-top: -50px; */
 }
 .news-bg-1{
 	background-image: url('../home/home-img/suma-filmy-art-news-200x200.png'); ;
@@ -3199,3 +3205,16 @@ ul{
 		color: blue !important;
 
 	}
+
+	@media (max-width:720px)   {
+		.enquiry-application {
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			width:20rem;
+	
+		} 
+		
+	}
+
+	

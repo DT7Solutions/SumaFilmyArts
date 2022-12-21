@@ -78,7 +78,7 @@
 	height: auto;
 	clear: both;
 	float: left;
-	margin-top: -80px !important;
+	/* margin-top: -80px !important; */
 }
 .timeline_list{
     background-color: #f8f7f7;
