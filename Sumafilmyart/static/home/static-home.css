@@ -2,6 +2,10 @@
 .home-banner{
   padding-top: 80px;
 }
+.mySwiper {
+  height: auto;
+  width: 100%;
+}
 
 .section-title {
     position: relative;
@@ -295,3 +299,20 @@ color: #ebeae9;
  .img-container{
   width: 80% !important;
  }
+ 
+ @media screen and (min-width: 320px) and (max-width: 480px) {
+  .suma-about-section{
+      margin-top: -450px;
+  }
+  .home-banner{
+    padding-top: 72px;
+  }
+  .brief-image {
+    margin-left: -25px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .brief-image {
+    margin-top: -260px;
+  }
+}
