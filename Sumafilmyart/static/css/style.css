@@ -490,7 +490,8 @@ h6 { font-size: 16px; }
 	right: 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	object-fit: contain;
+	background-position:center ;
 }
 .dizme_tm_hero .container{
 	height: 100%;
@@ -2969,7 +2970,8 @@ ul{
 /*responsive*/
 @media(max-width: 574px){
   .footer-col{
-    width: 50%;
+    width: 90%;
+	margin-left: 10px;
     margin-bottom: 30px;
 }
 }
@@ -3132,11 +3134,11 @@ ul{
 	flex-direction: column;
 	margin-top: 10px;
   }
-  .text-center{
+  /* .text-center{
 	color:#f75023;
 	font-family: "roboto sans-serif";
 	font-weight: 600;
-  }
+  } */
  .production-subpage{
 	display: flex;
 	flex-direction: column;

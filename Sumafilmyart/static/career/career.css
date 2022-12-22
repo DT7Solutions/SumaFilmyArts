@@ -172,9 +172,9 @@ text-align: center;
  /* job application */
  .job-application-section{
     position: relative;
-    top: 180px;
-    height: 180vh;
-    margin-bottom: 140px;
+   
+    /* height: 100vh;
+    margin-bottom: 140px; */
     
  }
  .job-h3,.job-h6{
@@ -262,7 +262,7 @@ text-align: center;
      color: #f8f8f8;
      font-size: 25px;
      font-weight: 600;
-     margin-left: 200px;
+     /* margin-left: 200px; */
      margin-bottom: 20px;
    
    }

@@ -5,8 +5,11 @@ var swiper = new Swiper(".port_video_slider1", {
         spaceBetween: 30,
         freeMode: true,
         loop:true,
+        
         autoplay: {
         delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
         },
         breakpoints: {
           // when window width is >= 320px
@@ -41,6 +44,36 @@ var swiper = new Swiper(".port_video_slider1", {
 
 // lakku kikku slider 
 
+    // Project carousel
+    $(".project-carousel").owlCarousel({
+      
+      smartSpeed: 1000,
+      margin: 0,
+      loop: true,
+      responsive:	true,
+      center: true,
+      dots: false,
+      nav: false,
+      navText : [
+          '<i class="bi bi-chevron-left"></i>',
+          '<i class="bi bi-chevron-right"></i>'
+      ],
+      
+      responsive: {
+    0:{
+              items:1
+          },
+          576:{
+              items:1
+          },
+          768:{
+              items:2
+          },
+          992:{
+              items:3
+          }
+      }
+  });
 
 
 

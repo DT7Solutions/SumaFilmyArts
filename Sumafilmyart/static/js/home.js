@@ -107,35 +107,51 @@ var swiper = new Swiper(".mySwiper2", {
   });
 
 /* owl carsoul */
-  $('.owl-carousel').owlCarousel({
-    merge:true,
-    loop :true,
-    margin:10,
-    items: 3,
-    video:true,
-    lazyload:true,
-    center:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    stagePadding:10,
-    responsive:{
-              0:{
-                  items:1
-                },
-                600:{
-                  items:1
-                },
-                800: {
-                  items:2
-                },
-                1000:{
-                  items:2
-                },
-                1100:{
-                  items:3
-                }
+//   $('.owl-carousel').owlCarousel({
+//     merge:true,
+//     loop :true,
+//     margin:10,
+//     items: 3,
+//     video:true,
+//     lazyload:true,
+//     center:true,
+//     autoplay:true,
+//     autoplayTimeout:3000,
+//     stagePadding:10,
+//     responsive:{
+//               0:{
+//                   items:1
+//                 },
+//                 600:{
+//                   items:1
+//                 },
+//                 800: {
+//                   items:2
+//                 },
+//                 1000:{
+//                   items:2
+//                 },
+//                 1100:{
+//                   items:3
+//                 }
 
-    }
+//     }
+// })
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
 })
 
 /* swiper image carsoul */
