@@ -311,6 +311,11 @@ color: #ebeae9;
     margin-left: -25px;
   }
 }
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  .brief-image {
+    margin-left: -10px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .brief-image {
     margin-top: -260px;
