@@ -2813,7 +2813,7 @@ input[type=number] {
 	.dizme_tm_modalbox .service_popup_informations .main_title h3{margin-bottom: 0px;}
 	.dizme_tm_modalbox .news_popup_informations .details h3{font-size: 19px;}
 	.dizme_tm_hero{margin-bottom: 135px;}
-	.dizme_tm_about{padding-top: 50px;}
+	/* .dizme_tm_about{padding-top: 50px;} */
 	.dizme_tm_portfolio{padding-top: 113px;margin-bottom: 88px;}
 	.dizme_tm_portfolio .portfolio_filter{padding-top: 53px;padding-bottom: 46px;}
 	.dizme_tm_services{padding-top: 120px;margin-bottom: 98px;}
@@ -2822,10 +2822,10 @@ input[type=number] {
 	.dizme_tm_testimonials{margin-bottom: 127px;}
 	.dizme_tm_testimonials .owl-theme .owl-nav.disabled+.owl-dots{margin-top: 50px;}
 	.dizme_tm_news{padding-top: 120px;margin-bottom: 100px;}
-	.dizme_tm_contact{padding-top: 123px;}
+	/* .dizme_tm_contact{padding-top: 123px;} */
 	.dizme_tm_contact .contact_inner{margin-top: 67px;margin-bottom: 120px;}
-	.dizme_tm_contact{margin-bottom: 120px;}
-}
+	/* .dizme_tm_contact{margin-bottom: 120px;}*/
+} 
 
 .social ul{
 	display: flex;
@@ -2910,7 +2910,7 @@ ul{
 .footer{
 	/* background-color:rgb(90, 90, 90) ; */
 	background-color: #fff2e6;
-    padding: 70px 0;
+    padding: 40px 0;
 }
 .footer-col{
    width: 33%;
@@ -3218,6 +3218,19 @@ ul{
 			width:20rem;
 	
 		} 
+		
+	}
+	@media (max-width:576px) {
+		.text-center{
+			font-size: 18px!important;
+			text-align: center;
+			margin-left: -50px;
+			
+		}
+		.news-text{
+			margin-left: 60px;
+
+		}
 		
 	}
 

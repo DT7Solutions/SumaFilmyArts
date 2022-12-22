@@ -220,6 +220,8 @@ text-align: center;
     position: relative;
    
    }
+
+   
    .card-container{
      margin-left: 0px!important;
    } 
@@ -284,7 +286,7 @@ text-align: center;
 @media(max-width: 574px){
     .carrer-application .card{
        
-       width: 18rem;
+       max-width: 18rem;
        }
     .card-container .card .form-control{
         width: 23rem;

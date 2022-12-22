@@ -18,22 +18,22 @@
                     <h5 class="card-title" style="text-align: center;">Apply Here</h5>
                     <form method="post" class="row g-3 applyform " enctype="multipart/form-data"  autocomplete="off">
                         {% csrf_token %}
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
                             <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
 
                             <input type="number" name="phone" class="form-control" id="phone" placeholder="phonenumber" required>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12 col-12">
                             <input type="text" name="address" class="form-control" id="address"
                                 placeholder="Apartment, studio, or floor" required>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-12">
                             <select id="inpuexperices" name ="inpuexperices" class="form-control" aria-placeholder="expriences"
                                 placeholder="Years of experience">
                                 <option selected>Work Experinces</option>
