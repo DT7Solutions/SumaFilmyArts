@@ -3269,8 +3269,8 @@ ul{
 	
 	}  
 	.dropdown-item.active, .dropdown-item:active {
-		color: #fff;
+		color: #fff !important;
 		text-decoration: none;
-		background-color:#ffb324!important;
+		background-color:#e06b0b!important;
 	}
 	
