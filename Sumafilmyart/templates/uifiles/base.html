@@ -90,9 +90,9 @@
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							  <li><a class="dropdown-item" href="/collaboration/">Collabratations</a></li>
 							  <li><a class="dropdown-item" href="/sponsorship/">Sponcership</a></li>
-							  <li><a class="dropdown-item" href="/fansinteraction/">Fans Interaction</a></li>
+							  <!-- <li><a class="dropdown-item" href="/fansinteraction/">Fans Interaction</a></li> -->
 							  <li><a class="dropdown-item" href="/shows_productions/">Enquiries</a></li>
-							  <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+							  <!-- <li><a class="dropdown-item" href="/contact/">Contact</a></li> -->
 							</ul>
 						  </li>
 						<li><a class="nav-btn" href="/news_events/">News&Events</a></li>
@@ -124,9 +124,9 @@
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								  <li><a class="dropdown-item {% if navbar == 'collaboration' %} active {% endif %}" href="/collaboration/">Collabrations</a></li>
 								  <li><a class="dropdown-item {% if navbar == 'sponsorship' %} active {% endif %}" href="/sponsorship/">Sponsorship</a></li>
-								  <li><a class="dropdown-item {% if navbar == 'fansinteraction' %} active {% endif %}" href="/fansinteraction/">Interaction with suma</a></li>
+								  <!-- <li><a class="dropdown-item {% if navbar == 'fansinteraction' %} active {% endif %}" href="/fansinteraction/">Interaction with suma</a></li> -->
 							      <li><a class="dropdown-item {% if navbar == 'shows_productions' %} active {% endif %}" href="/shows_productions/">Enquiries</a></li>
-								  <li><a class="dropdown-item {% if navbar == 'contact' %} active {% endif %}" href="/contact/">Contact</a></li>
+								  <!-- <li><a class="dropdown-item {% if navbar == 'contact' %} active {% endif %}" href="/contact/">Contact</a></li> -->
 								</ul>
 							  </li>
 
@@ -159,11 +159,11 @@
 				<div class="dizme_tm_copyright footer" style="padding-bottom: -30px!important;">
 			  
 				<div class="container-black">
-					<div class="row">
+					<div class="row d-flex">
 						<div class="footer-col" style="display: flex;justify-content: center;align-items: center;">
 							<div class="logo">
-							<a href="/"><img src="{% static 'img/logo/Suma filmy arts.png' %}" style="width:60%;height:auto;"  alt="" /></a>
-						</div>
+								<a href="/"><img src="{% static 'img/logo/Suma filmy arts.png' %}" style="width:60%;height:auto;"  alt="" /></a>
+							</div>
 						</div>
 						<div class="footer-col">
 							<h4>Quick Links</h4>
@@ -172,6 +172,15 @@
 								<li><a href="/portfolio/">Portfolio</a></li>
 								<li><a href="/news_events/">news&events</a></li>
 								<li><a href="/career/">Careers</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Connect Us</h4>
+							<ul>
+								<li><a href="/collaboration/">Collaboration </a></li>
+								<li><a href="/sponsorship/">Sponsorships</a></li>
+								<li><a href="/shows_productions/">Enquiries</a></li>
+								<!-- <li><a href="/career/">Careers</a></li> -->
 							</ul>
 						</div>
 						<div class="footer-col">
@@ -199,9 +208,21 @@
         <div class="container-black">
             <div class="row">
 				<hr class="w-100" style="height: 3px;">
-				<div style="display:flex;justify-content: center; font-size:x-small;">
-					&copy; Copyright  Sumafilmyarts All Rights Reserved
+				<div class="d-flex justify-content-between">
+					<div style="display:flex;justify-content: center; font-size:x-small;">
+						&copy; Copyright  Sumafilmyarts All Rights Reserved
+					</div>
+					<div>
+						<div class="menu ">
+							<ul class='home-social-links d-flex justify-content-around'>
+								<li><a href="#"><i class="icon-facebook-1"></i></a></li>
+								<li><a href="#"><i class="icon-instagram-1 px-2"></i></a></li>
+								<li><a href="#"><i class="bi bi-linkedin px-2"></i></a></li> 
+							</ul>
+						</div> 
+					</div>
 				</div>
+				
             </div>
         </div>
     </div> 

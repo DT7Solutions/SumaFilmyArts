@@ -9,44 +9,44 @@
     <div class="dizme_tm_contact"> 
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
-                <h2 style="font-family: ubuntu;">Show and spread your love for us</h2>
+                <h2 style="color: rgb(3, 46, 66);" >Get in touch with us to combine forces and deliver content.</h2>
               
             </div>
-            <div class="contact_inner">
-                
-                <div class=" wow fadeInRight" data-wow-duration="1s">
-                    <div class="fields"> 
-                        <form  method="post" class="contact_form" id="contact_form" autocomplete="off">
-                            {% csrf_token %}
-                            {% for mes in messages %}
-                            <h5 class="responce-text">hi dinesh </h5>
-                            {% endfor  %}
-                            <div class="returnmessage" ></div>
-                            <div class="empty_notice"><span>Please Fill Required Fields</span></div>
-                            <div class="input_list">
-                                <ul>
-                                    <li><input name ="name" id="name" type="text" placeholder="Your Name" /></li>
-                                    <li><input name ="email" id="email" type="text" placeholder="Your Email" /></li>
-                                    <li><input name ="phone" id="phone" type="number" placeholder="Your Phone" /></li>
-                                    <li><input name ="subject" id="subject" type="text" placeholder="Subject" /></li>
-                                </ul>
+            <div class="contact_inner d-flex justify-content-center aligen-items-center">
+               
+                <div class="card collabration-card" style="width: 40rem;">
+                    <div class="card-body enq-body-card ">
+                        <h5 class=" mb-3 text-center" style="color: coral; font-size:30px">Apply Here</h5>
+                        <div>
+                        <form method="post" class="row g-3 applyform " enctype="multipart/form-data"  autocomplete="off">
+                            <div class="col-md-6 col-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
                             </div>
-                            <div class="message_area">
-                                <textarea name ="message" id="message" placeholder="Write your message here"></textarea>
+                            <div class="col-md-6 col-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Last Name" required>
                             </div>
+                            <div class="col-md-12 col-12">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-12 col-12">
+    
+                                <input type="number" name="phone" class="form-control" id="phone" placeholder="phonenumber" required>
+                            </div>
+    
+    
+                            <div class="col-12">
+                                <input type="text" name="message" class="form-control" id="message"
+                                    placeholder="Message" required>
+                            </div>
+                            
+                           
                             <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
-                                <button type="submit" class="send-button form-sub-btn">Send</button>
-                               
+                                <button type="submit" href="#" class="btn btn-primary form-sub-btn">Send</button>
                             </div>
                         </form>
                     </div>
+                    </div>
                 </div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/contact/2.png" alt="" /></div>
-            </div>
-           
-            
-        </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/contact/1.png" alt="" /></div>
     </div>
 </div>
 <!-- /CONTACT -->
