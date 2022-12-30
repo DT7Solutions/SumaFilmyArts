@@ -3060,9 +3060,9 @@ ul{
 }  */
 /* header banner*/
 .page-baner-section{
-    height: 44vh;
+    height: 52vh;
 	width: 100%;
-    background-image: url('../home/home-img/page-banner.jpg'); 
+    background-image: url('../home/home-img/Sumafilmyarts-banner-1920x300.png') ; 
 	/* background-color:#ff9a00; */
     background-repeat: no-repeat; 
     background-size: cover;
@@ -3074,7 +3074,7 @@ ul{
 .page-baner-section h1 {
     position: relative;
 	top:0px;
-	left: 20%;
+	left: 10%;
 	right:20px;
 	
 	
@@ -3224,7 +3224,7 @@ ul{
 		.text-center{
 			font-size: 18px!important;
 			text-align: center;
-			margin-left: -50px;
+			/* margin-left: -50px; */
 			
 		}
 		.news-text{
@@ -3273,4 +3273,17 @@ ul{
 		text-decoration: none;
 		background-color:#e06b0b!important;
 	}
-	
+	#enqiury{
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../collabrations/collabration-img/Sumafilmyarts-enquires-1920x1080.jpg) no-repeat center right;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	#sponors{
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../collabrations/collabration-img/Sumafilmyarts-sponorship-1920x1080.jpg) no-repeat  right ;
+		background-size: cover;
+		background-attachment: fixed;
+
+	}
+	.nav-link{
+		padding: 0px!important;
+	}

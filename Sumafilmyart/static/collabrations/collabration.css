@@ -89,7 +89,11 @@
     align-items: center!important;
 }
 
-
+ #contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../collabrations/collabration-img/sumafilmyarts-collabrations-page-backgroundimage-1920x1080.jpg) no-repeat center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
 
@@ -105,7 +109,7 @@
 }
 .options{
     position: relative;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 #options label{
     display: block;
@@ -172,4 +176,30 @@
 .collabration-card{
     border: 2px solid rgb(165, 165, 165);
     border-radius: 8px;
+}
+.choosefile{
+    position:absolute;
+    /* bottom: 143px;
+    right:80%; */
+    bottom: 14%;
+    font-size: 17px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 0px) and (max-width:576px) {
+    /* .choosefile{
+        right:70%;
+        
+        
+       
+       
+        
+    } */
 }

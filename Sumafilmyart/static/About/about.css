@@ -26,3 +26,69 @@ ul.job_listings, ul.resumes {
     transform: scale(1.1); 
     overflow: hidden;
 }
+
+/* vission mission */
+
+@media only screen and (min-width: 0px){
+.vision-mission .objects {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.vision-mission .object {
+    border: 1px solid #d83135;
+    border-radius: 10px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 10px 15px;
+}
+}
+@media only screen and (min-width: 992px){
+.vision-mission .objects {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+@media only screen and (min-width: 1200px){
+.vision-mission .object {
+    max-width: 450px;
+    margin: 50px;
+    padding: 0 30px 30px;
+}
+.vision-mission .object .heading {
+    font-size: 70px;
+}
+.vision-mission .object .content {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+}
+
+
+@media only screen and (min-width: 0px){
+.vision-mission .object .heading {
+    background-color: #fff;
+    font-size: 35px;
+    line-height: 35px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0;
+}
+}
+.primary-color-text {
+    color:  #f75023;
+}
+.upper-text {
+    text-transform: uppercase;
+}

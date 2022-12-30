@@ -121,7 +121,7 @@
 
 .carrer-info-section{
    position: relative;
-   top: 180px;
+   top: 50px;
    height: 100vh;
    overflow: scroll;
    margin-bottom:170px!important;
@@ -138,7 +138,7 @@ text-align: center;
     padding-right: 5px;
  }
 .carrer-info-section h4{
- margin-left: 100px;
+ /* margin-left: 100px; */
  }
 .carrer-info-section p{
     margin-left: 100px;

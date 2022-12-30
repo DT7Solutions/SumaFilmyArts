@@ -331,19 +331,21 @@ color: #ebeae9;
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
- .home-left-img2{
-   order: 2;
-  }
-  .home-right-content2{
-    order: 1;
-  }
-  .about-right-img{
-    order: 1;
-    width: 40% !important;
-   }
-   .about-right-content{
-     order: 2;
-   }
-  
-} 
+@media screen and (min-width: 768px) and (max-width:992px) {
+	.home-left-img{
+	  order: 2;
+	 }
+	 
+	 .home-right-content{
+	   order: 1;
+	 }
+	 .about-right-img{
+	   order: 1;
+	   width: 40% !important;
+	  }
+	  .about-right-content{
+		order: 2;
+	  }
+	 
+   } 
+
