@@ -936,7 +936,7 @@ h6 { font-size: 16px; }
 	font-size: 24px;
 	font-weight: 500;
 	color: #f75023;
-	font-family: 'Jost', sans-serif;
+	/* font-family: 'Jost', sans-serif; */
 	display: inline-block;
 	margin-bottom: 6px;
 }
@@ -3069,7 +3069,7 @@ ul{
 	/* background-color:#ff9a00; */
     background-repeat: no-repeat; 
     background-size: cover;
-    background-position: center;
+    background-position: left center;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -3079,7 +3079,7 @@ ul{
 	top:0px;
 	left: 10%;
 	right:20px; */
-	
+	margin: 0px;
 	font-size: 50px;
 	font-weight: 800;
 	width: 100%;
@@ -3089,12 +3089,15 @@ ul{
     background: linear-gradient(#8b8b8a 00%, #f76407 45%,#0f0f0f);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-	
-
-	
-   
+	 
  }
-
+ @media only screen and (max-width: 480px) {
+	.page-baner-section h1 {
+		margin-top: -80px;
+	
+	}
+	
+ }
 .dizme_tm_about .left .image img{
     border-radius: 10px !important;
     width: 100%;

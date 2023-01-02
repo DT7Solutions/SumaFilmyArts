@@ -1,4 +1,77 @@
-{% extends 'uifiles/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_404{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+            background-image: url(/static/img/2.jpg);
+            background-size: cover;
+        }.show-mesage img{
+            height: 250px;
+            width: 250px;
+            margin-top: 35px !important;
+            margin-left: 30px !important;
+
+        }
+        .show-mesage{
+                display:inline-block;
+                position: relative;
+                left: 35%;
+                top: 20%;
+            }
+        .btn{
+            background-color: aquamarine;
+        }
+        .show-mesage h2{
+            margin-top: 0px !important;
+            margin-right: 5px !important;
+            margin-bottom: 20px;
+            font-size: 50px !important;
+        }
+        .show-mesage p{
+            margin-top: -30px !important;
+            margin-right: 5px !important;
+            font-size: 30px !important;
+            padding-top: 10px !important;
+        }
+        .show-mesage .btn{ 
+              margin-left: 100px !important;
+              height: 35px !important;
+              width: 35% !important;
+              border-radius: 20px !important;
+              background: transparent;
+              font-weight: 600;
+        }
+        .show-mesage .btn:hover{ 
+            background-image: linear-gradient(to right, rgb(222, 30, 142),rgb(131, 37, 189),rgb(133, 201, 230));
+            color: whitesmoke;
+            font-weight: 600 !important;
+            border: none;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_404">
+        <div class="show-mesage">
+            <img src="/static/img/logo/Suma filmy arts.png" alt="">
+            <h2>Page Not Found</h2>
+            <p>Sorry For The Inconvenience</p>
+            <button type="button" class="btn"><a href="http://127.0.0.1:8000/">Go To Home</a></button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- {% extends 'uifiles/base.html' %}
 {% load static %}
 {% block content %}
 
@@ -34,10 +107,10 @@
             </div>
         </div>
         <!--back to top--->
-        <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
+        <!-- <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
             <img src="images/top-arrow.png" onmouseover="this.src = 'images/top-arrow2.png'" onmouseout="this.src = 'images/top-arrow.png'" alt="left">
         </a>
-        </div>
+        </div> -->
 
         <!--end--->
-{% endblock %}
+<!-- {% endblock %} --> -->
