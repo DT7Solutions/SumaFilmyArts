@@ -5,7 +5,7 @@ urlpatterns = [
     path('aboutus/', views.about,name='aboutus'),
     path('portfolio/', views.portfolio,name='portfolio'),
     path('news_events/', views.news_events,name='news_events'),
-    path('contact/', views.contact,name='contact'),
+    path('ideas/', views.contact,name='ideas'),
     path('career/', views.career,name='career'),
     #dropdown 
     path('collaboration/', views.collaboration,name='collaboration'),
