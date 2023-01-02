@@ -181,7 +181,7 @@
     position:absolute;
     /* bottom: 143px;
     right:80%; */
-    bottom: 14%;
+    bottom: 18%;
     font-size: 17px;
     background-color: #f76407;
     border-radius: 5px;
@@ -193,11 +193,55 @@
     display: flex;
     flex-wrap: wrap;
 }
-@media screen and (min-width: 0px) and (max-width:576px) {
-    /* .choosefile{
-        right:70%;
+.choosefile-sponosor{
+    position:absolute;
+    
+    bottom: 18%;
+    font-size: 17px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.choosefile-idea{
+    position:absolute;
+    
+    bottom: 22%;
+    font-size: 17px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
 
-    } */
+}
+@media  (max-width:400px) {
+    .choosefile-sponosor{
+        bottom: 22%;
+       
+    }
+   
+    
+}
+@media  (max-width:399px) {
+    .choosefile{
+        bottom: 19%;
+    }
+    
+}
+@media  (min-width:400px) and (max-width:480px) {
+    .choosefile{
+        bottom: 17%;
+    }
 }
 
 input[type=checkbox] {
