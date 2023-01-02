@@ -5,12 +5,13 @@ var swiper = new Swiper(".port_video_slider1", {
         spaceBetween: 30,
         freeMode: true,
         loop:true,
-        
-        autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-        },
+        lazy:true,
+       
+        // autoplay: {
+        // delay: 5000,
+        // disableOnInteraction: false,
+        // pauseOnMouseEnter: true,
+        // },
         breakpoints: {
           // when window width is >= 320px
           320: {
@@ -46,10 +47,11 @@ var swiper = new Swiper(".port_video_slider1", {
 
     // Project carousel
     $(".project-carousel").owlCarousel({
-      
+      lazy:true,
       smartSpeed: 1000,
       margin: 0,
       loop: true,
+      autoplay: false,
       responsive:	true,
       center: true,
       dots: false,
@@ -58,6 +60,7 @@ var swiper = new Swiper(".port_video_slider1", {
           '<i class="bi bi-chevron-left"></i>',
           '<i class="bi bi-chevron-right"></i>'
       ],
+      
       
       responsive: {
     0:{

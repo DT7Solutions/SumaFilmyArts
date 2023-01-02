@@ -30,3 +30,11 @@ class Application(models.Model):
     
     def __str__(self):
                 return self.Name
+
+
+class ImageUploads(models.Model):
+            Name = models.CharField(max_length=100)
+            Image = models.ImageField(upload_to='uploads/')
+            
+            def __str__(self):
+                return self.Name
