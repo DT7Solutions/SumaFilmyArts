@@ -3072,22 +3072,18 @@ ul{
 	align-items: center;
 }
 .page-baner-section h1 {
-    position: relative;
+    /* position: relative;
 	top:0px;
 	left: 10%;
-	right:20px;
-	
+	right:20px; */
 	
 	font-size: 50px;
 	font-weight: 800;
-	
-	/* color: #f76407; */
 	width: 100%;
 	font-family: "roboto", sans-serif;
-	/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 	text-transform: capitalize;
 	color:#000;
-    background: linear-gradient(#8b8b8a 25%, #b3b0b0 25%,#0f0f0f);
+    background: linear-gradient(#8b8b8a 00%, #f76407 45%,#0f0f0f);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 	
