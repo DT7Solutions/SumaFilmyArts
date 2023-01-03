@@ -3,9 +3,11 @@
   padding-top: 80px;
 }
  .mySwiper {
-  height: auto;
+  min-height:auto;
   width: 100%;
 } 
+
+
 
 .section-title {
     position: relative;
