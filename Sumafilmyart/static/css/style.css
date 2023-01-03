@@ -2731,7 +2731,7 @@ input[type=number] {
 	.dizme_tm_process ul li{width: 100%;padding-left: 0px;}
 	.dizme_tm_about .wrapper{flex-direction: column;text-align: center;}
 	.dizme_tm_about .left{padding-right: 0px;width: 100%;margin-bottom: 40px;}
-	.dizme_tm_about .left .image img{max-width: 300px;max-height: 300px;}
+	.dizme_tm_about .left .image img{max-width: 300px;max-height: 700px;}
 	.dizme_tm_about .right{width: 100%;padding: 0px;}
 	.dizme_tm_about .right .title span{font-size: 35px;}
 	.dizme_tm_about .right .title h3{font-size: 35px;max-width: 100%;}
@@ -2828,7 +2828,7 @@ input[type=number] {
 } 
 @media (max-width:480px){
 	.dizme_tm_hero{margin-bottom: 135px;}
-	
+
 }
 .social ul{
 	display: flex;
