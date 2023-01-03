@@ -10,6 +10,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link href="/static/img/logo/sumafilmyarts-logo-icon-60x60.png" rel="icon">
 <title>SumaFilmyArt | Home</title>
 
 <!-- STYLES -->
@@ -24,7 +25,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}" /> 
 <link rel="stylesheet" type="text/css" href="{% static 'css/news_events.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/static-home.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'about/about.css' %}" />
@@ -79,24 +80,24 @@
 			<div class="dropdown">
 				<div class="dropdown_inner">
 					<ul class="anchor_nav">
-						<li class="current"><a class="nav-btn active" href="/">Home</a></li>
-						<li><a class="nav-btn" href="/aboutus/">Aboutus</a></li>
-						<li><a class="nav-btn" href="/portfolio/">Portfolio</a></li>
+						<li class="current"><a class="nav-btn {% if navbar == 'home' %} active {% endif %}" href="/">Home</a></li>
+						<li><a class="nav-btn {% if navbar == 'about' %} active  {% endif %}" href="/aboutus/">Aboutus</a></li>
+						<li><a class="nav-btn {% if navbar == 'portfolio' %} active {% endif %}" href="/portfolio/">Portfolio</a></li>
 						
 						<li class="nav-item dropdown mobial-nav">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Connect us
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="/collaboration/">Collabratations</a></li>
-							  <li><a class="dropdown-item" href="/sponsorship/">Sponcership</a></li>
+							  <li><a class="dropdown-item {% if navbar == 'collaboration' %} active {% endif %}" href="/collaboration/">Collabratations</a></li>
+							  <li><a class="dropdown-item {% if navbar == 'sponsorship' %} active {% endif %}" href="/sponsorship/">Sponcership</a></li>
 							  <!-- <li><a class="dropdown-item" href="/fansinteraction/">Fans Interaction</a></li> -->
-							  <li><a class="dropdown-item" href="/shows_productions/">Enquiries</a></li>
-							  <li><a class="dropdown-item" href="/ideas/">Your Ideas</a></li> 
+							  <li><a class="dropdown-item {% if navbar == 'shows_productions' %} active {% endif %}" href="/shows_productions/">Enquiries</a></li>
+							  <li><a class="dropdown-item {% if navbar == 'contact' %} active {% endif %}" href="/ideas/">Your Ideas</a></li> 
 							</ul>
 						  </li>
-						<li><a class="nav-btn" href="/news_events/">News&Events</a></li>
-						<li><a class="nav-btn"  href="/career/">Careers</a></li>
+						<li><a class="nav-btn {% if navbar == 'news_events' %} active {% endif %}" href="/news_events/">News&Events</a></li>
+						<li><a class="nav-btn {% if navbar == 'career' %} active {% endif %}"  href="/career/">Careers</a></li>
 						<!-- <li><a class="nav-btn" href="/contact/">Contact</a></li>  -->
 						
 					</ul>
@@ -130,18 +131,18 @@
 								</ul>
 							  </li>
 
-							<li><a class="nav-btn {% if navbar == 'news_events' %} active {% endif %}" href="/news_events/">News& Events</a></li>
+							<li><a class="nav-btn {% if navbar == 'news_events' %} active {% endif %}" href="/news_events/">News&Events</a></li>
 							<li><a class="nav-btn {% if navbar == 'career' %} active {% endif %}"  href="/career/">Careers</a></li>
 						</ul>
 					</div>
-					 <div class="menu ">
+					 <!-- <div class="menu ">
 						<ul class='home-social-links'>
 							<li><a href="#"><i class="icon-facebook-1"></i></a></li>
 							<li><a href="#"><i class="icon-instagram-1"></i></a></li>
 							<li><a href="#"><i class="bi bi-linkedin"></i></a></li> 
-							<!-- <li><a href="#"><i class="icon-behance"></i></a></li> -->
+						
 						</ul>
-					</div> 
+					</div>  -->
 				</div>
 			</div>
 		</div>
@@ -187,9 +188,9 @@
 							<h4>Contact Us</h4>
 							<ul>
 								<li><a href="#">twitter</a></li>
-								<li><a href="#">facebook</a></li>
-								<li><a href="#">instagram</a></li>
-								<li><a href="#">info@gmail.com</a></li>
+								<li><a href="https://www.facebook.com/SumaFilmyArts/">facebook</a></li>
+								<li><a href="https://www.instagram.com/sumafilmyarts/?utm_source=ig_embed&hl=en">instagram</a></li>
+								<!-- <li><a href="#">info@gmail.com</a></li> -->
 							</ul>
 						</div>
 						
@@ -215,8 +216,8 @@
 					<div>
 						<div class="menu ">
 							<ul class='home-social-links d-flex justify-content-around'>
-								<li><a href="#"><i class="icon-facebook-1"></i></a></li>
-								<li><a href="#"><i class="icon-instagram-1 px-2"></i></a></li>
+								<li><a href="https://www.facebook.com/SumaFilmyArts/"><i class="icon-facebook-1"></i></a></li>
+								<li><a href="https://www.instagram.com/sumafilmyarts/?utm_source=ig_embed&hl=en"><i class="icon-instagram-1 px-2"></i></a></li>
 								<li><a href="#"><i class="bi bi-linkedin px-2"></i></a></li> 
 							</ul>
 						</div> 
