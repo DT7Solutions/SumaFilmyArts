@@ -334,9 +334,11 @@ text-align: center;
 
    /* button */
 
-.carrer_tm_button{
-	width: auto;
-}
+/* .carrer_tm_button{
+	width: auto!important;
+   
+    
+} */
 .carrer_tm_button{
     padding-top: 15px !important;
 	width: 100%;
