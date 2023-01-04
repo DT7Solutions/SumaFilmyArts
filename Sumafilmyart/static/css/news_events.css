@@ -264,13 +264,14 @@ width: 150px;
 	color: #051922;
   }
   .latest-news-bg {
-	height: 200px;
+	height: 300px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 10px;
 	background-color: #ddd;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
+	border-radius: 10px;
+	/* border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0; */
   }
   .latest-news a.boxed-btn {
 	margin-top: 80px;
@@ -290,10 +291,10 @@ width: 150px;
 
   }
   .news-bg-10{
-	background-image: url('../home/home-img/sumafilmyarts-festivalofjoy-330x200.png');
+	background-image: url('../img/home/sumafilmyarts-homepage-top-banner-stressbusters1920x1080.png');
   }
   .news-bg-11{
-	background-image: url('../home/home-img/sumafilmyarts-festivalofjoyevents-330x200.png');
+	background-image: url('../About/about-imgs/sumafilmyart-main-image1900x1050.png');
   }
   .news-bg-12{
 	background-image: url('../home/home-img/sumafilmyarts-festivalofjoyevents3-330x200.png');
