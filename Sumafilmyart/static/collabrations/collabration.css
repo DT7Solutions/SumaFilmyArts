@@ -350,17 +350,17 @@ input[type=checkbox] {
 }
 
 .sponcership .card{
-    max-width: 50rem;
+    max-width: 40rem;
 }
 
 @media screen and (min-width:679px) and (max-width:1040px) {
     .sponcership .card{
-       margin-left: 100px;
+       margin-left: 140px;
     }
 }
 @media screen and (min-width:679px) and (max-width:768px) {
     .sponcership .card{
-       margin-left: 10px;
+       margin-left: 40px;
     }
 }
 
