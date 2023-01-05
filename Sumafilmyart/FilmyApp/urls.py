@@ -6,12 +6,12 @@ urlpatterns = [
     path('portfolio/', views.portfolio,name='portfolio'),
     path('news_events/', views.news_events,name='news_events'),
     path('ideas/', views.contact,name='ideas'),
-    path('career/', views.career,name='career'),
+    path('careers/', views.career,name='careers'),
     #dropdown 
-    path('collaboration/', views.collaboration,name='collaboration'),
+    path('collaborations/', views.collaboration,name='collaborations'),
     path('fansinteraction/', views.fansinteraction,name='fansinteraction'),
     path('sponsorship/', views.sponsorship,name='sponsorship'),  
-    path('shows_productions/', views.shows_productions, name='shows_productions'),
+    path('enquiries/', views.shows_productions, name='enquiries'),
     
     #carrer pages 
     path('assistent_director/', views.assistent_director, name='assistent_director') ,   

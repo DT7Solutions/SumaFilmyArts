@@ -1,9 +1,9 @@
-let upload_btn = document.querySelector('.choosefile-COL');
+let upload_btn = document.querySelector('.choosefile');
 
 function yesnoCheck(checkbox) {
     if(checkbox.checked == true){
         document.getElementById("ifYes").style.display = "block";
-        upload_btn.style.bottom ="15%";
+    
        
         // document.getElementById("submit").removeAttribute("disabled");
     }else{
