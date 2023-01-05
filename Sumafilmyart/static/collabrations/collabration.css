@@ -349,7 +349,7 @@ input[type=checkbox] {
 
 @media screen and (min-width:679px) and (max-width:1040px) {
     .collaboration-card .card{
-       margin-left: 155px;
+       margin-left: 145px;
     }
 }
 @media screen and (min-width:679px) and (max-width:768px) {
@@ -396,3 +396,37 @@ input[type=checkbox] {
        margin-left: 40px;
     }
 }
+/* .message{
+    position: relative;
+} */
+
+.choosefile-collab{
+    position:absolute;
+    bottom: 16.1%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ @media screen and (min-width:820px) and (max-width:820px) {
+    .collaboration-card .card{
+        margin-left: 55px;
+     }
+    .sponcership .card{
+        margin-left: 50px;
+     }
+    .enquiries .card{
+        margin-left: 50px;
+     }
+    .idea-form .card{
+        margin-left: 50px;
+     }
+} 
