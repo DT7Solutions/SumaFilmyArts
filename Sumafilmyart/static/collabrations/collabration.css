@@ -272,12 +272,12 @@
         padding-top: 14px;
     }
 }
-/* @media(min-width:320px) {
+@media(max-width:320px) {
     .choosefile {
         position:absolute;
-        right:50%;
+        right:60%;
         bottom: 16.5%;
-        font-size: 14px;
+        font-size: 12px;
         padding-left: 15px;
         padding-right: 15px;
         margin-top: -15px;
@@ -285,7 +285,16 @@
     }
    
     
-} */
+} 
+@media(max-width:412px) {
+    .choosefile {
+        position:absolute;
+        right:70%;
+        margin-top: 8px;
+        
+   
+    }   
+} 
 
 @media screen and (min-width:400px) and (max-width:480px) {
     .choosefile{
