@@ -893,9 +893,9 @@ h6 { font-size: 16px; }
 	max-width: 90%;
 	line-height: 1.25;
 }
-.dizme_tm_about .right .text{
+/* .dizme_tm_about .right .text{
 	margin-bottom: 47px;
-}
+} */
 .dizme_tm_about .brush_1{
 	position: absolute;
 	top: 20px;
@@ -3047,6 +3047,30 @@ ul{
 	width: 100% !important;
 }
 
+@media(max-width: 1040px) {
+	.dizme_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+		color: rgb(168, 30, 30);
+	}
+	.dizme_tm_mobile_menu .dropdown .dropdown_inner ul li{
+		padding-left: 30px;
+		width: 55%;
+	
+	}
+	.dropdown-menu{
+		border: none;
+		background-color: #f7d3aa;	
+		color: white !important;
+		width: 50% ;
+	}
+	.dropdown-item.active, .dropdown-item:active {
+		color: rgb(39, 37, 37) !important;
+		text-decoration: none;
+		width: 100%;
+		background-color:transparent !important;
+	}
+	
+}
+
 /* .navbarDropdown{
 	display: none !important;
 }
@@ -3271,9 +3295,9 @@ ul{
 	
 	}  
 	.dropdown-item.active, .dropdown-item:active {
-		color: #fff !important;
+		color: #fff;
 		text-decoration: none;
-		background-color:#e06b0b!important;
+		background-color:#efa96f;
 	}
 	#enqiury{
 		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../collabrations/collabration-img/Sumafilmyarts-enquires-1920x1080.jpg) no-repeat center right;

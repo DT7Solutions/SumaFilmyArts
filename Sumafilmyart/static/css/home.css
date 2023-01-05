@@ -350,3 +350,62 @@ a.nav-btn.active:hover {
 
 }
 
+
+
+
+
+
+/* new css for new home page sectionm  */
+
+.home-section-img img{
+	border-radius: 10px;
+}
+
+.home-section-content p{
+	font-size:18px;
+	text-align: justify;
+	padding-top: calc(15%);
+}
+
+@media(max-width: 575px){
+.column-one{
+order: 2;
+}
+.column-two{
+order: 1;
+}
+
+}
+@media(max-width: 480px){
+    .home-content-1{
+		margin-top: -400px;	
+	}
+	.brief-image img{
+		margin-top: 20px;
+	}
+	
+}
+
+@media (min-width: 481px ) and ( max-width: 767px) {
+	
+		.home-content-1{
+			order: 1;
+			margin-top: -25px;
+		}
+		.home-left-img{
+			order: 2;
+			padding-top: 10px;
+		}
+		
+}
+ @media (min-width: 993px ) and ( max-width: 1040px) {
+	.home-content-1{
+		order: 1;
+		margin-top: -25px;
+	}
+	.home-left-img{
+		order: 2;
+		padding-top: 10px;
+	}
+		
+} 
