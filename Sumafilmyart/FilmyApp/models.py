@@ -1,17 +1,20 @@
+from datetime import datetime
 from email.headerregistry import Address
 from django.db import models
 from .app import ContentTypeRestrictedFileField
 # from app.extra import ContentTypeRestrictedFileField
 # Create your models here.
 class ContactData(models.Model):
-            Name = models.CharField(max_length=100)
+            FirstName = models.CharField(max_length=100)
+            LastName = models.CharField(max_length=100)
             Email = models.EmailField(max_length=254)
             Phone = models.CharField(max_length=10)
             Subject = models.CharField(max_length=100)
             Message = models.CharField(max_length=500)
+            Date = models.DateTimeField(default=datetime.now())
 
             def __str__(self):
-                return self.Name
+                return self.FirstName
 
 class Application(models.Model):
     Name = models.CharField(max_length=50)
@@ -38,3 +41,15 @@ class ImageUploads(models.Model):
             
             def __str__(self):
                 return self.Name
+
+
+# class ContactForm(models.Model):
+#             FirstName = models.CharField(max_length=100)
+#             LastName = models.CharField(max_length=100)
+#             Email = models.EmailField(max_length=254)
+#             Phone = models.CharField(max_length=10)
+#             Subject = models.CharField(max_length=100)
+#             Message = models.CharField(max_length=500)
+
+#             def __str__(self):
+#                 return self.FirstName

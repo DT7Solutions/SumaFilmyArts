@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import ContactData, Application,ImageUploads
 # Register your models here.
 class  AdminContactData(admin.ModelAdmin):
-    list_display=('Name','Email' ,'Phone','Subject','Message')
+    list_display=('FirstName','LastName','Email' ,'Phone','Subject','Message','Date')
 
 #for application form 
 class AdminApplication(admin.ModelAdmin):

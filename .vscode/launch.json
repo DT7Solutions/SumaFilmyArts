@@ -1,15 +1,17 @@
 {
     "configurations": [
+   
         {
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}\\sumafilmyart\\manage.py",
+            "program": "${workspaceFolder}\\Sumafilmyart\\manage.py",
             "args": [
                 "runserver"
             ],
             "django": true,
             "justMyCode": true
-        }
+        },
+        
     ]
 }

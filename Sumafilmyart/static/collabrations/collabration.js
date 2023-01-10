@@ -43,3 +43,35 @@ $("#inputState").change(function(){
   $("#inputDistrict").html(htmlString);
 
 });
+
+
+
+// enquiries form 
+
+$(document).on('submit', '#enquiresform', function(event){
+  event.preventDefault();
+  $('.returnmessage').html(" ")
+  $.ajax({
+      type:'POST',
+      url:'/enquiries/',
+      cache:false,
+      enctype:'multipart/form-ata',
+      data:{
+          firstname:$('#firstname').val(),
+          lastname:$('#lastname').val(),
+          email:$('#email').val(),
+          phone:$('#phone').val(),
+          subject:$('#subject').val(),
+          message:$('#message').val(),
+          csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+      },  
+         
+      success:function(data){
+          // $('#enquiresform')[0].reset();
+          $('.returnmessage').append("Your message has been received, We will contact you soon.")
+      },
+      error:function(data){
+          $('.returnmessage').append("Your message has been faild, please try agian.")
+      }
+  })
+})
