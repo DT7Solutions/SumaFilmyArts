@@ -43,13 +43,52 @@ class ImageUploads(models.Model):
                 return self.Name
 
 
-# class ContactForm(models.Model):
-#             FirstName = models.CharField(max_length=100)
-#             LastName = models.CharField(max_length=100)
-#             Email = models.EmailField(max_length=254)
-#             Phone = models.CharField(max_length=10)
-#             Subject = models.CharField(max_length=100)
-#             Message = models.CharField(max_length=500)
+class Ideas(models.Model):
+            Name = models.CharField(max_length=100)
+            Email = models.EmailField(max_length=254)
+            Phone = models.CharField(max_length=10)
+            Subject = models.CharField(max_length=400)
+            file = ContentTypeRestrictedFileField(
+                upload_to='pdf',
+                content_types=['application/pdf', 'application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+                max_upload_size=2621440
+            ) 
+            Date = models.DateTimeField(default=datetime.now())
+            def __str__(self):
+                return self.Name
 
-#             def __str__(self):
-#                 return self.FirstName
+
+class Collaboration(models.Model):
+            FirstName = models.CharField(max_length=100)
+            LastName = models.CharField(max_length=100)
+            Email = models.EmailField(max_length=50)
+            Phone = models.CharField(max_length=10)
+            Brand_Agency = models.CharField(max_length=100)
+            Industry = models.CharField(max_length=100)
+            Collaboration_Type = models.CharField(max_length=25)
+            file = ContentTypeRestrictedFileField(
+                upload_to='pdf',
+                content_types=['application/pdf', 'application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+                max_upload_size=2621440
+            ) 
+            Date = models.DateTimeField(default=datetime.now())
+            def __str__(self):
+                return self.FirstName
+
+class Sponsorship(models.Model):
+            FirstName = models.CharField(max_length=100)
+            LastName = models.CharField(max_length=100)
+            Email = models.EmailField(max_length=50)
+            Phone = models.CharField(max_length=10)
+            Brand_Agency = models.CharField(max_length=35)
+            Industry = models.CharField(max_length=30)
+            Kind_Sponcer = models.CharField(max_length=30)
+            Sponcer_Type = models.CharField(max_length=30)
+            file = ContentTypeRestrictedFileField(
+                upload_to='pdf',
+                content_types=['application/pdf', 'application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+                max_upload_size=2621440
+            ) 
+            Date = models.DateTimeField(default=datetime.now())
+            def __str__(self):
+                return self.FirstName

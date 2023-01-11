@@ -1,6 +1,6 @@
 from email.headerregistry import Address
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData, Application
+from FilmyApp.models import ContactData, Application,Ideas,Sponsorship
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
@@ -22,7 +22,20 @@ def collaboration(request):
     return render (request,"uifiles/collaboration.html",{'navbar':'collaboration'})
 def fansinteraction(request):
     return render (request,"uifiles/fansinteraction.html",{'navbar':'collaboration'})
+
 def sponsorship(request):
+    if request.method == "POST":
+        firstname = request.POST.get('firstname',"")
+        lastname = request.POST.get('lastname',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        brand_agency = request.POST.get('brand',"")
+        industry = request.POST.get('industry',"")
+        sponcer_kind = request.POST.get('inputState',"")
+        sponcer_type = request.POST.get('inputDistrict',"")
+        up_file = request.FILES['file']
+        oApplication = Sponsorship(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Brand_Agency=brand_agency ,Industry=industry ,Kind_Sponcer=sponcer_kind,file=up_file ,Sponcer_Type=sponcer_type)
+        oApplication.save()
     return render (request,"uifiles/sponsorship.html",{'navbar':'sponsorship'})
 
 def shows_productions(request):
@@ -67,6 +80,39 @@ def show_page_1(request):
 def page_not_found_view(request, exception):
     return render(request, 'uifiles/404.html', status=404)
 
+#contact form submision  or your ideas form #
+
+# from django.views.decorators.csrf import csrf_exempt
+# @csrf_exempt
+def contact(request):
+    if request.method == "POST":
+        name = request.POST.get('fname',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        subject = request.POST.get('subject',"")
+        up_file = request.FILES['file']
+        print('its working')
+        oContactinfo = Ideas(Name=name,Email=email,Phone=phone,Subject=subject,file = up_file)
+        oContactinfo.save()
+
+        sucess =f'hi {name} Your message has been received, We will contact you soon'
+        
+        # message ='''
+        # Subject:{}
+        # Message:{}
+        # From:{}
+        # '''.format(subject,message,email)
+        # try:
+        #     send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['badugudinesh94@gmail.com']) 
+        #     messages.success(request,sucess)
+        # except:
+        #     messages.error(request,'Your message has been failed, Please Try Agian')
+        #return redirect("/")
+    return render (request,"uifiles/contact.html",{'navbar':'contact'})
+    
+
+
+
 
 def Apply_job(request):
     if request.method == "POST":
@@ -99,41 +145,26 @@ def Apply_job(request):
     return render (request, "uifiles/carrerpages/applyform.html")
 
 
-#contact form submision  #
 
-def contact(request):
-    if request.method == "POST":
-        name = request.POST.get('name',"")
-        email = request.POST.get('email',"")
-        phone = request.POST.get('phone',"")
-        subject = request.POST.get('subject',"")
-        message = request.POST.get('message',"")
-        
-        oContactinfo = ContactData(Name=name,Email=email,Phone=phone,Subject=subject,Message=message)
-        oContactinfo.save()
-        sucess =f'hi {name} Your message has been received, We will contact you soon'
-        
-        message ='''
-        Subject:{}
-        Message:{}
-        From:{}
-        '''.format(subject,message,email)
-        try:
-            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['badugudinesh94@gmail.com']) 
-            messages.success(request,sucess)
-        except:
-            messages.error(request,'Your message has been failed, Please Try Agian')
-        #return redirect("/")
-    return render (request,"uifiles/contact.html",{'navbar':'contact'})
-    
-def sending_email(subject, message, email,file):
-    email = EmailMessage(
-    'Hello',
-    'Body goes here',
-    'from@example.com',
-    ['to1@example.com', 'to2@example.com'],
-    ['bcc@example.com'],
-    reply_to=['another@example.com'],
-    headers={'Message-ID': 'foo'},
-)
-    return ""
+
+
+
+
+
+
+
+
+
+
+
+# def sending_email(subject, message, email,file):
+#     email = EmailMessage(
+#     'Hello',
+#     'Body goes here',
+#     'from@example.com',
+#     ['to1@example.com', 'to2@example.com'],
+#     ['bcc@example.com'],
+#     reply_to=['another@example.com'],
+#     headers={'Message-ID': 'foo'},
+# )
+#     return ""

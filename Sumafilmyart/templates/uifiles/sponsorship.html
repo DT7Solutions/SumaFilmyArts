@@ -17,15 +17,16 @@
             <div class="contact_inner d-flex justify-content-center aligen-items-center sponcership">
                
                 <div class="card collabration-card pt-5">
+                    <p class="returnmessage" style="text-align: center;"></p>
                     <div class="card-body enq-body-card ">
-                        <!-- <h5 class=" mb-3 text-center" style="color: coral; font-size:30px">Apply Here</h5> -->
                         <div>
-                        <form method="post" class="row g-3 applyform " enctype="multipart/form-data"  autocomplete="off">
+                        <form method="post" class="row g-3 applyform"  id="sponsorshipform" enctype="multipart/form-data"  autocomplete="off">
+                            {% csrf_token %}
                            <div class="col-md-6 col-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
+                            <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
                         </div>
                         <div class="col-md-6 col-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Last Name" required>
+                            <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
                         </div>
                             <div class="col-md-12 col-12">
                                 <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
@@ -36,25 +37,24 @@
                             </div>
     
                             <div class="col-md-12 col-12">
-                                <input type="text" name="Brand" class="form-control" id="Brand" placeholder="Name of Brand/Agency " required>
+                                <input type="text" name="brand" class="form-control" id="brand" placeholder="Name of Brand/Agency " required>
                             </div>
                             <div class="col-md-12 col-12">
-                                <input type="text" name="Industry" class="form-control" id="Industry" placeholder="Industry" required>
+                                <input type="text" name="industry" class="form-control" id="industry" placeholder="Industry" required>
                             </div>
                         
                             <div class="question ml-sm-5 pl-sm-5 pt-2">
                                 <div class="form-group col-md-8">
                                     <label for="inputState">What are you looking for</label>
-                                    <select class="form-control" id="inputState">
-                                                        <option value="SelectState">-- select -- </option>
-                                                        <option value="Andra Pradesh">Want to Sponsor </option>
-                                                        <option value="Arunachal Pradesh">Want a Brand Ambassador</option>
-                                                        
+                                    <select class="form-control" id="inputState" name="inputState">
+                                        <option value="SelectState">-- select -- </option>
+                                        <option value="sponcer">Want to Sponsor </option>
+                                        <option value="BrandAmbassador">Want a Brand Ambassador</option>        
                                     </select>
                                   </div>
                                   <div class="form-group col-md-4 pt-3">
                                     <label for="inputDistrict">Kind of sponsorship</label>
-                                    <select class="form-control" id="inputDistrict">
+                                    <select class="form-control" id="inputDistrict" name="inputDistrict">
                                         <option value="">-- select -- </option>
                                     </select>
                                   </div>
@@ -69,14 +69,15 @@
                             
                             <div id="hide" class="col-lg-8 col-xs-8">
                                 <label class="d-block custom-file-button">
-                                    <input required name="upload file" type="file" class="form-control" placeholder="Upload Resume"  accept="application/msword,application/msword,application/pdf" style="padding-left: 0px!important;border: none;"/>
+                                    <input  name="file" id="file" type="file" class="form-control" required placeholder="Upload Resume"  
+                                    accept="application/msword,application/msword,application/pdf" style="padding-left: 0px!important;border: none;"/>
                                     <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
                                     <span class="choosefile-sponosor" >Upload a File</span>
                                 </label>
                             </div>
                            
                             <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
-                                <button type="submit" href="#" class="btn btn-primary form-sub-btn">Send</button>
+                                <button type="submit" href="#" class="btn btn-primary form-sub-btn submit">Send</button>
                             </div>
                         </form>
                     </div>
