@@ -14,12 +14,13 @@
 
             <div class="contact_inner collaboration-card d-flex justify-content-center aligen-items-center colab">
                 <div class="card collabration-card pt-4">
+                    <p class="returnmessage" style="text-align: center;"></p>
                     <div class="card-body enq-body-card ">
                         <div>
                            <h6 class="mb-3 text-center" style="flex-wrap: wrap;"> Schedule A Call : Our team will contact you within 24 hours to 48 hours.</h6>
             
                     
-                            <form method="post" class="row g-3 collaborationform " enctype="multipart/form-data" autocomplete="off">
+                            <form method="post" class="row g-3 collaborationform" id="collaborationform" enctype="multipart/form-data" autocomplete="off">
                                 {% csrf_token %}
                                 <div class="col-md-6 col-6">
                                     <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
@@ -43,7 +44,7 @@
 
                                 <div class="col-md-12 col-12 pt-3">
                                     <label class="d-block custom-file-button">
-                                        <input required name="upload file" id="formfile" type="file" class="form-control"
+                                        <input required name="file" id="file" type="file" class="form-control"
                                             placeholder="Upload Resume" accept="application/msword,application/msword,application/pdf"
                                             style="border:none; padding-top: 4px!important; padding-left: 0px; font-size:small;  visibility: viss;" />
                                         <span class=" text-danger pt-3" style="font-size: smaller;">please upload .pdf and .doc,.docx and
@@ -78,7 +79,7 @@
                                     </div>
 
                                     <div class="col-12 mt-4 " id="ifYes1">
-                                        <input type="text" name="message" class="form-control" id="ifYes"
+                                        <input type="text" name="ifYes" class="form-control" id="ifYes"
                                             placeholder="write detail what are looking for" required>
                                     </div>
                                 </div>
@@ -104,7 +105,7 @@
                                 <!-- </div> -->
                             
                                 <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
-                                    <button type="submit" href="#" class="btn btn-primary form-sub-btn">Send</button>
+                                    <button type="button" id="collaboration-submit" href="#" class="btn btn-primary form-sub-btn">Send</button>
                                 </div>
                             </form>
 
