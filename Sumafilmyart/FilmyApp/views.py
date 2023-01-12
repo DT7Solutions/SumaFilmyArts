@@ -1,6 +1,6 @@
 from email.headerregistry import Address
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData, Application,Ideas,Sponsorship
+from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
@@ -18,10 +18,25 @@ def news_events(request):
 
 def career(request):
     return render (request,"uifiles/career.html",{'navbar':'career'})
-def collaboration(request):
-    return render (request,"uifiles/collaboration.html",{'navbar':'collaboration'})
+
 def fansinteraction(request):
     return render (request,"uifiles/fansinteraction.html",{'navbar':'collaboration'})
+
+def collaboration(request):
+    if request.method == "POST":
+        firstname = request.POST.get('firstname',"")
+        lastname = request.POST.get('lastname',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        brand_agency = request.POST.get('brand',"")
+        industry = request.POST.get('industry',"")
+        collaboration_Type = request.POST.get('Collaboration_Type',"")
+        up_file = request.FILES['file']
+        oApplication = Collaboration(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Brand_Agency=brand_agency ,Industry=industry ,file=up_file ,Collaboration_Type=collaboration_Type)
+        oApplication.save()
+    return render (request,"uifiles/collaboration.html",{'navbar':'collaboration'})
+
+
 
 def sponsorship(request):
     if request.method == "POST":
@@ -31,15 +46,15 @@ def sponsorship(request):
         phone = request.POST.get('phone',"")
         brand_agency = request.POST.get('brand',"")
         industry = request.POST.get('industry',"")
-        sponcer_kind = request.POST.get('inputState',"")
-        sponcer_type = request.POST.get('inputDistrict',"")
+        sponcer_kind = request.POST.get('Kind_Sponcer',"")
+        sponcer_type = request.POST.get('Sponcer_Type',"")
         up_file = request.FILES['file']
         oApplication = Sponsorship(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Brand_Agency=brand_agency ,Industry=industry ,Kind_Sponcer=sponcer_kind,file=up_file ,Sponcer_Type=sponcer_type)
         oApplication.save()
     return render (request,"uifiles/sponsorship.html",{'navbar':'sponsorship'})
-
+ 
+#enquiries
 def shows_productions(request):
-    #enquiries
     if request.method == "POST":
         firstname = request.POST.get('firstname',"")
         lastname =  request.POST.get('lastname',"")

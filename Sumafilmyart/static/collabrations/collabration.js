@@ -53,9 +53,9 @@ $(document).on('submit', '#enquiresform', function(event){
       type:'POST',
       url:'/enquiries/',
       cache:false,
-      enctype:'multipart/form-ata',
+      enctype:'multipart/form-data',
       data:{
-        firstname:$('#firstname').val(),
+          firstname:$('#firstname').val(),
           lastname:$('#lastname').val(),
           email:$('#email').val(),
           phone:$('#phone').val(),
@@ -65,7 +65,7 @@ $(document).on('submit', '#enquiresform', function(event){
       },  
          
       success:function(data){
-          // $('#enquiresform')[0].reset();
+          $('#enquiresform')[0].reset();
           $('.returnmessage').append("Your message has been received, We will contact you soon.")
       },
       error:function(data){
@@ -118,123 +118,119 @@ $(document).ready(function(){
 })
 
 
-// $(document).on('submit', '#ideaform', function(event){
-//   event.preventDefault();
-//   $('.returnmessage').html(" ")
-//   $.ajax({
-//       type:'POST',
-//       url:'/ideas/',
-//       cache: false,
-//       processData: false,
-//       contentType: false,
-//       enctype:'multipart/form-data',
-    
-//       data:{
-//           name:$('#name').val(),
-//           email:$('#email').val(),
-//           phone:$('#phone').val(),
-//           subject:$('#subject').val(),
-//           file:$('#file')[0].files[0],
-//           csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
-//       },  
-         
-//       success:function(data){
-//           $('#enquiresform')[0].reset();
-//           $('.returnmessage').append("Your message has been received, We will contact you soon.")
-//       },
-//       error:function(data){
-//           $('.returnmessage').append("Your message has been faild, please try agian.")
-//       }
-//   })
-// })
 
+
+// sponcership form 
+$(document).ready(function(){
+    $('#sponcerid').click(function(){
+        let firstname = $('#firstname').val()
+        let lastname = $('#lastname').val()
+        let email = $('#email').val()
+        let phone = $('#phone').val()
+        let brand = $('#brand').val()
+        let industry = $('#industry').val()
+        let Kind_Sponcer = $('#inputState').val()
+        let Sponcer_Type = $('#inputDistrict').val()
+        let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]').val()
+    
+     
+     let data = new FormData();
+     data.append("firstname", firstname);
+     data.append("lastname", lastname);
+     data.append("email",email);
+     data.append("phone",phone);
+     data.append("brand",brand);
+     data.append("industry",industry);
+     data.append("Kind_Sponcer",Kind_Sponcer);
+     data.append("Sponcer_Type",Sponcer_Type);
+     data.append("file",$("input[id^='file']")[0].files[0]);
+     data.append('csrfmiddlewaretoken',csrfmiddlewaretoken)
+     
+   
+   
+     $.ajax({
+           url:"/sponsorship/",
+           method: 'Post',
+           processData:false,
+           contentType:false,
+           cache:false,
+           mimeType:"multipart/form-data",
+           data:data,
+           
+           success:function(data){
+               $('#sponsorshipform')[0].reset();
+               $('.returnmessage').append("Your message has been received, We will contact you soon.")
+           },
+           error:function(data){
+               $('.returnmessage').append("Your message has been faild, please try agian.")
+           }
+       })
+   
+    })
+   
+   })
+   
 
 
 
 // collaboration form 
+$(document).ready(function(){
+    $('#collaboration-submit').click(function(){
+        let firstname = $('#firstname').val()
+        let lastname = $('#lastname').val()
+        let email = $('#email').val()
+        let phone = $('#phone').val()
+        let brand = $('#brand').val()
+        let industry = $('#industry').val()
+        let Collaboration_Type = $('input[name="check"]:checked').val();
+        let colbtype = ''
+        if (Collaboration_Type == 'Other'){
+            colbtype = $('#ifYes').val()
+        }
+        else{
+            colbtype = $('input[name="check"]:checked').val();
+        }
+        // let Sponcer_Type = $('#inputDistrict').val()
+        let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]').val()
+      
+     
+     let data = new FormData();
+     data.append("firstname", firstname);
+     data.append("lastname", lastname);
+     data.append("email",email);
+     data.append("phone",phone);
+     data.append("brand",brand);
+     data.append("industry",industry);
+     data.append("Collaboration_Type",colbtype);
+    //  data.append("Sponcer_Type",Sponcer_Type);
+     data.append("file",$("input[id^='file']")[0].files[0]);
+     data.append('csrfmiddlewaretoken',csrfmiddlewaretoken)
+     
+   
+   
+     $.ajax({
+           url:"/collaborations/",
+           method: 'Post',
+           processData:false,
+           contentType:false,
+           cache:false,
+           mimeType:"multipart/form-data",
+           data:data,
+           
+           success:function(data){
+               $('#collaborationform')[0].reset();
+               $('.returnmessage').append("Your message has been received, We will contact you soon.")
+           },
+           error:function(data){
+               $('.returnmessage').append("Your message has been faild, please try agian.")
+           }
+       })
+   
+    })
+   
+   })
+   
 
-$(document).on('submit', '#collaborationform', function(event){
-  event.preventDefault();
-  $('.returnmessage').html(" ")
-  // type0f_collaborations = $("input:checkbox[name=check]:checked").each(myfunction ().val()); 
+ 
   
-    // alert("Id: " + $(this).attr("id") + " Value: " + $(this).val());
-
-  $.ajax({
-      type:'POST',
-      url:'/collaborations/',
-      cache:false,
-      enctype:'multipart/form-ata',
-      data:{
-          firstname:$('#firstname').val(),
-          lastname:$('#lastname').val(),
-          email:$('#email').val(),
-          phone:$('#phone').val(),
-          brand:$('#brand').val(),
-          industry:$('#industry').val(),
-          collaboration_type:$("input:checkbox[name=check]:checked").each(myfunction ().val()),
   
-          
-
-
-
-
-          file:$('#file')[0].files[0],
-          csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
-      },  
-         
-      success:function(data){
-          // $('#enquiresform')[0].reset();
-          $('.returnmessage').append("Your message has been received, We will contact you soon.")
-      },
-      error:function(data){
-          $('.returnmessage').append("Your message has been faild, please try agian.")
-      }
-  })
-})
-
-
-
-
-
-// sponcership form 
-
-$(document).on('submit', '#sponsorshipform', function(event){
-  event.preventDefault();
-  $('.returnmessage').html(" ")
-
-  $.ajax({
-      type:'POST',
-      url:'/collaborations/',
-      cache:false,
-      enctype:'multipart/form-ata',
-      data:{
-          firstname:$('#firstname').val(),
-          lastname:$('#lastname').val(),
-          email:$('#email').val(),
-          phone:$('#phone').val(),
-          brand:$('#brand').val(),
-          industry:$('#industry').val(),
-          Kind_Sponcer:$('#inputState').val(),
-          Sponcer_Type:$('#inputDistrict').val(),
-          
-          collaboration_type:$("input:checkbox[name=check]:checked").each(myfunction ().val()),
-  
-          
-
-
-
-
-          file:$('#file')[0].files[0],
-          csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
-      },  
-         
-      success:function(data){
-          // $('#enquiresform')[0].reset();
-          $('.returnmessage').append("Your message has been received, We will contact you soon.")
-      },
-      error:function(data){
-          $('.returnmessage').append("Your message has been faild, please try agian.")
-      }
-  })
-})
