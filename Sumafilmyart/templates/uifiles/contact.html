@@ -36,12 +36,17 @@
                                 <input type="text" name="subject" class="form-control" id="subject"
                                     placeholder="Title of Your Concept" required>
                             </div>
-                            <div class="col-12">
-                                <input type="file" name="file" id="file"  class="form-control" 
-                                    placeholder="upload file" required style="border:none;padding-left:0px!important">
-                                    <span class="choosefile-idea" >Upload a File</span>
+                            <div id="hide" class="col-lg-8 col-xs-8">
+                                <div class="col-12 pt-2">
+                                    <label for="file" class="custom-file-upload" id="choose-file-label">
+                                        Upload file
+                                     </label>
+                                     <input name="file" type="file" id="file" 
+                                        accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
+                                </div>
+                                <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
                             </div>
-                            
+                        
                            
                             <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
                                 <button type="button" href="#" class="btn btn-primary form-sub-btn submit">Send</button>

@@ -42,19 +42,10 @@
                                     <input type="text" name="industry" class="form-control" id="industry" placeholder="Industry" required>
                                 </div>
 
-                                <div class="col-md-12 col-12 pt-3">
-                                    <label class="d-block custom-file-button">
-                                        <input required name="file" id="file" type="file" class="form-control"
-                                            placeholder="Upload Resume" accept="application/msword,application/msword,application/pdf"
-                                            style="border:none; padding-top: 4px!important; padding-left: 0px; font-size:small;  visibility: viss;" />
-                                        <span class=" text-danger pt-3" style="font-size: smaller;">please upload .pdf and .doc,.docx and
-                                            size must be 2.5 mb</span>
-                                        <span class="choosefile-collab">Upload a File</span>
-                                    </label>
-                                </div>
+                               
 
-                                <div class="question ml-sm-5 pl-sm-5 pt-2">
-                                    <div class="py-2 h5  ch-box" ><b>Kind of collaboration?</b></div>
+                                <div class="question ">
+                                    <div class=" h5  ch-box" ><b>Kind of collaboration?</b></div>
                                 
                                     <div>
                                        
@@ -84,25 +75,17 @@
                                     </div>
                                 </div>
 
-
-                               
-                            
-                                <!-- <div id="hide" class="col-lg-8 col-xs-8 ">
-                                    <input type="file" name="message" class="form-control" id="message"
-                                    placeholder="upload file" accept="application/msword,application/msword,application/pdf" required style="border:none;padding-left:0px!important; visibility: hidden;">
-                                    <span class="choosefile-collab">Upload a File</span> -->
-
-                                    <!-- <span class="fileupload-req text-danger pt-3">please upload .pdf and .doc,.docx and size must be 2.5 mb</span> -->
+                                <div class="col-md-12 col-12">
+                                    <div class="col-12 pt-2">
+                                        <label for="file" class="custom-file-upload" id="choose-file-label">
+                                            Upload file
+                                         </label>
+                                         <input name="file" type="file" id="file" 
+                                            accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
+                                    </div>
+                                    <span class="fileupload-req text-danger" style="font-size: small;" >please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                                </div>
                                     
-                                    <!-- <label class="d-block custom-file-button">
-                                        <input required name="upload file" id="formfile" type="file" class="form-control"
-                                            placeholder="Upload Resume" accept="application/msword,application/msword,application/pdf"
-                                            style="border:none; padding-top: 4px!important; padding-left: 0px; font-size:small;  visibility: hidden;" />
-                                        <span class="fileupload-req text-danger pt-3">please upload .pdf and .doc,.docx and
-                                            size must be 2.5 mb</span>
-                                        <span class="choosefile">Upload a File</span>
-                                    </label> -->
-                                <!-- </div> -->
                             
                                 <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
                                     <button type="button" id="collaboration-submit" href="#" class="btn btn-primary form-sub-btn">Send</button>

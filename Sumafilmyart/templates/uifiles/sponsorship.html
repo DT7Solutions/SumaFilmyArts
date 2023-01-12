@@ -43,16 +43,16 @@
                                 <input type="text" name="industry" class="form-control" id="industry" placeholder="Industry" required>
                             </div>
                         
-                            <div class="question ml-sm-5 pl-sm-5 pt-2">
+                            <div class="question">
                                 <div class="form-group col-md-8">
-                                    <label for="">What are you looking for</label>
+                                    <label for="inputState">What are you looking for</label>
                                     <select class="form-control" id="inputState" name="inputState">
                                         <option value="SelectState">-- select -- </option>
                                         <option value="sponcer">Want to Sponsor </option>
                                         <option value="BrandAmbassador">Want a Brand Ambassador</option>        
                                     </select>
                                   </div>
-                                  <div class="form-group col-md-4 pt-3">
+                                  <div class="form-group col-md-8">
                                     <label for="inputDistrict">Kind of sponsorship</label>
                                     <select class="form-control" id="inputDistrict" name="inputDistrict">
                                         <option value="">-- select -- </option>
@@ -68,12 +68,20 @@
                             </div> -->
                             
                             <div id="hide" class="col-lg-8 col-xs-8">
-                                <label class="d-block custom-file-button">
+                                <div class="col-12 pt-2">
+                                    <label for="file" class="custom-file-upload" id="choose-file-label">
+                                        Upload file
+                                     </label>
+                                     <input name="file" type="file" id="file" 
+                                        accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
+                                </div>
+                                <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                                <!-- <label class="d-block custom-file-button">
                                     <input  name="file" id="file" type="file" class="form-control" required placeholder="Upload Resume"  
                                     accept="application/msword,application/msword,application/pdf" style="padding-left: 0px!important;border: none;"/>
                                     <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
                                     <span class="choosefile-sponosor" >Upload a File</span>
-                                </label>
+                                </label> -->
                             </div>
                            
                             <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
