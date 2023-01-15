@@ -32,8 +32,26 @@ def collaboration(request):
         industry = request.POST.get('industry',"")
         collaboration_Type = request.POST.get('Collaboration_Type',"")
         up_file = request.FILES['file']
+        upload_file = settings.MEDIA_URL[1:] + "//pdf//" + str(up_file.name)
+        
         oApplication = Collaboration(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Brand_Agency=brand_agency ,Industry=industry ,file=up_file ,Collaboration_Type=collaboration_Type)
         oApplication.save()
+ 
+        subject="sumfilmyart"
+        sucess =f'hi {lastname} Your message has been received, We will contact you soon'
+        
+        message ='''
+        Subject:{}
+        Message:{}
+        From:{}
+        '''.format(subject,sucess,email)
+        try:
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
+            mail.attach_file(upload_file)
+            # mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            mail.send()
+        except:
+            messages.error(request,'Your message has been failed, Please Try Agian')
     return render (request,"uifiles/collaboration.html",{'navbar':'collaboration'})
 
 
@@ -49,6 +67,7 @@ def sponsorship(request):
         sponcer_kind = request.POST.get('Kind_Sponcer',"")
         sponcer_type = request.POST.get('Sponcer_Type',"")
         up_file = request.FILES['file']
+        upload_file = settings.MEDIA_URL[1:] + "//pdf//" + str(up_file.name)
         oApplication = Sponsorship(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Brand_Agency=brand_agency ,Industry=industry ,Kind_Sponcer=sponcer_kind,file=up_file ,Sponcer_Type=sponcer_type)
         oApplication.save()
         
@@ -57,9 +76,8 @@ def sponsorship(request):
         
         try:
             # bio_file = io.BytesIO(up_file.read().encode('utf8'))
-            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email,'manideep723@gmail.com'])
-            # mail.attach_file('Registrations_form.pdf')
-            mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
+            mail.attach_file(upload_file)
             mail.send()
            
         except:
@@ -117,18 +135,21 @@ def contact(request):
         phone = request.POST.get('phone',"")
         subject = request.POST.get('subject',"")
         up_file = request.FILES['file']
-        print('its working')
+        upload_file = settings.MEDIA_URL[1:] + "//pdf//" + str(up_file.name)
+
         oContactinfo = Ideas(Name=name,Email=email,Phone=phone,Subject=subject,file = up_file)
         oContactinfo.save()
 
         subject="sumfilmyart"
         message =f'hi {name} Your Application has been submited Sucessfully'
-
+        
+        
+       
+       
         try:
-            # bio_file = io.BytesIO(up_file.read().encode('utf8'))
-            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email,'manideep723@gmail.com'])
-            # mail.attach_file('Registrations_form.pdf')
-            mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
+            mail.attach_file(upload_file)
+            # mail.attach(up_file.name, up_file.read(), up_file.content_type)
             mail.send()
            
         except:
