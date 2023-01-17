@@ -1,10 +1,25 @@
 from django.contrib import admin
 from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Sponsorship
 
+import csv
+from django.http import HttpResponse
 # Register your models here.
 class  AdminContactData(admin.ModelAdmin):
-    list_display=('FirstName','LastName','Email' ,'Phone','Subject','Message','Date')
-    list_filter= ['Date']
+    list_display = ('FirstName','LastName','Email' ,'Phone','Subject','Message','Date')
+    list_filter = ['Date']
+    actions = ['export_to_csv']
+    def export_to_csv(self, request,queryset):
+        meta = self.model._meta
+        fieldnames = [field.name for field in meta.fields]
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment;filename=export.csv'
+        writer = csv.writer(response)
+        writer.writerow(fieldnames)
+        for obj in queryset:
+             writer.writerow([getattr(obj, field) for field in fieldnames])
+        return response
+    export_to_csv.short_description = "Download selected as csv"
+
 
 #for application form 
 class AdminApplication(admin.ModelAdmin):
