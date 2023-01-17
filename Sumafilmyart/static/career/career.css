@@ -1,7 +1,8 @@
 .career-section{
-    /* background-color: #f1eaea; */
-    background-image: url('../home/home-img/suma_site1.jpg');
-    background-image: url('../career/career-img/background-img.jpg');
+  
+    background-image: url('../career/career-img/human-resources-people-networking-concept_31965-2108.webp');
+    /* opacity: 0.1;
+    background: #6b84c9; */
 }
 .section-title h3{
    color:#F76407;
