@@ -25,7 +25,7 @@ var swiper = new Swiper(".port_video_slider1", {
           },
           // when window width is >= 640px
           640: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             
           }
         }
@@ -78,6 +78,7 @@ var swiper = new Swiper(".port_video_slider1", {
       }
   });
 
+// 
 
 
 
