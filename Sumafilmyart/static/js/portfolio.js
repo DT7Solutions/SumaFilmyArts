@@ -1,5 +1,5 @@
 
-// lakku kikku slider 
+// Bhale chance le slider 
 var swiper = new Swiper(".port_video_slider1", {
     slidesPerView:3,
         spaceBetween: 30,
@@ -13,25 +13,43 @@ var swiper = new Swiper(".port_video_slider1", {
         // pauseOnMouseEnter: true,
         // },
         breakpoints: {
-          // when window width is >= 320px
           320: {
             slidesPerView: 1,
-            
           },
-          // when window width is >= 480px
           480: {
             slidesPerView: 2,
-          
           },
-          // when window width is >= 640px
           640: {
             slidesPerView: 3,
-            
           }
         }
   });
 
-// lakku kikku slider 
+// F3 slider 
+var swiper = new Swiper(".port_video_slider2", {
+  slidesPerView:3,
+      spaceBetween: 30,
+      freeMode: true,
+      loop:true,
+      lazy:true,
+     
+      // autoplay: {
+      // delay: 5000,
+      // disableOnInteraction: false,
+      // pauseOnMouseEnter: true,
+      // },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 3,
+        }
+      }
+});
 
 
 // lakku kikku slider 
