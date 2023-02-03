@@ -362,11 +362,11 @@ input[type=checkbox] {
 }
 
 
-@media screen and (min-width:679px) and (max-width:1040px) {
+/* @media screen and (min-width:679px) and (max-width:1040px) {
     .collaboration-card .card{
        margin-left: 145px;
     }
-}
+} */
 @media screen and (min-width:679px) and (max-width:768px) {
     .collaboration-card .card{
        margin-left: 50px;
@@ -377,18 +377,18 @@ input[type=checkbox] {
     max-width: 40rem;
 }
 
-@media screen and (min-width:679px) and (max-width:1040px) {
+/* @media screen and (min-width:679px) and (max-width:1040px) {
     .sponcership .card{
        margin-left: 140px;
     }
-}
+} */
 @media screen and (min-width:679px) and (max-width:768px) {
     .sponcership .card{
        margin-left: 40px;
     }
 }
 
-@media screen and (min-width:679px) and (max-width:1040px) {
+/* @media screen and (min-width:679px) and (max-width:1040px) {
     .enquiries .card{
        margin-left: 140px;
     }
@@ -397,13 +397,13 @@ input[type=checkbox] {
     .enquiries .card{
        margin-left: 40px;
     }
-}
+} */
 
 
 
 @media screen and (min-width:679px) and (max-width:1040px) {
     .idea-form .card{
-       margin-left: 145px;
+       /* margin-left: 145px; */
     }
 }
 @media screen and (min-width:679px) and (max-width:768px) {
