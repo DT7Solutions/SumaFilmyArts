@@ -3320,4 +3320,9 @@ ul{
 	} */
 	/* trail video */
 
-	
+@media (max-width:576px) {
+	.footer-copy{
+		display: flex;
+		justify-content: space-around !important;
+	}
+}
