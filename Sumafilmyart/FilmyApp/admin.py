@@ -23,7 +23,7 @@ class  AdminContactData(admin.ModelAdmin):
 
 #for application form 
 class AdminApplication(admin.ModelAdmin):
-    list_display=('Name','Email' ,'Phone','Address','Experience','Message','file','Term_check')
+    list_display=('FirstName','LastName','Email' ,'Phone','Experience','file')
 
 class AdminImageuplaods(admin.ModelAdmin):
     list_display=('Name','Image')

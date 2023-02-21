@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-dl)x$b60)uiuz3$t)uh-woh%8yiv0fjhy@d-gy$247%h^px)z&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -151,3 +151,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 GOOGLE_RECAPTCHA_SECRET_KEY ="6LfvVUskAAAAACScSXGgMEq94GO1yitbZsqptbas"
+

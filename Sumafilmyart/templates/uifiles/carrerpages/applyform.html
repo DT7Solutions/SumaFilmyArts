@@ -1,66 +1,89 @@
 {% extends 'uifiles/base.html' %}
 {% load static %}
-{% block content %} 
-<!-- <div class="page-baner-section">
-    <h1>Career</h1>
-</div> -->
-<div class="job-application-section " style="margin-top: 7%;"  >
-    <!-- <h3 class="job-h3 ">Suma Filmy Arts</h3>
-    <h6 class="job-h6">we are offering Production kind of jobs</h6> -->
-    <!-- <hr class="hr-apply-line"> -->
-    <div class="carrer-application " style="display:flex;flex-direction:column;align-items:center;flex-wrap:nowrap;">
-        {% for mess in messages %}
-        <h5 class="application-responce">{{ mess }}</h5>
-        {%  endfor %}
-        <div class="card-container d-flex justify-content-center aligen-items-center" >
-            <div class=" card apply-card mt-5 col-lg-4 col-md-6 offset-md-3 mt-5 offset-lg-0">
-                <div class="card-body enq-body-card " >
-                    <h5 class="card-title text-center">Apply Here</h5>
+{% block content %}
+<!--top banner -->
+<div class="page-baner-section">
+  <h1 class="text-center"style="font-size:40px;" >Apply</h1>
+</div>
+
+<div class="dizme_tm_section" id="enqiury">
+  <div class="dizme_tm_contact"> 
+       
+    <div class="container">
+        <div class="dizme_tm_main_title" data-align="center">
+            <h2 style="color: rgb(214, 222, 227);" ></h2>
+          
+        </div>
+        <div class="contact_inner d-flex justify-content-center aligen-items-center enquiries ps-md-5 ms-md-3">
+   
+            <div class="card collabration-card pt-4 " style="max-width: 40rem;">
+                <p class="returnmessage" style="text-align: center;"></p>
+                <div class="card-body apply-job ">
                     <div>
-                    <form method="post" class="row g-3 applyform " enctype="multipart/form-data"  autocomplete="off">
-                        {% csrf_token %}
-                        <div class="col-md-12 col-12">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-                        </div>
-                        <div class="col-md-12 col-12">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-12 col-12">
+                        <form method="post" id="clearform" class="row g-3 applyjob" enctype="multipart/form-data" autocomplete="off">
+                            {% csrf_token %}
+                            <div class="col-md-6 col-6">
+                                <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-12 col-12">
+                    
+                                <input type="number" name="phone" class="form-control" id="phone" placeholder="Phonenumber"
+                                maxlength="10"  pattern="[1-9]{1}[0-9]{9}" required>
+                            </div>
 
-                            <input type="number" name="phone" class="form-control" id="phone" placeholder="phonenumber" required>
-                        </div>
+                            <div class="col-md-6 col-12 py-2 pb-3">
+                                <select id="userexperices" name ="userexperices" class="form-control" 
+                                    placeholder="Years of experience">
+                                    <option selected>Work Experinces</option>
+                                    <option>1 - 2 years</option>
+                                    <option>2 - 4 years</option>
+                                    <option>4 - 7 years</option>
+                                    <option>7 - 10 years</option>
+                                </select>
+                            </div>
+                            <div id="hide" class="col-lg-8 col-xs-8">
+                                <div class="col-12 pt-2">
+                                    <label for="file" class="custom-file-upload" id="choose-file-label">
+                                        Upload file
+                                     </label>
+                                     <input name="file" type="file" id="file" 
+                                        accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
+                                </div>
+                                <span class="fileupload-req text-danger" style="font-size: small;" >please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                                <!-- <label class="d-block custom-file-button">
+                                    <input  name="file" type="file" id="file"  class="form-control" placeholder="Upload Resume"  accept="application/msword,application/msword,application/pdf"/>
+                                    <span class=" text-danger" style="font-size:13px">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                                </label> -->
+                            </div>
+                            <script src='https://www.google.com/recaptcha/api.js'></script>
+                            <div class="g-recaptcha px-3 mb-2" data-sitekey="6LfvVUskAAAAAGlwyp52_FaIJu4vaTuJQ7RiGOJd" required></div>
 
-                        <div class="col-12 col-12">
-                            <input type="text" name="address" class="form-control" id="address"
-                                placeholder="Location" required>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <select id="inpuexperices" name ="inpuexperices" class="form-control" aria-placeholder="expriences"
-                                placeholder="Years of experience">
-                                <option selected>Work Experinces</option>
-                                <option>1 - 2 years</option>
-                                <option>2 - 4 years</option>
-                                <option>4 - 7 years</option>
-                                <option>7 - 10 years</option>
-                            </select>
-                        </div>
-
-                        <div id="hide" class="col-lg-8 col-xs-8">
-                        <label class="d-block custom-file-button">
-                            <input required name="upload file" type="file" class="form-control" placeholder="Upload Resume"  accept="application/msword,application/msword,application/pdf"/>
-                            <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
-                        </label>
+                            <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
+                                <button type="submit" id="applyjob" class="btn btn-primary form-sub-btn">Send</button>
+                            </div>
+                    
+                        </form>
                     </div>
-                        <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
-                            <button type="submit" href="/jobapplication/" class="btn btn-primary form-sub-btn">Send</button>
-                        </div>
-                    </form>
-                </div>
                 </div>
             </div>
+            
         </div>
+       
     </div>
-
+      
+  </div>
 </div>
+<!-- /CONTACT -->
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+
+
 
 {% endblock %}

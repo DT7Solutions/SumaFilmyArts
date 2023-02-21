@@ -49,6 +49,7 @@ def collaboration(request):
             mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
             mail.attach_file(upload_file)
             # mail.attach(up_file.name, up_file.read(), up_file.content_type)
+            #    mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
             mail.send()
         except:
             messages.error(request,'Your message has been failed, Please Try Agian')
@@ -105,7 +106,7 @@ def shows_productions(request):
         From:{}
         '''.format(subject,message,email)
         try:
-            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['badugudinesh94@gmail.com']) 
+            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['team@sumaflimyarts.com']) 
             messages.success(request,sucess)
         except:
             messages.error(request,'Your message has been failed, Please Try Agian')
@@ -147,7 +148,7 @@ def contact(request):
        
        
         try:
-            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , ['team@sumaflimyarts.com'])
             mail.attach_file(upload_file)
             # mail.attach(up_file.name, up_file.read(), up_file.content_type)
             mail.send()
@@ -161,35 +162,31 @@ def contact(request):
 
 
 
-# def Apply_job(request):
-#     if request.method == "POST":
-#         name = request.POST.get('name',"")
-#         email = request.POST.get('email',"")
-#         phone = request.POST.get('phone',"")
-#         address = request.POST.get('address',"")
-#         experinces = request.POST.get('inpuexperices',"")
-#         message = request.POST.get('message',"")
-        # file = request.POST.get('message',"")
-        # up_file = request.FILES['file']
-        # tr_check = request.POST.get('check'," ")
-        # agrement=''
-        # if tr_check =="on":
-        #     agrement = 'True'
-        # oApplication = Application(Name=name,Email=email,Phone=phone,Address=address,Experience =experinces ,Message=message, file=up_file ,Term_check=agrement)
-        # oApplication.save()
-        # subject="sumfilmyart"
-        # sucess =f'hi {name} Your Application has been submited Sucessfully'
+def Apply_job(request):
+    if request.method == "POST":
+        firstname = request.POST.get('firstname',"")
+        lastname = request.POST.get('lastname',"")
+        email = request.POST.get('email',"")
+        phone = request.POST.get('phone',"")
+        experinces = request.POST.get('userexperices',"")
+        up_file = request.FILES['file']
+        upload_file = settings.MEDIA_URL[1:] + "//pdf//" + str(up_file.name)
         
-        # try:
-            # bio_file = io.BytesIO(up_file.read().encode('utf8'))
-    #         mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , [email])
-    #         mail.attach(up_file.name, up_file.read(), up_file.content_type )
-    #         mail.send()
-    #         messages.success(request,sucess)
-    #     except:
-    #         messages.ERROR(request,'sending fail')
+        oApplication = Application(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Experience =experinces, file=up_file )
+        oApplication.save()
+        subject="JobApplication"
+        sucess =f'hi {firstname} Your Application has been submited Sucessfully'
+        message ='something'
+        try:
+            mail = EmailMessage(subject,message, settings.EMAIL_HOST_USER , ['team@sumafilmyarts.com'])
+            mail.attach_file(upload_file)
+            print('fill attach sucessfully')
+            mail.send()
+            messages.success(request,sucess)
+        except:
+            messages.ERROR(request,'sending fail')
                     
-    # return render (request, "uifiles/carrerpages/applyform.html")
+    return render (request, "uifiles/carrerpages/applyform.html")
 
 
 

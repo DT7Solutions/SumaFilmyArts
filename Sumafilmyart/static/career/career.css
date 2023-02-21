@@ -149,11 +149,11 @@ text-align: center;
         margin-left: 50px;
         margin-right: 100px; list-style:decimal;
     }
-    .carrer-info-section ul li{
+    /* .carrer-info-section ul li{
         margin-left: 100px;
         margin-right: 100px;
         list-style:decimal;
-    }
+    } */
 .hr-line{
     margin-left: 100px;
     margin-right: 100px;
@@ -428,3 +428,9 @@ text-align: center;
     font-size: 18px; 
 
 }  
+
+.applyjob .form-control{
+    border: none;
+    border-bottom: 1px solid rgb(230, 225, 225);
+    width: 80%;
+}

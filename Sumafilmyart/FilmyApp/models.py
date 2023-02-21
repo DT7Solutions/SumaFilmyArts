@@ -17,22 +17,22 @@ class ContactData(models.Model):
                 return self.FirstName
 
 class Application(models.Model):
-    Name = models.CharField(max_length=50)
+    FirstName = models.CharField(max_length=50,blank=True)
+    LastName = models.CharField(max_length=50,blank=True)
     Email = models.EmailField(max_length=254)
     Phone = models.CharField(max_length=10)
-    Address = models.CharField(max_length=500)
     Experience = models.CharField(max_length=20)
-    Message = models.CharField(max_length=150)
     # field_name = models.FileField(upload_to=None, max_length=254) 
     file = ContentTypeRestrictedFileField(
         upload_to='pdf',
         content_types=['application/pdf', 'application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
         max_upload_size=2621440
     ) 
-    Term_check = models.BooleanField()
+    # Term_check = models.BooleanField()
+    Date = models.DateTimeField(default=datetime.now())
     
     def __str__(self):
-                return self.Name
+                return self.FirstName
 
 
 class ImageUploads(models.Model):
