@@ -9,7 +9,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "SumaFilmyArts",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "img/logo/Suma filmy arts.png",
+    "site_logo": "img/logo/jazmin-logo.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
