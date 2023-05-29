@@ -7,11 +7,14 @@ urlpatterns = [
     path('news_events/', views.news_events,name='news_events'),
     path('ideas/', views.contact,name='ideas'),
     path('careers/', views.career,name='careers'),
+    path('blogs/',views.blogs,name='blogs'),
     #dropdown 
     path('collaborations/', views.collaboration,name='collaborations'),
     path('fansinteraction/', views.fansinteraction,name='fansinteraction'),
     path('sponsorship/', views.sponsorship,name='sponsorship'),  
     path('enquiries/', views.shows_productions, name='enquiries'),
+   
+  
     
     #carrer pages 
     path('assistent_director/', views.assistent_director, name='assistent_director') ,   

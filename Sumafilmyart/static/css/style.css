@@ -2138,7 +2138,7 @@ h6 { font-size: 16px; }
 	opacity: 0;
 	min-width: 100%;
 }
-.dizme_tm_modalbox .news_popup_informations .image .main{
+/* .dizme_tm_modalbox .news_popup_informations .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -2148,7 +2148,7 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	background-position: center;
 	border-radius: 12px;
-}
+} */
 .dizme_tm_modalbox .news_popup_informations .details{
 	width: 100%;
 	float: left;

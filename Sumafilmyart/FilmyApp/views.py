@@ -14,7 +14,8 @@ def portfolio(request):
     return render (request,"uifiles/portfolio.html",{'navbar':'portfolio'})
 def news_events(request):
     return render (request,"uifiles/news_events.html",{'navbar':'news_events'})
-
+def blogs(request):
+    return render (request,"uifiles/blogs.html",{'navbar':'blogs'})
 
 def career(request):
     return render (request,"uifiles/career.html",{'navbar':'career'})
