@@ -1,6 +1,7 @@
 from email.headerregistry import Address
+
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration
+from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration,Carrers
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
@@ -18,7 +19,9 @@ def blogs(request):
     return render (request,"uifiles/blogs.html",{'navbar':'blogs'})
 
 def career(request):
-    return render (request,"uifiles/career.html",{'navbar':'career'})
+    jobdata = Carrers.objects.all()
+   
+    return render (request,"uifiles/career.html",{'navbar':'career','jobinfo': jobdata})
 
 def fansinteraction(request):
     return render (request,"uifiles/fansinteraction.html",{'navbar':'collaboration'})
@@ -189,6 +192,65 @@ def Apply_job(request):
                     
     return render (request, "uifiles/carrerpages/applyform.html")
 
+import requests
+
+def linkedin_jobpost(data):
+   
+
+    LINKEDIN_API_ENDPOINT = "https://api.linkedin.com/v2/ugcPosts"
+
+    # Define the LinkedIn authentication token
+    LINKEDIN_TOKEN = "AQW-_-x7f70_SyaEq9QGhs-wSEZB4lH9doR-ZrWLbLjhnELwbwu0q4u4YmhrJBR9zsEgF1z57_6aDmQYEeZ7-N4Lt89hcBnifx-DUSdPaWBJAhVDy115fNdkNeFbMdT1dyfqRhmK5lz31z_-euArHZlnyYsmkCjnUkmzR-hOTWjqNTq2CxtxGS045dm2xOfs0LQIBwoqqTm283IKpHq-SqUYA0I6R9Zz6Z3UgwV4hyL7v_NSRGP94qrU81_tWUtYax3XR8vW6KAUSeqOkEhdWF4_vvn9r9ERGaEvzHelBnvVqT0ufBJCyNoEllF15U-Xzt98eQS-idf6dVZSFkrAnG0SXQltBQ"
+
+    title = data.get('title')
+    loaction = data.get('location')
+    description = data.get('description')
+   
+    payload = {
+                
+                "author": "urn:li:person:FMT47TxeNx",
+                "lifecycleState": "PUBLISHED",
+                "specificContent": {    
+                    "com.linkedin.ugc.ShareContent": {
+                        "shareCommentary": {
+                            "text": title,
+                
+                        },
+                        # "shareMediaCategory": "NONE"
+                        "shareMediaCategory": "ARTICLE",
+                        "media": [
+                                        {
+                                            "status": "READY",
+                                            "description": {
+                                                "text": loaction
+                                            },
+                                            "originalUrl": "https://dt7solutions.com",
+                                            "title": {
+                                                "text":  description
+                                            }
+                                        }
+                                ]
+                    }
+                },
+                "visibility": {
+                    "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+                }
+        
+            }
+            
+    print("start Post the job posting to LinkedIn")
+    response = requests.post(LINKEDIN_API_ENDPOINT, json=payload, headers={"Authorization": f"Bearer {LINKEDIN_TOKEN}"})
+    print("sucesfully Post the job posting to LinkedIn")
+    return ''
+
+
+
+    
+
+
+
+   
+   
 
 
 
@@ -201,15 +263,3 @@ def Apply_job(request):
 
 
 
-
-# def sending_email(subject, message, email,file):
-#     email = EmailMessage(
-#     'Hello',
-#     'Body goes here',
-#     'from@example.com',
-#     ['to1@example.com', 'to2@example.com'],
-#     ['bcc@example.com'],
-#     reply_to=['another@example.com'],
-#     headers={'Message-ID': 'foo'},
-# )
-#     return ""

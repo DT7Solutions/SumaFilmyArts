@@ -2,6 +2,7 @@ from datetime import datetime
 from email.headerregistry import Address
 from django.db import models
 from .app import ContentTypeRestrictedFileField
+from ckeditor.fields import RichTextField
 # from app.extra import ContentTypeRestrictedFileField
 # Create your models here.
 class ContactData(models.Model):
@@ -92,3 +93,17 @@ class Sponsorship(models.Model):
             Date = models.DateTimeField(default=datetime.now())
             def __str__(self):
                 return self.FirstName
+            
+
+
+
+class Carrers(models.Model):
+    title = models.CharField(max_length=255)
+    location = models.CharField(max_length=100)
+    posted_date = models.DateField(auto_now_add=True)
+    description = models.TextField()
+    Body = RichTextField(blank=True,null=True)
+   
+
+    def __str__(self):
+        return self.title

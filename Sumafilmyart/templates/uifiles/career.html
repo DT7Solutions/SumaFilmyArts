@@ -12,83 +12,39 @@
     </div>
     </div>
   </div>
+  {% for job in jobinfo %}
   <div class=" career-list">
     <div class="card career-card shadow p-3 mb-5 bg-white rounded" style="width: 55rem;" data-aos="fade-right">
       <div class="card-body">
-        <h5 class="card-title">Creative Writers (Skits, Short Films, & Content) - Telugu & English</h5>
+        <h5 class="card-title">{{ job.title }}</h5>
         <h6 class="card-subtitle mb-2 text-muted">Suma filmy arts </h6>
-        <h6 class="job-location mb-2 ">Location:<span class="card-span">Hyderabad</span></h6>
-        <h6 class="job-posted mb-0 ">Posted:<span class="card-span">21-02-2023</span></h6>
-        <p class="card-text"><span class="card-description mb-4">Description:</span>Suma Filmy Arts is a leading production company that serves as a home to some of India’s
-          biggest entertaining TV shows through our versatile, and stress-busting content. We are looking
-          for talented creative writers to join our team and help bring our stories to life.</p>
+        <h6 class="job-location mb-2 ">Location:<span class="card-span">{{ job.location }}</span></h6>
+        <h6 class="job-posted mb-0 ">Posted:<span class="card-span">{{ job.posted_date }}</span></h6>
+        <p class="card-text"><span class="card-description mb-4">Description:</span>{{ job.description }}</p>
         <div class="carrer_tm_button wow fadeInUp d-flex" data-wow-duration="1s">
           <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
-            <button type="submit" href="#" class="btn btn-primary form-sub-btn" data-toggle="modal" data-target="#myModal">More Info</button>
+            <button type="submit" href="#" class="btn btn-primary form-sub-btn" data-toggle="modal" data-target="#myModal{{job.id}}">More Info</button>
             <button type="button" onclick="location.href='/apply/' "  class="btn btn-primary form-sub-btn" >Apply Now</button>
-            <!-- <button type="submit" href="#" class="btn btn-primary form-sub-btn" target="_blank" data-bs-toggle="modal" data-bs-target="#popcarrer">Quick Apply</button> -->
+           
         </div>
     
       </div>
       </div>
     </div>
   </div>
-  <!-- <div class=" career-list">
-    <div class="card career-card shadow p-3 mb-5 bg-white rounded" style="width: 55rem;" data-aos="fade-right">
-      <div class="card-body">
-     <h3 style="color: coral;">"Thank you for your interest, right now there are no  openings available at this time. "</h3>
-      </div>
-    </div>
-    
-  </div> -->
-</div>
-
-<!-- Modal1 popup for job info -->
-<div id="myModal" class="modal fade" role="dialog">
+  <!-- Modal1 popup for job info -->
+<div id="myModal{{job.id}}" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 style="text-align: center; color:#f76407;">Suma FilmyArts</h3>
-        <!-- <h3><span class="diveder-right"><a>Hyderabad</a></span><span class="diveder-right">25-10-2022</span><span class="">Sumfilmyarts</span></h3> -->
+        <h3 style="text-align: center; color:#f76407;">SumaFilmyArts</h3>
+       
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="carrer-info-section">
-        <h3 style="font-size: 20px;">Creative Writers (Skits, Short Films, & Content) - Telugu & English</h3>
-        <h3><span class="diveder-right"><a>Hyderabad</a></span><span class="diveder-right">21-02-2023</span><span class="">Sumfilmyarts</span></h3>
-        <hr class="hr-line">   
-        <h4 class="px-3">Company Description</h4>
-        <p class="px-3" style="margin: 0px; padding:5px; text-align:justify;">Suma Filmy Arts is a leading production company that serves as a home to some of India’s
-              biggest entertaining TV shows through our versatile, and stress-busting content. We are looking
-              for talented creative writers to join our team and help bring our stories to life.</p>
-        <p class="px-3" style="margin: 0px; padding:5px; text-align:justify;">As a creative writer at Suma Filmy Arts, you will have the opportunity to showcase your talent
-              and turn your ideas into reality. We are looking for individuals who are passionate about
-              storytelling and have a strong sense of visual media.</p>
-            
-        <h4 class="px-3">Responsibilities:</h4>
-            <ul>
-              <li>Develop and write compelling stories, scripts, short films, and content for a variety of
-                projects majorly skits, content & short films.</li>
-              <li>Collaborate with other writers, directors, and producers to bring projects to life</li>
-              <li>Collaborate with other writers, directors, and producers to bring projects to life</li>
-              <li>Conduct research to ensure accuracy and authenticity in storytelling</li>
-              <li>Edit and revise written material as necessary </li>
-              <li>Stay up-to-date with industry trends and emerging technologies to continually improve your craft</li>
-          </ul>
-          <h4 class="px-3">Requirements:</h4>
-            <ul>
-              <li>Proven experience as a story writer, scriptwriter, short film writer, or content writer</li>
-              <li>Excellent writing, communication, and collaboration skills</li>
-              <li>Strong attention to detail and ability to work under tight deadlines</li>
-              <li>A passion for storytelling and visual media</li>
-          </ul>
-
-          <p class="px-3" style="margin: 0px; padding:5px; text-align:justify;">This is a full-time job opportunity for creative individuals who are passionate about storytelling
-            and have a strong sense of visual media. If you are a talented writer looking for an exciting
-            opportunity to work with a dynamic and growing production company, then we encourage you to
-            apply today.</p>
-          
-            <p class="px-3" style="margin: 0px; padding:5px; text-align:justify; font-weight:600;">Note:Please note that this is not a role for serial or movie script/story writers.</p>
-  
+        
+            <p>{{job.Body|safe}}</p>
+           
 
             <div class="carrer_tm_button wow fadeInUp text-center  mb-5" data-wow-duration="1s">
                 <a class="anchor" href="/apply/"><span style="font-size: 10px;">Apply Now</span></a>
@@ -98,6 +54,10 @@
   </div>
 </div>
 <!-- Modal-1 -->
+  {% endfor %}
+</div>
+
+
 
 <!-- popup -->
 
@@ -144,5 +104,8 @@
   </div>
 </div>
 <!-- popup -end-->
+
+<!--  -->
+
 
 {% endblock %}

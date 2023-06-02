@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Sponsorship
+
+from FilmyApp.views import linkedin_jobpost
+from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Carrers,Sponsorship
 
 import csv
 from django.http import HttpResponse
@@ -41,9 +43,29 @@ class AdminSponcershipForm(admin.ModelAdmin):
     list_filter= ['Date']
 
 
+
+
+class AdminCarrers(admin.ModelAdmin):
+    list_display = ('id','title', 'location', 'posted_date','description','Body')
+
+
+    def save_model(self, request, obj, form, change):
+        self.my_custom_method(obj)
+        super().save_model(request, obj, form, change)
+    
+     # Define your custom method here
+    def my_custom_method(self, obj):
+        job_item = obj.__dict__
+        linkedin_jobpost(data =job_item)
+    
+   
+
+
+
 admin.site.register(ContactData,AdminContactData)
 admin.site.register(Application,AdminApplication)
 admin.site.register(ImageUploads,AdminImageuplaods)
 admin.site.register(Ideas,AdminIdeasForm)
 admin.site.register(Collaboration,AdminCollaborationForm)
 admin.site.register(Sponsorship,AdminSponcershipForm)
+admin.site.register(Carrers,AdminCarrers)

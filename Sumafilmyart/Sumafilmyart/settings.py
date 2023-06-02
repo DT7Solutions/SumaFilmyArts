@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'FilmyApp',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
@@ -136,6 +137,7 @@ else:
     STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 # MEDIA_URL = '/media/'
 
 # Default primary key field type
