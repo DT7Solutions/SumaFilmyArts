@@ -200,7 +200,7 @@ def linkedin_jobpost(data):
     LINKEDIN_API_ENDPOINT = "https://api.linkedin.com/v2/ugcPosts"
 
     # Define the LinkedIn authentication token
-    LINKEDIN_TOKEN = "AQW-_-x7f70_SyaEq9QGhs-wSEZB4lH9doR-ZrWLbLjhnELwbwu0q4u4YmhrJBR9zsEgF1z57_6aDmQYEeZ7-N4Lt89hcBnifx-DUSdPaWBJAhVDy115fNdkNeFbMdT1dyfqRhmK5lz31z_-euArHZlnyYsmkCjnUkmzR-hOTWjqNTq2CxtxGS045dm2xOfs0LQIBwoqqTm283IKpHq-SqUYA0I6R9Zz6Z3UgwV4hyL7v_NSRGP94qrU81_tWUtYax3XR8vW6KAUSeqOkEhdWF4_vvn9r9ERGaEvzHelBnvVqT0ufBJCyNoEllF15U-Xzt98eQS-idf6dVZSFkrAnG0SXQltBQ"
+    LINKEDIN_TOKEN = ""
 
     title = data.get('title')
     loaction = data.get('location')

@@ -14,21 +14,25 @@
   </div>
   {% for job in jobinfo %}
   <div class=" career-list">
-    <div class="card career-card shadow p-3 mb-5 bg-white rounded" style="width: 55rem;" data-aos="fade-right">
+    <div class="card career-card border border-secondary bg-white rounded" style="width: 59rem;" data-aos="fade-right">
       <div class="card-body">
         <h5 class="card-title">{{ job.title }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Suma filmy arts </h6>
-        <h6 class="job-location mb-2 ">Location:<span class="card-span">{{ job.location }}</span></h6>
-        <h6 class="job-posted mb-0 ">Posted:<span class="card-span">{{ job.posted_date }}</span></h6>
+        <!-- <h6 class="card-subtitle mb-2 text-muted">Suma filmy arts </h6> -->
+       
         <p class="card-text"><span class="card-description mb-4">Description:</span>{{ job.description }}</p>
+        <div class="d-lg-flex justify-content-lg-space-between align-items-center">
         <div class="carrer_tm_button wow fadeInUp d-flex" data-wow-duration="1s">
+          <h6 class="job-location mb-2 "><i class="bi bi-geo-alt px-2"></i><span class="card-span">{{ job.location }}</span></h6>
+          <h6 class="job-posted mb-0 "><i class="bi bi-calendar3 px-2"></i><span class="card-span">{{ job.posted_date }}</span></h6>
+        </div>
           <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
             <button type="submit" href="#" class="btn btn-primary form-sub-btn" data-toggle="modal" data-target="#myModal{{job.id}}">More Info</button>
             <button type="button" onclick="location.href='/apply/' "  class="btn btn-primary form-sub-btn" >Apply Now</button>
            
         </div>
-    
       </div>
+    
+    
       </div>
     </div>
   </div>
