@@ -14,20 +14,20 @@
   </div>
   {% for job in jobinfo %}
   <div class=" career-list">
-    <div class="card career-card border border-secondary bg-white rounded" style="width: 59rem;" data-aos="fade-right">
-      <div class="card-body">
+    <div class="card career-card border  bg-white rounded" style="width: 59rem;" data-aos="fade-right">
+      <div class="card-body" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;">
         <h5 class="card-title">{{ job.title }}</h5>
         <!-- <h6 class="card-subtitle mb-2 text-muted">Suma filmy arts </h6> -->
        
-        <p class="card-text"><span class="card-description mb-4 text-dark fw-bold">Description: </span>{{ job.description }}</p>
-        <div class="d-lg-flex justify-content-lg-space-between align-items-center">
-        <div class="carrer_tm_button wow fadeInUp d-flex" data-wow-duration="1s">
-          <h6 class="job-location mb-2 "><i class="bi bi-geo-alt px-2"></i><span class="card-span">{{ job.location }}</span></h6>
+        <p class="card-text" style="text-align: justify;"><span class="card-description mb-4 text-dark fw-bold">Description: </span>{{ job.description }}</p>
+        <div style="display:flex!important;justify-content: space-between!important;flex-wrap: wrap;">
+        <div class="wow fadeInUp d-flex mobile-space"  style="display:flex;align-items: center;" data-wow-duration="1s">
+          <h6 class="job-location "><i class="bi bi-geo-alt " style="padding-right: 5px;"></i><span class="card-span">{{ job.location }}</span></h6>
           <h6 class="job-posted mb-0 "><i class="bi bi-calendar3 px-2"></i><span class="card-span">{{ job.posted_date }}</span></h6>
         </div>
-          <div class="carrer_tm_button wow fadeInUp  d-lg-flex justify-content-lg-space-between" data-wow-duration="1s">
-            <button type="submit" href="#" class="btn btn-primary form-sub-btn"  data-toggle="modal" data-target="#myModal{{job.id}}">More Info</button>
-            <button type="button" onclick="location.href='/apply/' "  class="btn btn-primary form-sub-btn" >Apply Now</button>
+          <div class=" wow fadeInUp  " style="display:flex;" data-wow-duration="1s">
+            <button type="submit" href="#" class="btn btn-primary form-sub-btn mr-2  text-white"  data-toggle="modal" data-target="#myModal{{job.id}}">More Info</button>
+            <button type="button" onclick="location.href='/apply/' "  class="btn btn-primary form-sub-btn text-white " >Apply Now</button>
            
         </div>
       </div>
@@ -45,7 +45,7 @@
        
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-      <div class="carrer-info-section">
+      <div class="popup-text" style="margin-bottom: 20px!important;">
         
             <p>{{job.Body|safe}}</p>
            
@@ -58,8 +58,10 @@
   </div>
 </div>
 <!-- Modal-1 -->
+
   {% endfor %}
 </div>
+
 
 
 

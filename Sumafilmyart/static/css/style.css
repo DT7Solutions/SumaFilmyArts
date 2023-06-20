@@ -3325,8 +3325,15 @@ ul{
 		display: flex;
 		justify-content: space-around !important;
 	}
+	.mobile-space{
+		margin-bottom: 10px!important;
+		margin-top: 10px!important;
+	
+	}
 }
-.card-body{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
 
+.popup-text p{
+	margin-left: 30px!important;
+	margin-right: 30px!important;
 }
+
