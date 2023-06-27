@@ -163,7 +163,7 @@ function dizme_tm_modalbox_news(){
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
-		modalBox.find('.news_popup_informations .image').after('<div class="details"><h3>'+title+'</h3><span>'+category+'</span><div>');
+		modalBox.find('.news_popup_informations .image').after('<div class="details"><h3>'+title+'</h3><div>');
 		dizme_tm_data_images();
 		return false;
 	});
