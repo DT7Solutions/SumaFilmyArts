@@ -2027,6 +2027,7 @@ h6 { font-size: 16px; }
 	width: 33.3333%;
 	float: left;
 	padding-left: 25px;
+	margin-right: 10px!important;
 }
 .dizme_tm_news ul li .list_inner{
 	width: 100%;
