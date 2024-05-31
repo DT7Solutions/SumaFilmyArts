@@ -17,6 +17,9 @@ class ContactData(models.Model):
             def __str__(self):
                 return self.FirstName
 
+
+
+
 class Application(models.Model):
     FirstName = models.CharField(max_length=50,blank=True)
     LastName = models.CharField(max_length=50,blank=True)
