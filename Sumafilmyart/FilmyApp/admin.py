@@ -48,8 +48,6 @@ class AdminSponcershipForm(admin.ModelAdmin):
 class AdminCarrers(admin.ModelAdmin):
     list_display = ('id','title', 'location', 'posted_date','description','Body')
 
-class AdminBlog(admin.ModelAdmin):
-    list_display = ('id','title', 'category','status')
 
     def save_model(self, request, obj, form, change):
         self.my_custom_method(obj)
@@ -61,6 +59,8 @@ class AdminBlog(admin.ModelAdmin):
         linkedin_jobpost(data =job_item)
     
    
+class AdminBlog(admin.ModelAdmin):
+    list_display = ('id','title', 'category','status')
 
 
 
