@@ -1,7 +1,7 @@
 from email.headerregistry import Address
 
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration,Carrers
+from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration,Carrers,Blog
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
@@ -16,7 +16,8 @@ def portfolio(request):
 def news_events(request):
     return render (request,"uifiles/news_events.html",{'navbar':'news_events'})
 def blogs(request):
-    return render (request,"uifiles/blogs.html",{'navbar':'blogs'})
+    blogs = Blog.objects.filter(status=1).order_by('-id')
+    return render (request,"uifiles/blogs.html",{'navbar':'blogs',"blogs":blogs})
 
 def career(request):
     jobdata = Carrers.objects.all()

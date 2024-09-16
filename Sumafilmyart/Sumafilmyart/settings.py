@@ -138,6 +138,7 @@ else:
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CKEDITOR_VERSION = '4.25.0-lts'
 # MEDIA_URL = '/media/'
 
 # Default primary key field type

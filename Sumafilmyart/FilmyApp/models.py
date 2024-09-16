@@ -110,3 +110,22 @@ class Carrers(models.Model):
 
     def __str__(self):
         return self.title
+
+STATUS = (
+    (0,"Draft"),
+    (1,"Publish")
+)
+
+class Blog(models.Model):
+    title = models.CharField(max_length=255)
+    Body = RichTextField(blank=True,null=True)
+    primary_image = models.ImageField(upload_to='uploads/')
+    seondary_image = models.ImageField(upload_to='uploads/',blank=True,null=True)
+    optional_image = models.ImageField(upload_to='uploads/',blank=True,null=True)
+    date_published = models.DateField()
+    category = models.CharField(max_length=100, blank=True, null=True)
+    author = models.CharField(max_length=100, blank=True, null=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+
+    def __str__(self):
+        return self.title

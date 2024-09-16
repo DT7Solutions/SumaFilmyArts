@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from FilmyApp.views import linkedin_jobpost
-from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Carrers,Sponsorship
+from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Carrers,Sponsorship,Blog
 
 import csv
 from django.http import HttpResponse
@@ -48,6 +48,8 @@ class AdminSponcershipForm(admin.ModelAdmin):
 class AdminCarrers(admin.ModelAdmin):
     list_display = ('id','title', 'location', 'posted_date','description','Body')
 
+class AdminBlog(admin.ModelAdmin):
+    list_display = ('id','title', 'category','status')
 
     def save_model(self, request, obj, form, change):
         self.my_custom_method(obj)
@@ -69,3 +71,4 @@ admin.site.register(Ideas,AdminIdeasForm)
 admin.site.register(Collaboration,AdminCollaborationForm)
 admin.site.register(Sponsorship,AdminSponcershipForm)
 admin.site.register(Carrers,AdminCarrers)
+admin.site.register(Blog,AdminBlog)
