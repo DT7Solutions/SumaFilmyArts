@@ -1,7 +1,7 @@
 from email.headerregistry import Address
 
 from django.shortcuts import render,redirect
-from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration,Carrers,Blog
+from FilmyApp.models import ContactData, Application,Ideas,Sponsorship,Collaboration,Carrers,Blog,GalleryImage,Category
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
@@ -13,6 +13,11 @@ def about(request):
     return render (request,"uifiles/about.html",{'navbar':'about'})
 def portfolio(request):
     return render (request,"uifiles/portfolio.html",{'navbar':'portfolio'})
+
+def gallery(request):
+    gallery_categories = Category.objects.all().order_by('-id')
+    gallery_items = GalleryImage.objects.all().order_by('-id')
+    return render (request,"uifiles/gallery.html",{'navbar':'gallery', "gallery":gallery_items, "gallery_cat":gallery_categories})
 def news_events(request):
     return render (request,"uifiles/news_events.html",{'navbar':'news_events'})
 def blogs(request):

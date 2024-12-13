@@ -1,0 +1,74 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %} 
+
+
+<!-- /NEWS -->
+<div class="page-baner-section">
+    <h1 class="text-center" style="font-size:40px;font-family: 'Open Sans', sans-serif;">Gallery</h1>
+</div>
+
+
+<!-- sumakanakala updates -->
+<div class="latest-news pt-150 pb-150 mb-5 pb-3">
+    <div class="container mt-4">
+        <h1 class="text-center">Events Gallery</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="hero-btn mt-5 row justify-content-center">
+                {% for category in gallery_cat %}
+                <div class="col-md-4 mb-3">
+                    <!-- Category button -->
+                    <a data-fslightbox="gallery-{{ category.Name }}" data-type="image" 
+                       href="{{ category.image.url }}" title="{{ category.Name }}">
+                        <img src="{{ category.image.url }}" class="img-fluid" alt="{{ category.Name }}">
+                    </a>
+                    <h4 class="text-center">{{ category.Name }}</h4>
+        
+                    <!-- Related gallery items for this category -->
+                    {% for item in gallery %}
+                        {% if item.category.Name == category.Name %}
+                        <a data-fslightbox="gallery-{{ category.Name }}" data-type="image" 
+                           href="{{ item.image.url }}" title="{{ item.id }}" class="d-none"></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <!-- Initialize FSLightbox -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Reload lightbox after adding new elements dynamically
+                refreshFsLightbox();
+            });
+        </script>
+        
+        <!-- <div class="row d-flex justify-content-center">
+            <div class="hero-btn mt-5 row justify-content-center">
+                {% for item in gallery_cat %}
+                <div class="col-md-4">
+                    <a data-fslightbox="{{item.Name}}" data-type="image" href="{{item.image.url}}" title="images"
+                    >
+                    <img src="{{item.image.url}}" class="img-fluid" alt="images">
+                </a>
+                <h4 class="text-center">{{item.Name}}</h4>
+                </div>
+                {% endfor %}
+
+                {% for items in gallery %}
+                <a data-fslightbox="{{items.category.Name}}" data-type="image"
+                    href="{{items.image.url}}?text={{items.id}}" title="images"></a>
+                {% endfor %}
+            </div>
+        </div> -->
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Reload lightbox after adding new elements dynamically
+        refreshFsLightbox();
+    });
+</script>
+
+{% endblock %}

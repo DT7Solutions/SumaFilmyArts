@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from FilmyApp.views import linkedin_jobpost
-from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Carrers,Sponsorship,Blog
+from .models import ContactData, Application,ImageUploads,Ideas,Collaboration,Carrers,Sponsorship,Blog,GalleryImage,Category
 
 import csv
 from django.http import HttpResponse
@@ -62,6 +62,11 @@ class AdminCarrers(admin.ModelAdmin):
 class AdminBlog(admin.ModelAdmin):
     list_display = ('id','title', 'category','status')
 
+class AdminGalleryCategory(admin.ModelAdmin):
+    list_display = ('id','Name')
+
+class AdminGallery(admin.ModelAdmin):
+    list_display = ('id','category', 'image')
 
 
 admin.site.register(ContactData,AdminContactData)
@@ -72,3 +77,5 @@ admin.site.register(Collaboration,AdminCollaborationForm)
 admin.site.register(Sponsorship,AdminSponcershipForm)
 admin.site.register(Carrers,AdminCarrers)
 admin.site.register(Blog,AdminBlog)
+admin.site.register(Category,AdminGalleryCategory)
+admin.site.register(GalleryImage,AdminGallery)

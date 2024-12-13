@@ -1,18 +1,15 @@
 {
     "configurations": [
-    
-   
         {
-            "name": "Python: Django",
-            "type": "python",
+            "name": "Python Debugger: Django",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\Sumafilmyart\\manage.py",
             "args": [
                 "runserver"
             ],
             "django": true,
-            "justMyCode": true
-        },
-        
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}\\Sumafilmyart\\manage.py"
+        }
     ]
 }
